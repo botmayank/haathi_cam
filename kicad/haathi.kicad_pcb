@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 0)
-    (tracks 2)
+    (tracks 1)
     (zones 0)
     (modules 1)
     (nets 8)
@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.05)
+    (last_trace_width 0.25)
     (user_trace_width 0.05)
     (user_trace_width 0.1)
     (user_trace_width 0.2)
@@ -563,7 +563,6 @@
       (net 1 "Net-(U1-PadA1)") (solder_mask_margin 0.12) (clearance 0.12))
   )
 
-  (segment (start 95.885 92.075) (end 95.885 91.905602) (width 0.05) (layer F.Cu) (net 0))
   (segment (start 138.845 73.925) (end 138.825 73.925) (width 0.05) (layer F.Cu) (net 0))
 
 )
