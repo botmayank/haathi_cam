@@ -74,4 +74,12 @@ Text Notes 1650 5100 0    50   ~ 10
 claimed : Anool
 Text Notes 4650 3100 0    50   ~ 10
 claimed : Anool
+Text Notes 1650 1150 0    50   ~ 10
+claimed : Mayank
+Text Notes 4650 5150 0    50   ~ 10
+claimed : Mayank
+Text Notes 4650 1150 0    50   ~ 10
+claimed : Mayank
+Text Notes 7700 3150 0    50   ~ 10
+claimed : Mayank
 $EndSCHEMATC
