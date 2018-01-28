@@ -19,7 +19,6 @@ S 2000 1000 1500 1500
 U 5A630787
 F0 "POWER" 50
 F1 "haathi_power.sch" 50
-F2 "VIN" I L 2000 1350 50 
 $EndSheet
 $Sheet
 S 5000 1000 1500 1500
@@ -88,21 +87,19 @@ claimed : Mayank
 Text Notes 7700 3150 0    50   ~ 10
 claimed : Mayank
 Wire Wire Line
-	2000 1350 1700 1350
+	2000 3200 1375 3200
 Wire Wire Line
-	2000 3200 1250 3200
+	1375 3300 2000 3300
 Wire Wire Line
-	1250 3300 2000 3300
+	2000 3400 1375 3400
 Wire Wire Line
-	2000 3400 1250 3400
-Wire Wire Line
-	1250 3500 2000 3500
-Text Label 1250 3200 0    50   ~ 0
+	1375 3500 2000 3500
+Text Label 1375 3200 0    50   ~ 0
 5V_USB_OTG
-Text Label 1250 3300 0    50   ~ 0
+Text Label 1375 3300 0    50   ~ 0
 USB_OTG1_D-
-Text Label 1250 3400 0    50   ~ 0
+Text Label 1375 3400 0    50   ~ 0
 USB_OTG1_D+
-Text Label 1250 3500 0    50   ~ 0
+Text Label 1375 3500 0    50   ~ 0
 USB_OTG1_ID
 $EndSCHEMATC

@@ -19,6 +19,7 @@ S 2000 1000 1500 1500
 U 5A630787
 F0 "POWER" 50
 F1 "haathi_power.sch" 50
+F2 "VIN" I L 2000 1350 50 
 $EndSheet
 $Sheet
 S 5000 1000 1500 1500
@@ -82,4 +83,6 @@ Text Notes 4650 1150 0    50   ~ 10
 claimed : Mayank
 Text Notes 7700 3150 0    50   ~ 10
 claimed : Mayank
+Wire Wire Line
+	2000 1350 1700 1350
 $EndSCHEMATC
