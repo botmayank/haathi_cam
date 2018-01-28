@@ -44,6 +44,10 @@ S 2000 3000 1500 1500
 U 5A630892
 F0 "USB" 50
 F1 "haathi_usb.sch" 50
+F2 "5V_USB_OTG" B L 2000 3200 50 
+F3 "USB_OTG1_D-" B L 2000 3300 50 
+F4 "USB_OTG1_D+" B L 2000 3400 50 
+F5 "USB_OTG1_ID" B L 2000 3500 50 
 $EndSheet
 $Sheet
 S 8000 3000 1500 1500
@@ -85,4 +89,20 @@ Text Notes 7700 3150 0    50   ~ 10
 claimed : Mayank
 Wire Wire Line
 	2000 1350 1700 1350
+Wire Wire Line
+	2000 3200 1250 3200
+Wire Wire Line
+	1250 3300 2000 3300
+Wire Wire Line
+	2000 3400 1250 3400
+Wire Wire Line
+	1250 3500 2000 3500
+Text Label 1250 3200 0    50   ~ 0
+5V_USB_OTG
+Text Label 1250 3300 0    50   ~ 0
+USB_OTG1_D-
+Text Label 1250 3400 0    50   ~ 0
+USB_OTG1_D+
+Text Label 1250 3500 0    50   ~ 0
+USB_OTG1_ID
 $EndSCHEMATC

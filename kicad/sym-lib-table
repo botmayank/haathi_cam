@@ -1,4 +1,4 @@
 (sym_lib_table
   (lib (name haathi)(type Legacy)(uri ${KIPRJMOD}/symbol_lib/haathi.lib)(options "")(descr ""))
-  (lib (name haathi_mayank)(type Legacy)(uri /home/mayank/Documents/2_MJ_Projects/1_iMX_RT_Camera/haathi_cam/kicad/symbol_lib/haathi_mayank.lib)(options "")(descr ""))
+  (lib (name haathi_mayank)(type Legacy)(uri ${KIPRJMOD}/symbol_lib/haathi_mayank.lib)(options "")(descr ""))
 )

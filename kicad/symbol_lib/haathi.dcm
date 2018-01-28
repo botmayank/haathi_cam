@@ -1,9 +1,51 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BC817
+D 0.8A Ic, 45V Vce, NPN Transistor, SOT-23
+K NPN Transistor
+F http://www.fairchildsemi.com/ds/BC/BC817.pdf
+$ENDCMP
+#
+$CMP BC818
+D 0.8A Ic, 25V Vce, NPN Transistor, SOT-23
+K NPN Transistor
+F https://www.fairchildsemi.com/datasheets/BC/BC818.pdf
+$ENDCMP
+#
+$CMP BC847
+D 0.1A Ic, 45V Vce, NPN Transistor, SOT-23
+K NPN Small Signal Transistor
+F http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
+$ENDCMP
+#
+$CMP BC848
+D 0.1A Ic, 30V Vce, NPN Transistor, SOT-23
+K NPN Small Signal Transistor
+F http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
+$ENDCMP
+#
+$CMP BC849
+D 0.1A Ic, 30V Vce, NPN Transistor, SOT-23
+K NPN Small Signal Transistor
+F http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
+$ENDCMP
+#
+$CMP BC850
+D 0.1A Ic, 45V Vce, NPN Transistor, SOT-23
+K NPN Small Signal Transistor
+F http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
+$ENDCMP
+#
 $CMP Conn_01x01
 D Generic connector, single row, 01x01
 K connector
 F ~
+$ENDCMP
+#
+$CMP MMBT3904
+D 0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23
+K NPN Transistor
+F https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf
 $ENDCMP
 #
 #End Doc Library
