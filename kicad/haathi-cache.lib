@@ -1,4 +1,172 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# haathi_mayank:C_NP
+#
+DEF haathi_mayank:C_NP C 0 10 N N 1 F N
+F0 "C" -100 100 40 H V L CNN
+F1 "haathi_mayank:C_NP" 0 -150 40 H V L CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ SM*
+ C?
+ C1-1
+$ENDFPLIST
+DRAW
+S -75 50 75 25 0 1 0 F
+S 75 -50 -75 -25 0 1 0 F
+X + 1 0 150 100 D 40 40 1 1 P
+X - 2 0 -150 100 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# haathi_mayank:C_POL
+#
+DEF haathi_mayank:C_POL C 0 10 N N 1 F N
+F0 "C" -100 100 40 H V L CNN
+F1 "haathi_mayank:C_POL" 0 -150 40 H V L CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ SM*
+ C?
+ C1-1
+$ENDFPLIST
+DRAW
+T 0 45 85 50 0 0 0 + Normal 1 C C
+S -75 50 75 25 0 1 0 f
+S 75 -50 -75 -25 0 1 0 F
+X + 1 0 150 100 D 40 40 1 1 P
+X - 2 0 -150 100 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# haathi_mayank:IND_SML
+#
+DEF haathi_mayank:IND_SML L 0 0 N N 1 F N
+F0 "L" 0 100 40 H V C CNN
+F1 "haathi_mayank:IND_SML" 0 -50 40 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+A -100 0 50 1 1799 0 1 10 N -50 0 -150 0
+A 0 0 50 1 1799 0 1 10 N 50 0 -50 0
+A 100 0 50 1 1799 0 1 10 N 150 0 50 0
+X 1 1 -200 0 50 R 30 30 1 1 P
+X 2 2 200 0 50 L 30 30 1 1 P
+ENDDRAW
+ENDDEF
+#
+# haathi_mayank:R
+#
+DEF haathi_mayank:R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "haathi_mayank:R" 0 0 50 V V C CNN
+F2 "" -70 0 30 V V C CNN
+F3 "" 0 0 30 H V C CNN
+$FPLIST
+ R_*
+ Resistor_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 f
+X ~ 1 0 150 50 D 60 60 1 1 P
+X ~ 2 0 -150 50 U 60 60 1 1 P
+ENDDRAW
+ENDDEF
+#
+# haathi_mayank:TPS62142
+#
+DEF haathi_mayank:TPS62142 U 0 40 Y Y 1 F N
+F0 "U" -300 450 50 H V C CNN
+F1 "haathi_mayank:TPS62142" 100 -550 50 H V C CNN
+F2 "" 100 0 50 H I C CNN
+F3 "" 100 0 50 H I C CNN
+DRAW
+S -350 400 300 -500 0 1 0 N
+X SW 1 -450 300 100 R 50 50 1 1 P
+X AVIN 10 400 -300 100 L 50 50 1 1 P
+X PVIN 11 400 -200 100 L 50 50 1 1 P
+X PVIN 12 400 -100 100 L 50 50 1 1 P
+X EN 13 400 0 100 L 50 50 1 1 P
+X VOS 14 400 100 100 L 50 50 1 1 P
+X PGND 15 400 200 100 L 50 50 1 1 P
+X PGND 16 400 300 100 L 50 50 1 1 P
+X SW 2 -450 200 100 R 50 50 1 1 P
+X SW 3 -450 100 100 R 50 50 1 1 P
+X PG 4 -450 0 100 R 50 50 1 1 P
+X FB 5 -450 -100 100 R 50 50 1 1 P
+X AGND 6 -450 -200 100 R 50 50 1 1 P
+X FSW 7 -450 -300 100 R 50 50 1 1 P
+X DEF 8 -450 -400 100 R 50 50 1 1 P
+X SS/TR 9 400 -400 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# haathi_mayank:batt_coin_holder
+#
+DEF haathi_mayank:batt_coin_holder BT 0 0 N Y 1 F N
+F0 "BT" 25 75 40 H V L CNN
+F1 "haathi_mayank:batt_coin_holder" 25 -75 40 H V L CNN
+F2 "" 0 -25 60 V V C CNN
+F3 "" 0 -25 60 V V C CNN
+F4 "HOLDER BATTERY COIN 20MM DIA THM" 0 300 40 H I L CNN
+F5 "Coin Cell, Retainer" 0 400 40 H I L CNN
+F6 "Coin, 20.0mm" 0 500 40 H I L CNN
+F7 "Keystone Electronics" 0 600 40 H I L CNN
+F8 "3003" 0 700 40 H I L CNN
+F9 "Digikey" 0 800 40 H I L CNN
+F10 "3003K-ND" 0 900 40 H I L CNN
+F11 "http://www.digikey.com/scripts/DkSearch/dksus.dll?x=0&y=0&lang=en&KeyWords=3003K-ND&cur=USD" 0 1000 40 H I L CNN
+DRAW
+S 50 -25 -50 -5 0 1 0 F
+S 90 25 -90 15 0 1 0 F
+P 2 0 1 0 0 -25 0 -50 N
+P 2 0 1 0 0 50 0 25 N
+X + + 0 150 100 D 40 40 1 1 P
+X - - 0 -150 100 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power:GND
+#
+DEF power:GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:PWR_FLAG
+#
+DEF power:PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power:PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# power:VCC
+#
+DEF power:VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power:VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 #End Library
