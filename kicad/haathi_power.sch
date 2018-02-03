@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 4 12
 Title ""
 Date ""
 Rev ""
@@ -40,7 +41,7 @@ L haathi_mayank:C_POL C?
 U 1 1 5A6DF04E
 P 4200 1700
 F 0 "C?" H 4303 1738 40  0000 L CNN
-F 1 "10uF" H 4303 1662 40  0000 L CNN
+F 1 "22uF" H 4303 1662 40  0000 L CNN
 F 2 "" H 4200 1700 60  0000 C CNN
 F 3 "" H 4200 1700 60  0000 C CNN
 	1    4200 1700
@@ -435,12 +436,12 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR?
 U 1 1 5A6FED5F
-P 7450 1250
-F 0 "#PWR?" H 7450 1100 50  0001 C CNN
-F 1 "VCC" H 7467 1423 50  0000 C CNN
-F 2 "" H 7450 1250 50  0001 C CNN
-F 3 "" H 7450 1250 50  0001 C CNN
-	1    7450 1250
+P 7100 1250
+F 0 "#PWR?" H 7100 1100 50  0001 C CNN
+F 1 "VCC" H 7117 1423 50  0000 C CNN
+F 2 "" H 7100 1250 50  0001 C CNN
+F 3 "" H 7100 1250 50  0001 C CNN
+	1    7100 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -455,8 +456,6 @@ F 3 "" H 7500 1250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 7500 1250
-Wire Wire Line
-	7500 1250 7450 1250
 Text HLabel 8250 1250 2    50   Input ~ 0
 DCDC_IN
 Text HLabel 8250 1600 2    50   Input ~ 0
@@ -964,8 +963,6 @@ Text HLabel 6400 1200 2    50   Input ~ 0
 V_USB
 Text Label 4750 1500 0    50   ~ 0
 VIN
-Text Label 5600 1300 2    50   ~ 0
-VIN
 Text Label 6400 1300 0    50   ~ 0
 V_BATT
 Text Label 10850 2050 0    50   ~ 0
@@ -979,80 +976,80 @@ Battery
 $Comp
 L haathi_mayank:SW-SPST-M S?
 U 1 1 5A81CDE8
-P 6100 2100
-F 0 "S?" H 6100 2402 40  0000 C CNB
-F 1 "SW-SPST-M" H 6100 2326 40  0000 C CNB
-F 2 "" H 6100 2100 60  0000 C CNN
-F 3 "" H 6100 2100 60  0000 C CNN
-	1    6100 2100
+P 9600 4350
+F 0 "S?" H 9600 4652 40  0000 C CNB
+F 1 "SW-SPST-M" H 9600 4576 40  0000 C CNB
+F 2 "" H 9600 4350 60  0000 C CNN
+F 3 "" H 9600 4350 60  0000 C CNN
+	1    9600 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L haathi_mayank:SW-SPST-M S?
 U 1 1 5A81CEB6
-P 6100 2550
-F 0 "S?" H 6100 2852 40  0000 C CNB
-F 1 "SW-SPST-M" H 6100 2776 40  0000 C CNB
-F 2 "" H 6100 2550 60  0000 C CNN
-F 3 "" H 6100 2550 60  0000 C CNN
-	1    6100 2550
+P 9600 4800
+F 0 "S?" H 9600 5102 40  0000 C CNB
+F 1 "SW-SPST-M" H 9600 5026 40  0000 C CNB
+F 2 "" H 9600 4800 60  0000 C CNN
+F 3 "" H 9600 4800 60  0000 C CNN
+	1    9600 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L haathi_mayank:SW-SPST-M S?
 U 1 1 5A81CF46
-P 6100 3050
-F 0 "S?" H 6100 3352 40  0000 C CNB
-F 1 "SW-SPST-M" H 6100 3276 40  0000 C CNB
-F 2 "" H 6100 3050 60  0000 C CNN
-F 3 "" H 6100 3050 60  0000 C CNN
-	1    6100 3050
+P 9600 5300
+F 0 "S?" H 9600 5602 40  0000 C CNB
+F 1 "SW-SPST-M" H 9600 5526 40  0000 C CNB
+F 2 "" H 9600 5300 60  0000 C CNN
+F 3 "" H 9600 5300 60  0000 C CNN
+	1    9600 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5A81D0A2
-P 5650 3150
-F 0 "#PWR?" H 5650 2900 50  0001 C CNN
-F 1 "GND" H 5655 2977 50  0000 C CNN
-F 2 "" H 5650 3150 50  0001 C CNN
-F 3 "" H 5650 3150 50  0001 C CNN
-	1    5650 3150
+P 9150 5400
+F 0 "#PWR?" H 9150 5150 50  0001 C CNN
+F 1 "GND" H 9155 5227 50  0000 C CNN
+F 2 "" H 9150 5400 50  0001 C CNN
+F 3 "" H 9150 5400 50  0001 C CNN
+	1    9150 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 2100 5650 2100
+	9450 4350 9150 4350
 Wire Wire Line
-	5650 2100 5650 2550
+	9150 4350 9150 4800
 Wire Wire Line
-	5950 2550 5650 2550
-Connection ~ 5650 2550
+	9450 4800 9150 4800
+Connection ~ 9150 4800
 Wire Wire Line
-	5650 2550 5650 3050
+	9150 4800 9150 5300
 Wire Wire Line
-	5950 3050 5650 3050
-Connection ~ 5650 3050
+	9450 5300 9150 5300
+Connection ~ 9150 5300
 Wire Wire Line
-	5650 3050 5650 3150
+	9150 5300 9150 5400
 Wire Wire Line
-	6250 3050 6450 3050
+	9750 5300 9950 5300
 Wire Wire Line
-	6250 2550 6450 2550
+	9750 4800 9950 4800
 Wire Wire Line
-	6250 2100 6450 2100
-Text HLabel 6450 2100 2    50   Input ~ 0
+	9750 4350 9950 4350
+Text HLabel 9950 4350 2    50   Input ~ 0
 ONOFF
-Text HLabel 6450 2550 2    50   Input ~ 0
+Text HLabel 9950 4800 2    50   Input ~ 0
 POR_BUTTON
-Text HLabel 6450 3050 2    50   Input ~ 0
+Text HLabel 9950 5300 2    50   Input ~ 0
 USER_BUTTON
-Text Notes 5250 2100 0    50   ~ 0
+Text Notes 8750 4350 0    50   ~ 0
 Buttons
-Text Notes 6450 2250 0    50   ~ 0
+Text Notes 9950 4500 0    50   ~ 0
 CPU ONOFF Button
-Text Notes 6450 2700 0    50   ~ 0
+Text Notes 9950 4950 0    50   ~ 0
 System Reset Button
-Text Notes 6450 3200 0    50   ~ 0
+Text Notes 9950 5450 0    50   ~ 0
 User Button
 Wire Wire Line
 	1900 700  1900 1100
@@ -1441,24 +1438,6 @@ F 3 "" H 2300 2850 50  0001 C CNN
 $EndComp
 Text HLabel 2950 3050 2    50   Input ~ 0
 POR_BUTTON
-Wire Wire Line
-	5950 2150 5950 2100
-Connection ~ 5950 2100
-Wire Wire Line
-	6250 2150 6250 2100
-Connection ~ 6250 2100
-Wire Wire Line
-	6250 2600 6250 2550
-Connection ~ 6250 2550
-Wire Wire Line
-	5950 2600 5950 2550
-Connection ~ 5950 2550
-Wire Wire Line
-	5950 3100 5950 3050
-Connection ~ 5950 3050
-Wire Wire Line
-	6250 3100 6250 3050
-Connection ~ 6250 3050
 $Comp
 L power:VCC #PWR?
 U 1 1 5A8FE01D
@@ -1495,4 +1474,92 @@ Wire Wire Line
 	1950 2900 1950 3150
 Text Notes 2700 2550 2    50   ~ 0
 Power Monitoring and Reset
+Text Label 5600 1300 2    50   ~ 0
+V_INPUT
+$Comp
+L haathi_mayank:Q_PMOS_GDS Q?
+U 1 1 5A778B6C
+P 6100 2050
+F 0 "Q?" V 6443 2050 50  0000 C CNN
+F 1 "Q_PMOS_GDS" V 6352 2050 50  0000 C CNN
+F 2 "" H 6300 2150 50  0001 C CNN
+F 3 "~" H 6100 2050 50  0001 C CNN
+	1    6100 2050
+	0    -1   -1   0   
+$EndComp
+Text Label 6450 1950 0    50   ~ 0
+VIN
+Text Label 5800 1950 2    50   ~ 0
+V_INPUT
+$Comp
+L power:GND #PWR?
+U 1 1 5A78CC9B
+P 6100 2350
+F 0 "#PWR?" H 6100 2100 50  0001 C CNN
+F 1 "GND" H 6105 2177 50  0000 C CNN
+F 2 "" H 6100 2350 50  0001 C CNN
+F 3 "" H 6100 2350 50  0001 C CNN
+	1    6100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2250 6100 2300
+Wire Wire Line
+	5800 1950 5900 1950
+Wire Wire Line
+	6300 1950 6350 1950
+Text Notes 5600 1650 0    50   ~ 0
+Reverse Polarity Protection
+Wire Wire Line
+	7100 1250 7300 1250
+$Comp
+L haathi_mayank:Test_Point_Probe TP?
+U 1 1 5A7E05E8
+P 7300 1100
+F 0 "TP?" H 7453 1202 50  0000 L CNN
+F 1 "Test_Point_Probe" H 7453 1111 50  0000 L CNN
+F 2 "" H 7500 1100 50  0001 C CNN
+F 3 "~" H 7500 1100 50  0001 C CNN
+	1    7300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:Test_Point_Probe TP?
+U 1 1 5A7E0B7A
+P 6300 2300
+F 0 "TP?" H 6453 2402 50  0000 L CNN
+F 1 "Test_Point_Probe" H 6453 2311 50  0000 L CNN
+F 2 "" H 6500 2300 50  0001 C CNN
+F 3 "~" H 6500 2300 50  0001 C CNN
+	1    6300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:Test_Point_Probe TP?
+U 1 1 5A7E0EB4
+P 6450 1850
+F 0 "TP?" H 6603 1952 50  0000 L CNN
+F 1 "Test_Point_Probe" H 6603 1861 50  0000 L CNN
+F 2 "" H 6650 1850 50  0001 C CNN
+F 3 "~" H 6650 1850 50  0001 C CNN
+	1    6450 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1850 6350 1850
+Wire Wire Line
+	6350 1850 6350 1950
+Connection ~ 6350 1950
+Wire Wire Line
+	6350 1950 6450 1950
+Wire Wire Line
+	6300 2300 6100 2300
+Connection ~ 6100 2300
+Wire Wire Line
+	6100 2300 6100 2350
+Wire Wire Line
+	7300 1100 7300 1250
+Connection ~ 7300 1250
+Wire Wire Line
+	7300 1250 7500 1250
 $EndSCHEMATC
