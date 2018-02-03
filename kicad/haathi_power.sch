@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:haathi_power-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -88,12 +87,7 @@ Connection ~ 2550 1200
 Wire Wire Line
 	2700 1600 2550 1600
 Wire Wire Line
-	2700 1700 2550 1700
-Wire Wire Line
-	2550 1700 2550 1800
-Wire Wire Line
 	2700 1800 2550 1800
-Connection ~ 2550 1800
 Wire Wire Line
 	2550 1800 2550 1900
 $Comp
@@ -174,7 +168,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 1850 4200 2150
 Wire Wire Line
-	4200 2150 3800 2150
+	4200 2150 4100 2150
 Connection ~ 3800 2150
 Wire Wire Line
 	3800 2150 3800 2200
@@ -191,7 +185,6 @@ F 3 "" H 2550 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 1100 2450 1100
-Connection ~ 2550 1100
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A6E447F
@@ -203,31 +196,15 @@ F 3 "" H 1900 1250 30  0000 C CNN
 	1    1900 1250
 	1    0    0    -1  
 $EndComp
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A6E57C1
-P 1450 1250
-F 0 "C?" H 1553 1288 40  0000 L CNN
-F 1 "22uF" H 1553 1212 40  0000 L CNN
-F 2 "" H 1450 1250 60  0000 C CNN
-F 3 "" H 1450 1250 60  0000 C CNN
-	1    1450 1250
-	1    0    0    -1  
-$EndComp
-Connection ~ 1450 1100
 Wire Wire Line
-	1450 1400 1450 1550
+	1450 1400 1450 1500
 Connection ~ 1900 1100
 Wire Wire Line
 	1900 1100 2050 1100
 Wire Wire Line
-	1900 1400 2700 1400
+	1900 1400 2450 1400
 Wire Wire Line
 	1450 1100 1900 1100
-Wire Wire Line
-	2550 1100 2550 700 
-Wire Wire Line
-	2550 700  3800 700 
 Wire Wire Line
 	3800 700  3800 1300
 Wire Wire Line
@@ -244,18 +221,6 @@ F 3 "" H 4450 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4450 1500
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5A6E8353
-P 4200 2150
-F 0 "#FLG?" H 4200 2225 50  0001 C CNN
-F 1 "PWR_FLAG" V 4200 2278 50  0000 L CNN
-F 2 "" H 4200 2150 50  0001 C CNN
-F 3 "" H 4200 2150 50  0001 C CNN
-	1    4200 2150
-	0    1    1    0   
-$EndComp
-Connection ~ 4200 2150
 $Comp
 L power:VCC #PWR?
 U 1 1 5A6E83DA
@@ -282,65 +247,65 @@ Connection ~ 1350 1100
 Wire Wire Line
 	1350 1100 1450 1100
 Wire Wire Line
-	950  1100 1350 1100
+	950  1100 1100 1100
 Wire Wire Line
-	4450 1500 4750 1500
+	4450 1500 4650 1500
 $Comp
 L haathi_mayank:batt_coin_holder BT?
 U 1 1 5A6EAFEE
-P 9800 2350
-F 0 "BT?" H 9600 2450 40  0000 L CNN
-F 1 "batt_coin_holder" H 9450 2550 40  0000 L CNN
-F 2 "" V 9800 2325 60  0000 C CNN
-F 3 "" V 9800 2325 60  0000 C CNN
-F 4 "HOLDER BATTERY COIN 20MM DIA THM" H 9800 2650 40  0001 L CNN "Field4"
-F 5 "Coin Cell, Retainer" H 9800 2750 40  0001 L CNN "Field5"
-F 6 "Coin, 20.0mm" H 9800 2850 40  0001 L CNN "Field6"
-F 7 "Keystone Electronics" H 9800 2950 40  0001 L CNN "Field7"
-F 8 "3003" H 9800 3050 40  0001 L CNN "Field8"
-F 9 "Digikey" H 9800 3150 40  0001 L CNN "Field9"
-F 10 "3003K-ND" H 9800 3250 40  0001 L CNN "Field10"
-F 11 "http://www.digikey.com/scripts/DkSearch/dksus.dll?x=0&y=0&lang=en&KeyWords=3003K-ND&cur=USD" H 9800 3350 40  0001 L CNN "Field11"
-	1    9800 2350
+P 9600 1250
+F 0 "BT?" H 9400 1350 40  0000 L CNN
+F 1 "batt_coin_holder" H 9250 1450 40  0000 L CNN
+F 2 "" V 9600 1225 60  0000 C CNN
+F 3 "" V 9600 1225 60  0000 C CNN
+F 4 "HOLDER BATTERY COIN 20MM DIA THM" H 9600 1550 40  0001 L CNN "Field4"
+F 5 "Coin Cell, Retainer" H 9600 1650 40  0001 L CNN "Field5"
+F 6 "Coin, 20.0mm" H 9600 1750 40  0001 L CNN "Field6"
+F 7 "Keystone Electronics" H 9600 1850 40  0001 L CNN "Field7"
+F 8 "3003" H 9600 1950 40  0001 L CNN "Field8"
+F 9 "Digikey" H 9600 2050 40  0001 L CNN "Field9"
+F 10 "3003K-ND" H 9600 2150 40  0001 L CNN "Field10"
+F 11 "http://www.digikey.com/scripts/DkSearch/dksus.dll?x=0&y=0&lang=en&KeyWords=3003K-ND&cur=USD" H 9600 2250 40  0001 L CNN "Field11"
+	1    9600 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9800 2200 10300 2200
+	9600 1100 10100 1100
 $Comp
 L power:GND #PWR?
 U 1 1 5A6EBB3E
-P 9800 2550
-F 0 "#PWR?" H 9800 2300 50  0001 C CNN
-F 1 "GND" H 9805 2377 50  0000 C CNN
-F 2 "" H 9800 2550 50  0001 C CNN
-F 3 "" H 9800 2550 50  0001 C CNN
-	1    9800 2550
+P 9600 1450
+F 0 "#PWR?" H 9600 1200 50  0001 C CNN
+F 1 "GND" H 9605 1277 50  0000 C CNN
+F 2 "" H 9600 1450 50  0001 C CNN
+F 3 "" H 9600 1450 50  0001 C CNN
+	1    9600 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9800 2500 9800 2550
-Text HLabel 10400 2200 2    50   Input ~ 0
+	9600 1400 9600 1450
+Text HLabel 10200 1100 2    50   Input ~ 0
 VDD_SNVS_IN
 $Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A6EC61E
-P 10300 2350
-F 0 "C?" H 10403 2388 40  0000 L CNN
-F 1 "0.22uF" H 10403 2312 40  0000 L CNN
-F 2 "" H 10300 2350 60  0000 C CNN
-F 3 "" H 10300 2350 60  0000 C CNN
-	1    10300 2350
+P 10100 1250
+F 0 "C?" H 10203 1288 40  0000 L CNN
+F 1 "0.22uF" H 10203 1212 40  0000 L CNN
+F 2 "" H 10100 1250 60  0000 C CNN
+F 3 "" H 10100 1250 60  0000 C CNN
+	1    10100 1250
 	1    0    0    -1  
 $EndComp
-Connection ~ 10300 2200
+Connection ~ 10100 1100
 Wire Wire Line
-	10300 2200 10400 2200
+	10100 1100 10200 1100
 Wire Wire Line
-	9800 2500 10300 2500
-Connection ~ 9800 2500
+	9600 1400 10100 1400
+Connection ~ 9600 1400
 Text Notes 4300 950  0    50   ~ 0
 Buck Converter 
-Text Notes 9850 2050 0    50   ~ 0
+Text Notes 9650 950  0    50   ~ 0
 SNVS
 $Comp
 L haathi_mayank:R R?
@@ -506,49 +471,12 @@ Text HLabel 8250 2800 2    50   Input ~ 0
 VDDA_ADC_3P3
 Text HLabel 8250 3050 2    50   Input ~ 0
 VDD_HIGH_IN
-$Comp
-L haathi_mayank:SW_SPDT SW?
-U 1 1 5A6EFAC5
-P 6150 1400
-F 0 "SW?" H 6150 1685 50  0000 C CNN
-F 1 "SW_SPDT" H 6150 1594 50  0000 C CNN
-F 2 "" H 6150 1400 50  0001 C CNN
-F 3 "" H 6150 1400 50  0001 C CNN
-	1    6150 1400
-	1    0    0    -1  
-$EndComp
 Text HLabel 1300 4600 0    50   Input ~ 0
 DCDC_IN
 Wire Wire Line
 	1300 4600 1450 4600
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A71FE88
-P 1450 4750
-F 0 "C?" H 1553 4788 40  0000 L CNN
-F 1 "22uF" H 1553 4712 40  0000 L CNN
-F 2 "" H 1450 4750 60  0000 C CNN
-F 3 "" H 1450 4750 60  0000 C CNN
-	1    1450 4750
-	1    0    0    -1  
-$EndComp
-Connection ~ 1450 4600
 Wire Wire Line
 	1450 4600 1850 4600
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A71FF20
-P 1850 4750
-F 0 "C?" H 1953 4788 40  0000 L CNN
-F 1 "4.7uF" H 1953 4712 40  0000 L CNN
-F 2 "" H 1850 4750 60  0000 C CNN
-F 3 "" H 1850 4750 60  0000 C CNN
-	1    1850 4750
-	1    0    0    -1  
-$EndComp
-Connection ~ 1850 4600
-Wire Wire Line
-	1850 4600 2250 4600
 $Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A71FF62
@@ -602,9 +530,6 @@ $EndComp
 Wire Wire Line
 	1450 4900 1850 4900
 Wire Wire Line
-	1850 4900 2250 4900
-Connection ~ 1850 4900
-Wire Wire Line
 	2250 4900 2250 5000
 Connection ~ 2250 4900
 Wire Wire Line
@@ -614,17 +539,6 @@ Wire Wire Line
 	2650 4900 3050 4900
 Text HLabel 1300 5400 0    50   Input ~ 0
 NVCC_SD0
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A7294BA
-P 1600 5550
-F 0 "C?" H 1703 5588 40  0000 L CNN
-F 1 "4.7uF" H 1703 5512 40  0000 L CNN
-F 2 "" H 1600 5550 60  0000 C CNN
-F 3 "" H 1600 5550 60  0000 C CNN
-	1    1600 5550
-	1    0    0    -1  
-$EndComp
 $Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A729556
@@ -638,7 +552,6 @@ F 3 "" H 2000 5550 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	1300 5400 1600 5400
-Connection ~ 1600 5400
 Wire Wire Line
 	1600 5400 2000 5400
 $Comp
@@ -659,17 +572,6 @@ Wire Wire Line
 Connection ~ 2000 5700
 Text HLabel 1300 6150 0    50   Input ~ 0
 NVCC_SD1
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A72FF66
-P 1550 6300
-F 0 "C?" H 1653 6338 40  0000 L CNN
-F 1 "4.7uF" H 1653 6262 40  0000 L CNN
-F 2 "" H 1550 6300 60  0000 C CNN
-F 3 "" H 1550 6300 60  0000 C CNN
-	1    1550 6300
-	1    0    0    -1  
-$EndComp
 $Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A72FFCC
@@ -694,7 +596,6 @@ F 3 "" H 1950 6550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 6150 1550 6150
-Connection ~ 1550 6150
 Wire Wire Line
 	1550 6150 1950 6150
 Wire Wire Line
@@ -704,17 +605,6 @@ Wire Wire Line
 Connection ~ 1950 6450
 Text HLabel 2800 5400 0    50   Input ~ 0
 NVCC_EMC
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A737887
-P 2950 5550
-F 0 "C?" H 3053 5588 40  0000 L CNN
-F 1 "4.7uF" H 3053 5512 40  0000 L CNN
-F 2 "" H 2950 5550 60  0000 C CNN
-F 3 "" H 2950 5550 60  0000 C CNN
-	1    2950 5550
-	1    0    0    -1  
-$EndComp
 $Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A737907
@@ -739,7 +629,6 @@ F 3 "" H 3750 5550 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	2800 5400 2950 5400
-Connection ~ 2950 5400
 Wire Wire Line
 	2950 5400 3350 5400
 Connection ~ 3350 5400
@@ -765,17 +654,6 @@ Wire Wire Line
 	3350 5800 3350 5700
 Text HLabel 2800 6150 0    50   Input ~ 0
 NVCC_GPIO
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A7460A6
-P 2950 6300
-F 0 "C?" H 3053 6338 40  0000 L CNN
-F 1 "4.7uF" H 3053 6262 40  0000 L CNN
-F 2 "" H 2950 6300 60  0000 C CNN
-F 3 "" H 2950 6300 60  0000 C CNN
-	1    2950 6300
-	1    0    0    -1  
-$EndComp
 $Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A74610A
@@ -822,7 +700,6 @@ F 3 "" H 3500 6550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2800 6150 2950 6150
-Connection ~ 2950 6150
 Wire Wire Line
 	2950 6150 3300 6150
 Connection ~ 3300 6150
@@ -857,20 +734,8 @@ F 3 "" H 5400 4750 60  0000 C CNN
 	1    5400 4750
 	1    0    0    -1  
 $EndComp
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A75063A
-P 5000 4750
-F 0 "C?" H 5103 4788 40  0000 L CNN
-F 1 "1uF" H 5103 4712 40  0000 L CNN
-F 2 "" H 5000 4750 60  0000 C CNN
-F 3 "" H 5000 4750 60  0000 C CNN
-	1    5000 4750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4850 4600 5000 4600
-Connection ~ 5000 4600
 Wire Wire Line
 	5000 4600 5400 4600
 Wire Wire Line
@@ -892,17 +757,6 @@ Connection ~ 5400 4900
 Text HLabel 4800 5450 0    50   Input ~ 0
 VDD_HIGH_IN
 $Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A75C3F0
-P 5000 5600
-F 0 "C?" H 5103 5638 40  0000 L CNN
-F 1 "4.7uF" H 5103 5562 40  0000 L CNN
-F 2 "" H 5000 5600 60  0000 C CNN
-F 3 "" H 5000 5600 60  0000 C CNN
-	1    5000 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A75C46C
 P 5400 5600
@@ -915,7 +769,6 @@ F 3 "" H 5400 5600 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4800 5450 5000 5450
-Connection ~ 5000 5450
 Wire Wire Line
 	5000 5450 5400 5450
 Wire Wire Line
@@ -924,17 +777,6 @@ Text Notes 3250 4200 0    50   ~ 0
 Decoupling Capacitors\n
 Text HLabel 4900 6100 0    50   Input ~ 0
 VDD_SNVS_CAP
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A769046
-P 5000 6250
-F 0 "C?" H 5103 6288 40  0000 L CNN
-F 1 "4.7uF" H 5103 6212 40  0000 L CNN
-F 2 "" H 5000 6250 60  0000 C CNN
-F 3 "" H 5000 6250 60  0000 C CNN
-	1    5000 6250
-	1    0    0    -1  
-$EndComp
 $Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A7690BC
@@ -948,7 +790,6 @@ F 3 "" H 5400 6250 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4900 6100 5000 6100
-Connection ~ 5000 6100
 Wire Wire Line
 	5000 6100 5400 6100
 Wire Wire Line
@@ -984,17 +825,6 @@ Connection ~ 5400 5750
 Text HLabel 1500 6850 0    50   Input ~ 0
 VDD_HIGH_CAP
 $Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A77AE7D
-P 1600 7000
-F 0 "C?" H 1703 7038 40  0000 L CNN
-F 1 "4.7uF" H 1703 6962 40  0000 L CNN
-F 2 "" H 1600 7000 60  0000 C CNN
-F 3 "" H 1600 7000 60  0000 C CNN
-	1    1600 7000
-	1    0    0    -1  
-$EndComp
-$Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A77AF0B
 P 2000 7000
@@ -1018,7 +848,6 @@ F 3 "" H 2000 7200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 6850 1600 6850
-Connection ~ 1600 6850
 Wire Wire Line
 	1600 6850 2000 6850
 Wire Wire Line
@@ -1028,28 +857,6 @@ Wire Wire Line
 Connection ~ 2000 7150
 Text HLabel 2950 6900 0    50   Input ~ 0
 VDD_SOC_IN
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A797B35
-P 3100 7050
-F 0 "C?" H 3203 7088 40  0000 L CNN
-F 1 "22uF" H 3203 7012 40  0000 L CNN
-F 2 "" H 3100 7050 60  0000 C CNN
-F 3 "" H 3100 7050 60  0000 C CNN
-	1    3100 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L haathi_mayank:C_POL C?
-U 1 1 5A797BFB
-P 3450 7050
-F 0 "C?" H 3553 7088 40  0000 L CNN
-F 1 "4.7uF" H 3553 7012 40  0000 L CNN
-F 2 "" H 3450 7050 60  0000 C CNN
-F 3 "" H 3450 7050 60  0000 C CNN
-	1    3450 7050
-	1    0    0    -1  
-$EndComp
 $Comp
 L haathi_mayank:C_NP C?
 U 1 1 5A797CB7
@@ -1107,10 +914,8 @@ F 3 "" H 5400 7050 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	2950 6900 3100 6900
-Connection ~ 3100 6900
 Wire Wire Line
 	3100 6900 3450 6900
-Connection ~ 3450 6900
 Wire Wire Line
 	3450 6900 3800 6900
 Connection ~ 3800 6900
@@ -1127,7 +932,6 @@ Wire Wire Line
 	5000 6900 5400 6900
 Wire Wire Line
 	3100 7200 3450 7200
-Connection ~ 3450 7200
 Wire Wire Line
 	3450 7200 3800 7200
 Connection ~ 3800 7200
@@ -1156,76 +960,21 @@ $EndComp
 Connection ~ 4000 7200
 Wire Wire Line
 	4000 7200 4200 7200
-Wire Wire Line
-	5700 1400 5950 1400
-Text HLabel 6650 1300 2    50   Input ~ 0
+Text HLabel 6400 1200 2    50   Input ~ 0
 V_USB
-Wire Wire Line
-	6350 1300 6650 1300
-Wire Wire Line
-	6350 1500 6650 1500
-$Comp
-L haathi_mayank:Battery BT?
-U 1 1 5A7C7D29
-P 9850 1250
-F 0 "BT?" H 9958 1296 50  0000 L CNN
-F 1 "Battery" H 9958 1205 50  0000 L CNN
-F 2 "" V 9850 1310 50  0001 C CNN
-F 3 "~" V 9850 1310 50  0001 C CNN
-	1    9850 1250
-	1    0    0    -1  
-$EndComp
 Text Label 4750 1500 0    50   ~ 0
 VIN
-Text Label 5700 1400 2    50   ~ 0
+Text Label 5600 1300 2    50   ~ 0
 VIN
-Text Label 6650 1500 0    50   ~ 0
+Text Label 6400 1300 0    50   ~ 0
 V_BATT
-Wire Wire Line
-	9850 1050 10350 1050
-Text Label 10450 1050 0    50   ~ 0
+Text Label 10850 2050 0    50   ~ 0
 V_BATT
-$Comp
-L power:GND #PWR?
-U 1 1 5A7CF7EC
-P 9850 1600
-F 0 "#PWR?" H 9850 1350 50  0001 C CNN
-F 1 "GND" H 9855 1427 50  0000 C CNN
-F 2 "" H 9850 1600 50  0001 C CNN
-F 3 "" H 9850 1600 50  0001 C CNN
-	1    9850 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 1450 9850 1550
-$Comp
-L haathi_mayank:C_NP C?
-U 1 1 5A7D666C
-P 10350 1250
-F 0 "C?" H 10453 1288 40  0000 L CNN
-F 1 "0.1uF" H 10453 1212 40  0000 L CNN
-F 2 "" H 10350 1250 60  0000 C CNN
-F 3 "" H 10350 1250 60  0000 C CNN
-	1    10350 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 1100 10350 1050
-Connection ~ 10350 1050
-Wire Wire Line
-	10350 1050 10450 1050
-Wire Wire Line
-	10350 1400 10350 1550
-Wire Wire Line
-	10350 1550 9850 1550
-Connection ~ 9850 1550
-Wire Wire Line
-	9850 1550 9850 1600
-Text Notes 5750 950  0    50   ~ 0
+Text Notes 5600 950  0    50   ~ 0
 Power Input Selection
 Text Notes 7800 950  0    50   ~ 0
 Supply Nets
-Text Notes 9900 950  0    50   ~ 0
+Text Notes 9500 1900 0    50   ~ 0
 Battery
 $Comp
 L haathi_mayank:SW-SPST-M S?
@@ -1305,4 +1054,445 @@ Text Notes 6450 2700 0    50   ~ 0
 System Reset Button
 Text Notes 6450 3200 0    50   ~ 0
 User Button
+Wire Wire Line
+	1900 700  1900 1100
+Wire Wire Line
+	1900 700  3800 700 
+Wire Wire Line
+	2700 1700 2450 1700
+Wire Wire Line
+	2450 1700 2450 1400
+Connection ~ 2450 1400
+Wire Wire Line
+	2450 1400 2700 1400
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A75BFBB
+P 4650 1650
+F 0 "C?" H 4753 1688 40  0000 L CNN
+F 1 "0.1uF" H 4753 1612 40  0000 L CNN
+F 2 "" H 4650 1650 60  0000 C CNN
+F 3 "" H 4650 1650 60  0000 C CNN
+	1    4650 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 1500
+Wire Wire Line
+	4650 1500 4750 1500
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5A75C5FD
+P 4100 2150
+F 0 "#FLG?" H 4100 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 2324 50  0000 C CNN
+F 2 "" H 4100 2150 50  0001 C CNN
+F 3 "" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	-1   0    0    1   
+$EndComp
+Connection ~ 4100 2150
+Wire Wire Line
+	4100 2150 3800 2150
+Wire Wire Line
+	4650 1800 4650 2150
+Wire Wire Line
+	4650 2150 4200 2150
+Connection ~ 4200 2150
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A764B24
+P 5000 4750
+F 0 "C?" H 5103 4788 40  0000 L CNN
+F 1 "1uF" H 5103 4712 40  0000 L CNN
+F 2 "" H 5000 4750 60  0000 C CNN
+F 3 "" H 5000 4750 60  0000 C CNN
+	1    5000 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 4600
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A764C8E
+P 5000 5600
+F 0 "C?" H 5103 5638 40  0000 L CNN
+F 1 "4.7uF" H 5103 5562 40  0000 L CNN
+F 2 "" H 5000 5600 60  0000 C CNN
+F 3 "" H 5000 5600 60  0000 C CNN
+	1    5000 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 5450
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A764DF8
+P 5000 6250
+F 0 "C?" H 5103 6288 40  0000 L CNN
+F 1 "4.7uF" H 5103 6212 40  0000 L CNN
+F 2 "" H 5000 6250 60  0000 C CNN
+F 3 "" H 5000 6250 60  0000 C CNN
+	1    5000 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 6100
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A764FD0
+P 2950 5550
+F 0 "C?" H 3053 5588 40  0000 L CNN
+F 1 "4.7uF" H 3053 5512 40  0000 L CNN
+F 2 "" H 2950 5550 60  0000 C CNN
+F 3 "" H 2950 5550 60  0000 C CNN
+	1    2950 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 5400
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A7650CD
+P 1850 4750
+F 0 "C?" H 1953 4788 40  0000 L CNN
+F 1 "4.7uF" H 1953 4712 40  0000 L CNN
+F 2 "" H 1850 4750 60  0000 C CNN
+F 3 "" H 1850 4750 60  0000 C CNN
+	1    1850 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 4600
+Connection ~ 1850 4900
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A765319
+P 2950 6300
+F 0 "C?" H 3053 6338 40  0000 L CNN
+F 1 "4.7uF" H 3053 6262 40  0000 L CNN
+F 2 "" H 2950 6300 60  0000 C CNN
+F 3 "" H 2950 6300 60  0000 C CNN
+	1    2950 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 6150
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A765422
+P 1550 6300
+F 0 "C?" H 1653 6338 40  0000 L CNN
+F 1 "4.7uF" H 1653 6262 40  0000 L CNN
+F 2 "" H 1550 6300 60  0000 C CNN
+F 3 "" H 1550 6300 60  0000 C CNN
+	1    1550 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 6150
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A7655DB
+P 3450 7050
+F 0 "C?" H 3553 7088 40  0000 L CNN
+F 1 "4.7uF" H 3553 7012 40  0000 L CNN
+F 2 "" H 3450 7050 60  0000 C CNN
+F 3 "" H 3450 7050 60  0000 C CNN
+	1    3450 7050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 6900
+Connection ~ 3450 7200
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A7656B2
+P 1600 7000
+F 0 "C?" H 1703 7038 40  0000 L CNN
+F 1 "4.7uF" H 1703 6962 40  0000 L CNN
+F 2 "" H 1600 7000 60  0000 C CNN
+F 3 "" H 1600 7000 60  0000 C CNN
+	1    1600 7000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 6850
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A76584F
+P 3100 7050
+F 0 "C?" H 3203 7088 40  0000 L CNN
+F 1 "22uF" H 3203 7012 40  0000 L CNN
+F 2 "" H 3100 7050 60  0000 C CNN
+F 3 "" H 3100 7050 60  0000 C CNN
+	1    3100 7050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 6900
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A7659C5
+P 1450 4750
+F 0 "C?" H 1553 4788 40  0000 L CNN
+F 1 "22uF" H 1553 4712 40  0000 L CNN
+F 2 "" H 1450 4750 60  0000 C CNN
+F 3 "" H 1450 4750 60  0000 C CNN
+	1    1450 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 4600
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A765AF4
+P 1600 5550
+F 0 "C?" H 1703 5588 40  0000 L CNN
+F 1 "4.7uF" H 1703 5512 40  0000 L CNN
+F 2 "" H 1600 5550 60  0000 C CNN
+F 3 "" H 1600 5550 60  0000 C CNN
+	1    1600 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 5400
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A76612E
+P 1450 1250
+F 0 "C?" H 1553 1288 40  0000 L CNN
+F 1 "22uF" H 1553 1212 40  0000 L CNN
+F 2 "" H 1450 1250 60  0000 C CNN
+F 3 "" H 1450 1250 60  0000 C CNN
+	1    1450 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 1100
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A76680E
+P 1100 1250
+F 0 "C?" H 1203 1288 40  0000 L CNN
+F 1 "0.1uF" H 1203 1212 40  0000 L CNN
+F 2 "" H 1100 1250 60  0000 C CNN
+F 3 "" H 1100 1250 60  0000 C CNN
+	1    1100 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1100 1100
+Wire Wire Line
+	1100 1100 1350 1100
+Wire Wire Line
+	1100 1400 1100 1500
+Wire Wire Line
+	1100 1500 1450 1500
+Wire Wire Line
+	1850 4600 2250 4600
+Wire Wire Line
+	1850 4900 2250 4900
+Connection ~ 1450 1500
+Wire Wire Line
+	1450 1500 1450 1550
+$Comp
+L haathi_mayank:Barrel_Jack J?
+U 1 1 5A7907B4
+P 9600 3100
+F 0 "J?" H 9678 3425 50  0000 C CNN
+F 1 "Barrel_Jack" H 9678 3334 50  0000 C CNN
+F 2 "" H 9650 3060 50  0001 C CNN
+F 3 "~" H 9650 3060 50  0001 C CNN
+	1    9600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:Conn_01x02 J?
+U 1 1 5A790B17
+P 9550 2150
+F 0 "J?" H 9630 2142 50  0000 L CNN
+F 1 "Conn_01x02" H 9630 2051 50  0000 L CNN
+F 2 "" H 9550 2150 50  0001 C CNN
+F 3 "~" H 9550 2150 50  0001 C CNN
+	1    9550 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A7C72A6
+P 10250 2500
+F 0 "#PWR?" H 10250 2250 50  0001 C CNN
+F 1 "GND" H 10255 2327 50  0000 C CNN
+F 2 "" H 10250 2500 50  0001 C CNN
+F 3 "" H 10250 2500 50  0001 C CNN
+	1    10250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A7C7321
+P 10250 2200
+F 0 "C?" H 10353 2238 40  0000 L CNN
+F 1 "0.1uF" H 10353 2162 40  0000 L CNN
+F 2 "" H 10250 2200 60  0000 C CNN
+F 3 "" H 10250 2200 60  0000 C CNN
+	1    10250 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2150 9950 2150
+Wire Wire Line
+	9750 2050 10250 2050
+Connection ~ 10250 2050
+Wire Wire Line
+	10250 2050 10450 2050
+Wire Wire Line
+	9950 2500 10250 2500
+Wire Wire Line
+	9950 2150 9950 2500
+Wire Wire Line
+	10250 2350 10250 2500
+Connection ~ 10250 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5A7FB66D
+P 10150 3350
+F 0 "#PWR?" H 10150 3100 50  0001 C CNN
+F 1 "GND" H 10155 3177 50  0000 C CNN
+F 2 "" H 10150 3350 50  0001 C CNN
+F 3 "" H 10150 3350 50  0001 C CNN
+	1    10150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5A7FB89E
+P 10150 3100
+F 0 "C?" H 10253 3138 40  0000 L CNN
+F 1 "22uF" H 10253 3062 40  0000 L CNN
+F 2 "" H 10150 3100 60  0000 C CNN
+F 3 "" H 10150 3100 60  0000 C CNN
+	1    10150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3100 9900 3200
+Wire Wire Line
+	9900 3200 9900 3300
+Wire Wire Line
+	9900 3300 10150 3300
+Connection ~ 9900 3200
+Wire Wire Line
+	9900 3000 9900 2950
+Wire Wire Line
+	9900 2950 10150 2950
+Wire Wire Line
+	10150 3250 10150 3300
+Wire Wire Line
+	10150 3300 10150 3350
+Connection ~ 10150 3300
+Text Label 10800 2950 0    50   ~ 0
+V_BATT
+$Comp
+L haathi_mayank:D_Schottky D?
+U 1 1 5A8309CA
+P 10600 2050
+F 0 "D?" H 10600 1834 50  0000 C CNN
+F 1 "D_Schottky" H 10600 1925 50  0000 C CNN
+F 2 "" H 10600 2050 50  0001 C CNN
+F 3 "" H 10600 2050 50  0001 C CNN
+	1    10600 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L haathi_mayank:D_Schottky D?
+U 1 1 5A83100D
+P 10500 2950
+F 0 "D?" H 10500 2734 50  0000 C CNN
+F 1 "D_Schottky" H 10500 2825 50  0000 C CNN
+F 2 "" H 10500 2950 50  0001 C CNN
+F 3 "" H 10500 2950 50  0001 C CNN
+	1    10500 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10150 2950 10350 2950
+Connection ~ 10150 2950
+Wire Wire Line
+	10650 2950 10800 2950
+Wire Wire Line
+	10750 2050 10850 2050
+$Comp
+L haathi_mayank:SW_SP3T SW?
+U 1 1 5A855D59
+P 5900 1300
+F 0 "SW?" H 5900 1583 50  0000 C CNN
+F 1 "SW_SP3T" H 5900 1492 50  0000 C CNN
+F 2 "" H 5275 1475 50  0001 C CNN
+F 3 "" H 5275 1475 50  0001 C CNN
+	1    5900 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1200 6400 1200
+Wire Wire Line
+	6100 1300 6400 1300
+Wire Wire Line
+	5700 1300 5600 1300
+NoConn ~ 6100 1400
+Text Notes 6200 1450 0    50   ~ 0
+OFF
+$Comp
+L haathi_mayank:APX811 U?
+U 1 1 5A8B233D
+P 2450 2950
+F 0 "U?" H 2425 3265 50  0000 C CNN
+F 1 "APX811" H 2425 3174 50  0000 C CNN
+F 2 "" H 2300 2850 50  0001 C CNN
+F 3 "" H 2300 2850 50  0001 C CNN
+	1    2450 2950
+	1    0    0    -1  
+$EndComp
+Text HLabel 2950 3050 2    50   Input ~ 0
+POR_BUTTON
+Wire Wire Line
+	5950 2150 5950 2100
+Connection ~ 5950 2100
+Wire Wire Line
+	6250 2150 6250 2100
+Connection ~ 6250 2100
+Wire Wire Line
+	6250 2600 6250 2550
+Connection ~ 6250 2550
+Wire Wire Line
+	5950 2600 5950 2550
+Connection ~ 5950 2550
+Wire Wire Line
+	5950 3100 5950 3050
+Connection ~ 5950 3050
+Wire Wire Line
+	6250 3100 6250 3050
+Connection ~ 6250 3050
+$Comp
+L power:VCC #PWR?
+U 1 1 5A8FE01D
+P 2950 2900
+F 0 "#PWR?" H 2950 2750 50  0001 C CNN
+F 1 "VCC" H 2967 3073 50  0000 C CNN
+F 2 "" H 2950 2900 50  0001 C CNN
+F 3 "" H 2950 2900 50  0001 C CNN
+	1    2950 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 1850 3050 0    50   Input ~ 0
+MCU_RESET_N
+Wire Wire Line
+	1850 3050 2050 3050
+Wire Wire Line
+	2800 2900 2950 2900
+Wire Wire Line
+	2800 3050 2950 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5A92FBAD
+P 1950 3150
+F 0 "#PWR?" H 1950 2900 50  0001 C CNN
+F 1 "GND" H 1955 2977 50  0000 C CNN
+F 2 "" H 1950 3150 50  0001 C CNN
+F 3 "" H 1950 3150 50  0001 C CNN
+	1    1950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2900 1950 2900
+Wire Wire Line
+	1950 2900 1950 3150
+Text Notes 2700 2550 2    50   ~ 0
+Power Monitoring and Reset
 $EndSCHEMATC
