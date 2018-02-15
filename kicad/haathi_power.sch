@@ -1594,8 +1594,6 @@ Connection ~ 900  1100
 Wire Wire Line
 	900  1100 1200 1100
 Wire Wire Line
-	5000 1500 5300 1500
-Wire Wire Line
 	5400 1500 5500 1500
 Connection ~ 5500 1500
 Wire Wire Line
@@ -1618,4 +1616,81 @@ $EndComp
 Connection ~ 10000 1100
 Wire Wire Line
 	10000 1100 10050 1100
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A864549
+P 5400 1900
+F 0 "R?" H 5470 1946 50  0000 L CNN
+F 1 "0" H 5470 1855 50  0000 L CNN
+F 2 "" V 5330 1900 30  0000 C CNN
+F 3 "" H 5400 1900 30  0000 C CNN
+	1    5400 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 1500 5400 1800
+Wire Wire Line
+	5400 1800 5550 1800
+Wire Wire Line
+	5550 1800 5550 1900
+Connection ~ 5400 1500
+Wire Wire Line
+	5300 1500 5300 1800
+Wire Wire Line
+	5300 1800 5250 1800
+Wire Wire Line
+	5250 1800 5250 1900
+Wire Wire Line
+	5000 1500 5300 1500
+Connection ~ 5300 1500
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8938A2
+P 9700 1550
+F 0 "R?" H 9770 1596 50  0000 L CNN
+F 1 "0" H 9770 1505 50  0000 L CNN
+F 2 "" V 9630 1550 30  0000 C CNN
+F 3 "" H 9700 1550 30  0000 C CNN
+	1    9700 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 1100 9650 1450
+Wire Wire Line
+	9650 1450 9550 1450
+Wire Wire Line
+	9550 1450 9550 1550
+Connection ~ 9650 1100
+Wire Wire Line
+	9750 1100 9750 1450
+Wire Wire Line
+	9750 1450 9850 1450
+Wire Wire Line
+	9850 1450 9850 1550
+Connection ~ 9750 1100
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8ABC59
+P 1250 1650
+F 0 "R?" H 1320 1696 50  0000 L CNN
+F 1 "0" H 1320 1605 50  0000 L CNN
+F 2 "" V 1180 1650 30  0000 C CNN
+F 3 "" H 1250 1650 30  0000 C CNN
+	1    1250 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 1100 1300 1550
+Wire Wire Line
+	1300 1550 1400 1550
+Wire Wire Line
+	1400 1550 1400 1650
+Connection ~ 1300 1100
+Wire Wire Line
+	1200 1100 1200 1550
+Wire Wire Line
+	1200 1550 1100 1550
+Wire Wire Line
+	1100 1550 1100 1650
+Connection ~ 1200 1100
 $EndSCHEMATC
