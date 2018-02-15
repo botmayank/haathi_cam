@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_camera-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -15,14 +15,817 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L haathi_mayank:Conn_02x08_Odd_Even J?
-U 1 1 5A760D6D
-P 3400 2000
-F 0 "J?" H 3450 2517 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 3450 2426 50  0000 C CNN
-F 2 "" H 3400 2000 50  0001 C CNN
-F 3 "~" H 3400 2000 50  0001 C CNN
-	1    3400 2000
+L haathi_mayank:Conn_01x20 J?
+U 1 1 5A865B61
+P 3100 2500
+F 0 "J?" H 3180 2492 50  0000 L CNN
+F 1 "Conn_01x20" H 3180 2401 50  0000 L CNN
+F 2 "" H 3100 2500 50  0001 C CNN
+F 3 "~" H 3100 2500 50  0001 C CNN
+	1    3100 2500
 	1    0    0    -1  
 $EndComp
+$Comp
+L haathi_mayank:Conn_02x10_Odd_Even J?
+U 1 1 5A865EBE
+P 5850 2300
+F 0 "J?" H 5900 2917 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 5900 2826 50  0000 C CNN
+F 2 "" H 5850 2300 50  0001 C CNN
+F 3 "~" H 5850 2300 50  0001 C CNN
+	1    5850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2000 5400 2000
+Wire Wire Line
+	5650 2100 5400 2100
+Wire Wire Line
+	5650 2200 5400 2200
+Wire Wire Line
+	5650 2300 5400 2300
+Wire Wire Line
+	5650 2400 5400 2400
+Wire Wire Line
+	5650 2500 5400 2500
+Wire Wire Line
+	5650 2600 5400 2600
+Wire Wire Line
+	5650 2700 5400 2700
+Wire Wire Line
+	5650 2800 5400 2800
+Wire Wire Line
+	6150 2000 6400 2000
+Wire Wire Line
+	6150 2100 6400 2100
+Wire Wire Line
+	6150 2200 6400 2200
+Wire Wire Line
+	6150 2300 6400 2300
+Wire Wire Line
+	6150 2400 6400 2400
+Wire Wire Line
+	6150 2500 6400 2500
+Wire Wire Line
+	6150 2600 6400 2600
+Wire Wire Line
+	6150 2700 6400 2700
+Wire Wire Line
+	6150 2800 6400 2800
+$Comp
+L power:VCC #PWR?
+U 1 1 5A86619C
+P 5150 1650
+F 0 "#PWR?" H 5150 1500 50  0001 C CNN
+F 1 "VCC" H 5167 1823 50  0000 C CNN
+F 2 "" H 5150 1650 50  0001 C CNN
+F 3 "" H 5150 1650 50  0001 C CNN
+	1    5150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5A866259
+P 5150 1700
+F 0 "#FLG?" H 5150 1775 50  0001 C CNN
+F 1 "PWR_FLAG" V 5150 1828 50  0000 L CNN
+F 2 "" H 5150 1700 50  0001 C CNN
+F 3 "" H 5150 1700 50  0001 C CNN
+	1    5150 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A86664D
+P 7050 1900
+F 0 "#PWR?" H 7050 1650 50  0001 C CNN
+F 1 "GND" H 7055 1727 50  0000 C CNN
+F 2 "" H 7050 1900 50  0001 C CNN
+F 3 "" H 7050 1900 50  0001 C CNN
+	1    7050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1900 7050 1900
+Text HLabel 6400 2000 2    50   Input ~ 0
+CSI_I2C_SDA
+Text HLabel 5400 2000 0    50   Input ~ 0
+CSI_I2C_SCL
+Wire Wire Line
+	5650 1900 5150 1900
+Wire Wire Line
+	5150 1900 5150 1700
+Connection ~ 5150 1700
+Wire Wire Line
+	5150 1700 5150 1650
+Text HLabel 5400 2100 0    50   Input ~ 0
+CSI_VSYNC
+Text HLabel 6400 2100 2    50   Input ~ 0
+CSI_HSYNC
+Text HLabel 5400 2200 0    50   Input ~ 0
+CSI_PCLK
+Text HLabel 6400 2200 2    50   Input ~ 0
+CSI_XCLK
+Text HLabel 5400 2300 0    50   Input ~ 0
+CSI_D7
+Text HLabel 5400 2400 0    50   Input ~ 0
+CSI_D5
+Text HLabel 5400 2500 0    50   Input ~ 0
+CSI_D3
+Text HLabel 5400 2600 0    50   Input ~ 0
+CSI_D1
+Text HLabel 6400 2300 2    50   Input ~ 0
+CSI_D6
+Text HLabel 6400 2400 2    50   Input ~ 0
+CSI_D4
+Text HLabel 6400 2500 2    50   Input ~ 0
+CSI_D2
+Text HLabel 6400 2600 2    50   Input ~ 0
+CSI_D0
+Text HLabel 5400 2700 0    50   Input ~ 0
+CSI_GIO_3
+Text HLabel 5400 2800 0    50   Input ~ 0
+CSI_GIO_1
+Text HLabel 6400 2700 2    50   Input ~ 0
+CSI_GIO_2
+Text HLabel 6400 2800 2    50   Input ~ 0
+CSI_GIO_0
+Text HLabel 5550 3650 0    50   Input ~ 0
+CSI_I2C_SCL
+Text HLabel 6250 3650 2    50   Input ~ 0
+I2C1_SCL
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5A86711E
+P 5850 3250
+F 0 "#FLG?" H 5850 3325 50  0001 C CNN
+F 1 "PWR_FLAG" V 5850 3378 50  0000 L CNN
+F 2 "" H 5850 3250 50  0001 C CNN
+F 3 "" H 5850 3250 50  0001 C CNN
+	1    5850 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5A86712D
+P 5850 3200
+F 0 "#PWR?" H 5850 3050 50  0001 C CNN
+F 1 "VCC" H 5867 3373 50  0000 C CNN
+F 2 "" H 5850 3200 50  0001 C CNN
+F 3 "" H 5850 3200 50  0001 C CNN
+	1    5850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A867A89
+P 5850 3500
+F 0 "R?" H 5920 3546 50  0000 L CNN
+F 1 "10k" H 5920 3455 50  0000 L CNN
+F 2 "" V 5780 3500 30  0000 C CNN
+F 3 "" H 5850 3500 30  0000 C CNN
+	1    5850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3650 6250 3650
+Wire Wire Line
+	5850 3200 5850 3250
+Connection ~ 5850 3250
+Wire Wire Line
+	5850 3250 5850 3350
+Wire Wire Line
+	5550 3650 5850 3650
+Connection ~ 5850 3650
+Text HLabel 5550 4500 0    50   Input ~ 0
+CSI_I2C_SDA
+Text HLabel 6250 4500 2    50   Input ~ 0
+I2C1_SDA
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5A868A88
+P 5850 4100
+F 0 "#FLG?" H 5850 4175 50  0001 C CNN
+F 1 "PWR_FLAG" V 5850 4228 50  0000 L CNN
+F 2 "" H 5850 4100 50  0001 C CNN
+F 3 "" H 5850 4100 50  0001 C CNN
+	1    5850 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5A868A8E
+P 5850 4050
+F 0 "#PWR?" H 5850 3900 50  0001 C CNN
+F 1 "VCC" H 5867 4223 50  0000 C CNN
+F 2 "" H 5850 4050 50  0001 C CNN
+F 3 "" H 5850 4050 50  0001 C CNN
+	1    5850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A868A94
+P 5850 4350
+F 0 "R?" H 5920 4396 50  0000 L CNN
+F 1 "10k" H 5920 4305 50  0000 L CNN
+F 2 "" V 5780 4350 30  0000 C CNN
+F 3 "" H 5850 4350 30  0000 C CNN
+	1    5850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4500 6250 4500
+Wire Wire Line
+	5850 4050 5850 4100
+Connection ~ 5850 4100
+Wire Wire Line
+	5850 4100 5850 4200
+Wire Wire Line
+	5550 4500 5850 4500
+Connection ~ 5850 4500
+Text HLabel 8100 1550 0    50   Input ~ 0
+CSI_VSYNC
+Text HLabel 8100 1650 0    50   Input ~ 0
+CSI_HSYNC
+Text HLabel 8100 1300 0    50   Input ~ 0
+CSI_PCLK
+Text HLabel 8100 2400 0    50   Input ~ 0
+CSI_D7
+Text HLabel 8100 2600 0    50   Input ~ 0
+CSI_D5
+Text HLabel 8100 2800 0    50   Input ~ 0
+CSI_D3
+Text HLabel 8100 3000 0    50   Input ~ 0
+CSI_D1
+Text HLabel 8100 3500 0    50   Input ~ 0
+CSI_GIO_3
+Text HLabel 8100 3700 0    50   Input ~ 0
+CSI_GIO_1
+Text HLabel 8100 1400 0    50   Input ~ 0
+CSI_XCLK
+Text HLabel 8100 2500 0    50   Input ~ 0
+CSI_D6
+Text HLabel 8100 2700 0    50   Input ~ 0
+CSI_D4
+Text HLabel 8100 2900 0    50   Input ~ 0
+CSI_D2
+Text HLabel 8100 3100 0    50   Input ~ 0
+CSI_D0
+Text HLabel 8100 3600 0    50   Input ~ 0
+CSI_GIO_2
+Text HLabel 8100 3800 0    50   Input ~ 0
+CSI_GIO_0
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8692BD
+P 8600 1550
+F 0 "R?" V 8550 1400 50  0000 C CNN
+F 1 "0E" V 8600 1550 50  0000 C CNN
+F 2 "" V 8530 1550 30  0000 C CNN
+F 3 "" H 8600 1550 30  0000 C CNN
+	1    8600 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 1550 8450 1550
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869870
+P 8600 1650
+F 0 "R?" V 8550 1500 50  0000 C CNN
+F 1 "0E" V 8600 1650 50  0000 C CNN
+F 2 "" V 8530 1650 30  0000 C CNN
+F 3 "" H 8600 1650 30  0000 C CNN
+	1    8600 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A86988C
+P 8600 1300
+F 0 "R?" V 8550 1150 50  0000 C CNN
+F 1 "0E" V 8600 1300 50  0000 C CNN
+F 2 "" V 8530 1300 30  0000 C CNN
+F 3 "" H 8600 1300 30  0000 C CNN
+	1    8600 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8698AA
+P 8600 1400
+F 0 "R?" V 8550 1250 50  0000 C CNN
+F 1 "0E" V 8600 1400 50  0000 C CNN
+F 2 "" V 8530 1400 30  0000 C CNN
+F 3 "" H 8600 1400 30  0000 C CNN
+	1    8600 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8698CA
+P 8600 2400
+F 0 "R?" V 8550 2250 50  0000 C CNN
+F 1 "0E" V 8600 2400 50  0000 C CNN
+F 2 "" V 8530 2400 30  0000 C CNN
+F 3 "" H 8600 2400 30  0000 C CNN
+	1    8600 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8698EC
+P 8600 2500
+F 0 "R?" V 8550 2350 50  0000 C CNN
+F 1 "0E" V 8600 2500 50  0000 C CNN
+F 2 "" V 8530 2500 30  0000 C CNN
+F 3 "" H 8600 2500 30  0000 C CNN
+	1    8600 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869910
+P 8600 2600
+F 0 "R?" V 8550 2450 50  0000 C CNN
+F 1 "0E" V 8600 2600 50  0000 C CNN
+F 2 "" V 8530 2600 30  0000 C CNN
+F 3 "" H 8600 2600 30  0000 C CNN
+	1    8600 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869945
+P 8600 2700
+F 0 "R?" V 8550 2550 50  0000 C CNN
+F 1 "0E" V 8600 2700 50  0000 C CNN
+F 2 "" V 8530 2700 30  0000 C CNN
+F 3 "" H 8600 2700 30  0000 C CNN
+	1    8600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869971
+P 8600 2800
+F 0 "R?" V 8550 2650 50  0000 C CNN
+F 1 "0E" V 8600 2800 50  0000 C CNN
+F 2 "" V 8530 2800 30  0000 C CNN
+F 3 "" H 8600 2800 30  0000 C CNN
+	1    8600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8699B5
+P 8600 2900
+F 0 "R?" V 8550 2750 50  0000 C CNN
+F 1 "0E" V 8600 2900 50  0000 C CNN
+F 2 "" V 8530 2900 30  0000 C CNN
+F 3 "" H 8600 2900 30  0000 C CNN
+	1    8600 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8699E5
+P 8600 3000
+F 0 "R?" V 8550 2850 50  0000 C CNN
+F 1 "0E" V 8600 3000 50  0000 C CNN
+F 2 "" V 8530 3000 30  0000 C CNN
+F 3 "" H 8600 3000 30  0000 C CNN
+	1    8600 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869A17
+P 8600 3100
+F 0 "R?" V 8550 2950 50  0000 C CNN
+F 1 "0E" V 8600 3100 50  0000 C CNN
+F 2 "" V 8530 3100 30  0000 C CNN
+F 3 "" H 8600 3100 30  0000 C CNN
+	1    8600 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869ED9
+P 8600 3500
+F 0 "R?" V 8550 3350 50  0000 C CNN
+F 1 "0E" V 8600 3500 50  0000 C CNN
+F 2 "" V 8530 3500 30  0000 C CNN
+F 3 "" H 8600 3500 30  0000 C CNN
+	1    8600 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869F1D
+P 8600 3600
+F 0 "R?" V 8550 3450 50  0000 C CNN
+F 1 "0E" V 8600 3600 50  0000 C CNN
+F 2 "" V 8530 3600 30  0000 C CNN
+F 3 "" H 8600 3600 30  0000 C CNN
+	1    8600 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869F51
+P 8600 3700
+F 0 "R?" V 8550 3550 50  0000 C CNN
+F 1 "0E" V 8600 3700 50  0000 C CNN
+F 2 "" V 8530 3700 30  0000 C CNN
+F 3 "" H 8600 3700 30  0000 C CNN
+	1    8600 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A869F87
+P 8600 3800
+F 0 "R?" V 8550 3650 50  0000 C CNN
+F 1 "0E" V 8600 3800 50  0000 C CNN
+F 2 "" V 8530 3800 30  0000 C CNN
+F 3 "" H 8600 3800 30  0000 C CNN
+	1    8600 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 1650 8450 1650
+Wire Wire Line
+	8100 1300 8450 1300
+Wire Wire Line
+	8100 1400 8450 1400
+Wire Wire Line
+	8100 2400 8450 2400
+Wire Wire Line
+	8100 2500 8450 2500
+Wire Wire Line
+	8100 2600 8450 2600
+Wire Wire Line
+	8100 2700 8450 2700
+Wire Wire Line
+	8100 2800 8450 2800
+Wire Wire Line
+	8100 2900 8450 2900
+Wire Wire Line
+	8100 3000 8450 3000
+Wire Wire Line
+	8100 3100 8450 3100
+Wire Wire Line
+	8100 3500 8450 3500
+Wire Wire Line
+	8100 3600 8450 3600
+Wire Wire Line
+	8100 3700 8450 3700
+Wire Wire Line
+	8100 3800 8450 3800
+Wire Wire Line
+	8750 1550 9100 1550
+Wire Wire Line
+	8750 1650 9100 1650
+Wire Wire Line
+	8750 1300 9100 1300
+Wire Wire Line
+	8750 1400 9100 1400
+Wire Wire Line
+	8750 2400 9150 2400
+Wire Wire Line
+	8750 2500 9150 2500
+Wire Wire Line
+	8750 2600 9150 2600
+Wire Wire Line
+	8750 2700 9150 2700
+Wire Wire Line
+	8750 2800 9150 2800
+Wire Wire Line
+	8750 2900 9150 2900
+Wire Wire Line
+	8750 3000 9150 3000
+Wire Wire Line
+	8750 3100 9150 3100
+Wire Wire Line
+	8750 3500 9150 3500
+Wire Wire Line
+	8750 3600 9150 3600
+Wire Wire Line
+	8750 3700 9150 3700
+Wire Wire Line
+	8750 3800 9150 3800
+Text HLabel 9100 1300 2    50   Input ~ 0
+GPIO_AD_B1_04
+Text HLabel 9100 1400 2    50   Input ~ 0
+GPIO_AD_B1_05
+Text HLabel 9100 1550 2    50   Input ~ 0
+GPIO_AD_B1_06
+Text HLabel 9100 1650 2    50   Input ~ 0
+GPIO_AD_B1_07
+Text HLabel 9150 2400 2    50   Input ~ 0
+GPIO_AD_B1_10
+Text HLabel 9150 2500 2    50   Input ~ 0
+GPIO_AD_B1_11
+Text HLabel 9150 2600 2    50   Input ~ 0
+GPIO_AD_B1_12
+Text HLabel 9150 2700 2    50   Input ~ 0
+GPIO_AD_B1_13
+Text HLabel 9150 2800 2    50   Input ~ 0
+GPIO_AD_B1_14
+Text HLabel 9150 2900 2    50   Input ~ 0
+GPIO_AD_B1_15
+Text HLabel 9150 3000 2    50   Input ~ 0
+GPIO_B1_11
+Text HLabel 9150 3100 2    50   Input ~ 0
+GPIO_B1_10
+Text HLabel 8100 2300 0    50   Input ~ 0
+CSI_D8
+Text HLabel 8100 2200 0    50   Input ~ 0
+CSI_D9
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A870B35
+P 8600 2300
+F 0 "R?" V 8550 2150 50  0000 C CNN
+F 1 "0E" V 8600 2300 50  0000 C CNN
+F 2 "" V 8530 2300 30  0000 C CNN
+F 3 "" H 8600 2300 30  0000 C CNN
+	1    8600 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A870B6F
+P 8600 2200
+F 0 "R?" V 8550 2050 50  0000 C CNN
+F 1 "0E" V 8600 2200 50  0000 C CNN
+F 2 "" V 8530 2200 30  0000 C CNN
+F 3 "" H 8600 2200 30  0000 C CNN
+	1    8600 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 2200 8450 2200
+Wire Wire Line
+	8100 2300 8450 2300
+Wire Wire Line
+	8750 2200 9150 2200
+Wire Wire Line
+	8750 2300 9150 2300
+Text HLabel 9150 2300 2    50   Input ~ 0
+GPIO_AD_B1_09
+Text HLabel 9150 2200 2    50   Input ~ 0
+GPIO_AD_B1_08
+Text Notes 7700 3950 0    50   ~ 0
+CSI_DATA_10..13 (Table 4-1 Ref Manual)\n
+Text HLabel 9150 3500 2    50   Input ~ 0
+GPIO_B1_09
+Text HLabel 9150 3600 2    50   Input ~ 0
+GPIO_B1_08
+Text HLabel 9150 3700 2    50   Input ~ 0
+GPIO_B1_07
+Text HLabel 9150 3800 2    50   Input ~ 0
+GPIO_B1_06
+Text Notes 8150 1000 0    98   ~ 0
+CSI Pin Mappings\n
+Wire Wire Line
+	2900 1600 2350 1600
+Wire Wire Line
+	2350 1600 2350 1450
+$Comp
+L power:VCC #PWR?
+U 1 1 5A87BB2E
+P 2350 1400
+F 0 "#PWR?" H 2350 1250 50  0001 C CNN
+F 1 "VCC" H 2367 1573 50  0000 C CNN
+F 2 "" H 2350 1400 50  0001 C CNN
+F 3 "" H 2350 1400 50  0001 C CNN
+	1    2350 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 1450
+Wire Wire Line
+	2350 1450 2350 1400
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5A87BB67
+P 2350 1450
+F 0 "#FLG?" H 2350 1525 50  0001 C CNN
+F 1 "PWR_FLAG" V 2350 1578 50  0000 L CNN
+F 2 "" H 2350 1450 50  0001 C CNN
+F 3 "" H 2350 1450 50  0001 C CNN
+	1    2350 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A87BD6E
+P 2100 1750
+F 0 "#PWR?" H 2100 1500 50  0001 C CNN
+F 1 "GND" H 2105 1577 50  0000 C CNN
+F 2 "" H 2100 1750 50  0001 C CNN
+F 3 "" H 2100 1750 50  0001 C CNN
+	1    2100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1700 2100 1700
+Wire Wire Line
+	2100 1700 2100 1750
+Text HLabel 2750 1800 0    50   Input ~ 0
+CSI_I2C_SCL
+Text HLabel 2750 2000 0    50   Input ~ 0
+CSI_VSYNC
+Text HLabel 2750 2200 0    50   Input ~ 0
+CSI_PCLK
+Text HLabel 2750 1900 0    50   Input ~ 0
+CSI_I2C_SDA
+Text HLabel 2750 2100 0    50   Input ~ 0
+CSI_HSYNC
+Text HLabel 2750 2300 0    50   Input ~ 0
+CSI_XCLK
+Wire Wire Line
+	2750 1800 2900 1800
+Wire Wire Line
+	2750 1900 2900 1900
+Wire Wire Line
+	2750 2000 2900 2000
+Wire Wire Line
+	2750 2100 2900 2100
+Wire Wire Line
+	2750 2200 2900 2200
+Wire Wire Line
+	2750 2300 2900 2300
+Wire Wire Line
+	2900 2400 2750 2400
+Wire Wire Line
+	2900 2500 2750 2500
+Wire Wire Line
+	2900 2600 2750 2600
+Wire Wire Line
+	2900 2700 2750 2700
+Wire Wire Line
+	2900 2800 2750 2800
+Wire Wire Line
+	2900 2900 2750 2900
+Wire Wire Line
+	2900 3000 2750 3000
+Wire Wire Line
+	2900 3100 2750 3100
+Wire Wire Line
+	2900 3200 2750 3200
+Wire Wire Line
+	2900 3300 2750 3300
+Wire Wire Line
+	2900 3400 2750 3400
+Text HLabel 2750 2400 0    50   Input ~ 0
+CSI_D9
+Text HLabel 2750 2500 0    50   Input ~ 0
+CSI_D8
+Text HLabel 2750 2600 0    50   Input ~ 0
+CSI_D7
+Text HLabel 2750 2700 0    50   Input ~ 0
+CSI_D6
+Text HLabel 2750 2800 0    50   Input ~ 0
+CSI_D5
+Text HLabel 2750 2900 0    50   Input ~ 0
+CSI_D4
+Text HLabel 2750 3000 0    50   Input ~ 0
+CSI_D3
+Text HLabel 2750 3100 0    50   Input ~ 0
+CSI_D2
+Text HLabel 2750 3200 0    50   Input ~ 0
+CSI_D1
+Text HLabel 2750 3300 0    50   Input ~ 0
+CSI_D0
+Text HLabel 2750 3400 0    50   Input ~ 0
+CSI_RESET
+Text HLabel 1150 3500 0    50   Input ~ 0
+CSI_PWDN
+Text HLabel 2300 4550 0    50   Input ~ 0
+CSI_RESET
+Text HLabel 3200 4550 2    50   Input ~ 0
+CSI_GIO_1
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A882679
+P 2950 4550
+F 0 "R?" V 2900 4400 50  0000 C CNN
+F 1 "0E" V 2950 4550 50  0000 C CNN
+F 2 "" V 2880 4550 30  0000 C CNN
+F 3 "" H 2950 4550 30  0000 C CNN
+	1    2950 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 4550 3200 4550
+Text Notes 1850 1050 0    98   ~ 0
+Camera FRC Connector
+Text Notes 4800 1000 0    98   ~ 0
+Arducam Camera Connector
+$Comp
+L haathi_mayank:D_Schottky D?
+U 1 1 5A894D78
+P 1500 3500
+F 0 "D?" H 1500 3716 50  0000 C CNN
+F 1 "D_Schottky" H 1500 3625 50  0000 C CNN
+F 2 "" H 1500 3500 50  0001 C CNN
+F 3 "" H 1500 3500 50  0001 C CNN
+	1    1500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A898D63
+P 1850 3300
+F 0 "R?" H 1700 3150 50  0000 C CNN
+F 1 "10k_DNP" H 1600 3250 50  0000 C CNN
+F 2 "" V 1780 3300 30  0000 C CNN
+F 3 "" H 1850 3300 30  0000 C CNN
+	1    1850 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 3500 1850 3500
+Wire Wire Line
+	1850 3450 1850 3500
+Connection ~ 1850 3500
+Wire Wire Line
+	1850 3500 2900 3500
+Wire Wire Line
+	1150 3500 1350 3500
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5A8AC5D8
+P 1850 3050
+F 0 "#FLG?" H 1850 3125 50  0001 C CNN
+F 1 "PWR_FLAG" V 1850 3178 50  0000 L CNN
+F 2 "" H 1850 3050 50  0001 C CNN
+F 3 "" H 1850 3050 50  0001 C CNN
+	1    1850 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5A8AC5DE
+P 1850 3000
+F 0 "#PWR?" H 1850 2850 50  0001 C CNN
+F 1 "VCC" H 1867 3173 50  0000 C CNN
+F 2 "" H 1850 3000 50  0001 C CNN
+F 3 "" H 1850 3000 50  0001 C CNN
+	1    1850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3000 1850 3050
+Connection ~ 1850 3050
+Wire Wire Line
+	1850 3050 1850 3150
+Wire Wire Line
+	2300 4550 2450 4550
+$Comp
+L haathi_mayank:R R?
+U 1 1 5A8B8661
+P 2450 4400
+F 0 "R?" H 2300 4250 50  0000 C CNN
+F 1 "10k" H 2300 4350 50  0000 C CNN
+F 2 "" V 2380 4400 30  0000 C CNN
+F 3 "" H 2450 4400 30  0000 C CNN
+	1    2450 4400
+	-1   0    0    1   
+$EndComp
+Connection ~ 2450 4550
+Wire Wire Line
+	2450 4550 2800 4550
+$Comp
+L power:VCC #PWR?
+U 1 1 5A8B8794
+P 2450 4150
+F 0 "#PWR?" H 2450 4000 50  0001 C CNN
+F 1 "VCC" H 2467 4323 50  0000 C CNN
+F 2 "" H 2450 4150 50  0001 C CNN
+F 3 "" H 2450 4150 50  0001 C CNN
+	1    2450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5A8B87D3
+P 2400 4200
+F 0 "#FLG?" H 2400 4275 50  0001 C CNN
+F 1 "PWR_FLAG" V 2400 4328 50  0000 L CNN
+F 2 "" H 2400 4200 50  0001 C CNN
+F 3 "" H 2400 4200 50  0001 C CNN
+	1    2400 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 4150 2450 4200
+Wire Wire Line
+	2400 4200 2450 4200
+Connection ~ 2450 4200
+Wire Wire Line
+	2450 4200 2450 4250
 $EndSCHEMATC
