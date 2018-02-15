@@ -1475,7 +1475,7 @@ F 3 "~" H 7450 5350 50  0001 C CNN
 $EndComp
 Text Label 7800 5250 0    50   ~ 0
 VIN
-Text Label 7150 5250 2    50   ~ 0
+Text Label 6800 5250 2    50   ~ 0
 V_INPUT
 $Comp
 L power:GND #PWR?
@@ -1490,8 +1490,6 @@ F 3 "" H 7450 5650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7450 5550 7450 5600
-Wire Wire Line
-	7150 5250 7250 5250
 Wire Wire Line
 	7650 5250 7700 5250
 Text Notes 6950 4950 0    50   ~ 0
@@ -1693,4 +1691,24 @@ Wire Wire Line
 Wire Wire Line
 	1100 1550 1100 1650
 Connection ~ 1200 1100
+$Comp
+L haathi_mayank:D_TVS D?
+U 1 1 5A8D6681
+P 7000 5400
+F 0 "D?" V 6954 5479 50  0000 L CNN
+F 1 "D_TVS" V 7045 5479 50  0000 L CNN
+F 2 "" H 7000 5400 50  0001 C CNN
+F 3 "~" H 7000 5400 50  0001 C CNN
+	1    7000 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 5250 7000 5250
+Connection ~ 7000 5250
+Wire Wire Line
+	7000 5250 7250 5250
+Wire Wire Line
+	7000 5550 7000 5600
+Wire Wire Line
+	7000 5600 7450 5600
 $EndSCHEMATC
