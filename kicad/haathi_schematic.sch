@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 12
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -26,12 +25,6 @@ S 5000 1000 1500 1500
 U 5A6307C3
 F0 "CPU i.MX RT1052" 50
 F1 "haathi_cpu.sch" 50
-$EndSheet
-$Sheet
-S 8000 1000 1500 1500
-U 5A6307F7
-F0 "DISPLAY LCD" 50
-F1 "haathi_lcd.sch" 50
 $EndSheet
 $Sheet
 S 5000 3000 1500 1500
