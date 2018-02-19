@@ -374,4 +374,40 @@ Wire Wire Line
 	1600 3700 1850 3700
 Wire Wire Line
 	1600 3800 1850 3800
+Wire Wire Line
+	6500 3450 6150 3450
+Wire Wire Line
+	7000 3450 7350 3450
+Text HLabel 6150 3450 0    50   Input ~ 0
+5V_USB_HS_EXTERN
+Wire Wire Line
+	6500 3550 6150 3550
+Wire Wire Line
+	6500 3650 6150 3650
+Wire Wire Line
+	6500 3750 6150 3750
+Wire Wire Line
+	6500 3850 6150 3850
+Wire Wire Line
+	6500 3950 6150 3950
+Wire Wire Line
+	6500 4050 6150 4050
+Wire Wire Line
+	6500 4150 6150 4150
+Wire Wire Line
+	6500 4250 6150 4250
+Wire Wire Line
+	6500 4350 6150 4350
+Wire Wire Line
+	6500 4450 6150 4450
+Wire Wire Line
+	6500 4550 6150 4550
+Text HLabel 6150 3550 0    50   Input ~ 0
+USB_OTG2_D-_EXTERN
+Text HLabel 6150 3650 0    50   Input ~ 0
+USB_OTG2_D+_EXTERN
+Text HLabel 6150 3750 0    50   Input ~ 0
+USB_OTG2_ID_EXTERN
+Text HLabel 6150 3850 0    50   Input ~ 0
+USB_GND_EXTERN
 $EndSCHEMATC
