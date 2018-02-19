@@ -1034,7 +1034,7 @@ ONOFF
 Text HLabel 10400 4800 2    50   Input ~ 0
 POR_BUTTON
 Text HLabel 10400 5300 2    50   Input ~ 0
-USER_BUTTON
+WAKEUP_BUTTON
 Text Notes 9200 4350 0    50   ~ 0
 Buttons
 Text Notes 10400 4500 0    50   ~ 0
@@ -1042,7 +1042,7 @@ CPU ONOFF Button
 Text Notes 10400 4950 0    50   ~ 0
 System Reset Button
 Text Notes 10400 5450 0    50   ~ 0
-User Button
+Wakeup Button
 Wire Wire Line
 	2250 700  2250 1100
 Wire Wire Line

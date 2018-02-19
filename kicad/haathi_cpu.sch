@@ -328,7 +328,7 @@ $EndComp
 Wire Wire Line
 	3650 3150 4350 3150
 Text HLabel 3600 3450 0    50   Input ~ 0
-USER_BUTTON
+WAKEUP_BUTTON
 Wire Wire Line
 	3600 3450 3700 3450
 Wire Wire Line
@@ -3535,6 +3535,8 @@ Wire Wire Line
 Wire Wire Line
 	3850 11300 4050 11300
 Connection ~ 4050 11300
+Text Notes 4500 10950 0    100  ~ 0
+Boot Configuration\n
 Wire Bus Line
 	21100 950  21100 1750
 Wire Bus Line
@@ -3543,6 +3545,4 @@ Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
 	9425 8000 9425 9800
-Text Notes 4500 10950 0    100  ~ 0
-Boot Configuration\n
 $EndSCHEMATC
