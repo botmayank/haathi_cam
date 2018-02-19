@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 12
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -252,4 +251,204 @@ Text HLabel 6825 2250 2    50   BiDi ~ 0
 USB_OTG1_ID
 NoConn ~ 4500 2625
 NoConn ~ 4500 2825
+$Comp
+L haathi:C_NP C?
+U 1 1 5A8AEC37
+P 5450 4675
+F 0 "C?" H 5550 4725 40  0000 L CNN
+F 1 "4.7uF" H 5550 4650 40  0000 L CNN
+F 2 "" H 5450 4675 60  0000 C CNN
+F 3 "" H 5450 4675 60  0000 C CNN
+	1    5450 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:IND_FERRITE_BEAD L?
+U 1 1 5A8AEC3E
+P 2375 5675
+F 0 "L?" H 2175 5700 40  0000 C CNN
+F 1 "330E" H 2375 5550 40  0000 C CNN
+F 2 "" H 2375 5675 60  0000 C CNN
+F 3 "" H 2340 5765 60  0000 C CNN
+	1    2375 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:IND_FERRITE_BEAD L?
+U 1 1 5A8AEC45
+P 4875 4425
+F 0 "L?" H 4875 4550 40  0000 C CNN
+F 1 "330E" H 4900 4300 40  0000 C CNN
+F 2 "" H 4875 4425 60  0000 C CNN
+F 3 "" H 4840 4515 60  0000 C CNN
+	1    4875 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:Diode_TVS D?
+U 1 1 5A8AEC4C
+P 3650 6275
+F 0 "D?" H 3900 6075 50  0000 R CNN
+F 1 "RClamp0854P.TCT" H 4175 6000 50  0000 R CNN
+F 2 "" H 3650 6275 50  0001 C CNN
+F 3 "" H 3650 6275 50  0001 C CNN
+	1    3650 6275
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:IND_CHOKE_CM L?
+U 1 1 5A8AEC53
+P 4875 5425
+F 0 "L?" H 4875 5200 40  0000 C CNN
+F 1 "90E" H 4875 5275 40  0000 C CNN
+F 2 "" H 4875 5325 60  0000 C CNN
+F 3 "" H 4875 5325 60  0000 C CNN
+	1    4875 5425
+	1    0    0    1   
+$EndComp
+$Comp
+L haathi:R R?
+U 1 1 5A8AEC5A
+P 4850 5800
+F 0 "R?" V 4750 5800 50  0000 C CNN
+F 1 "0E" V 4850 5800 50  0000 C CNN
+F 2 "" V 4780 5800 30  0000 C CNN
+F 3 "" H 4850 5800 30  0000 C CNN
+	1    4850 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4675 5325 3800 5325
+Wire Wire Line
+	2925 5325 2925 5375
+Wire Wire Line
+	2925 5375 1975 5375
+Wire Wire Line
+	1975 5475 2925 5475
+Wire Wire Line
+	2925 5475 2925 5525
+Wire Wire Line
+	2925 5525 3700 5525
+Wire Wire Line
+	5075 4425 5450 4425
+Wire Wire Line
+	5450 4425 5450 4525
+Wire Wire Line
+	4675 4425 3450 4425
+Wire Wire Line
+	2825 4425 2825 5275
+Wire Wire Line
+	2825 5275 1975 5275
+Wire Wire Line
+	3450 6025 3450 4425
+Connection ~ 3450 4425
+Wire Wire Line
+	3450 4425 2825 4425
+Wire Wire Line
+	1975 5575 2825 5575
+Wire Wire Line
+	2825 5575 2825 5800
+Wire Wire Line
+	2825 5800 3600 5800
+Wire Wire Line
+	3600 5800 3600 6025
+Wire Wire Line
+	3700 6025 3700 5525
+Connection ~ 3700 5525
+Wire Wire Line
+	3700 5525 4675 5525
+Wire Wire Line
+	3800 6025 3800 5325
+Connection ~ 3800 5325
+Wire Wire Line
+	3800 5325 2925 5325
+Wire Wire Line
+	2725 5675 2725 7400
+Wire Wire Line
+	3450 6525 3450 7400
+Wire Wire Line
+	5450 4825 5450 4950
+Wire Wire Line
+	5075 5325 6325 5325
+Wire Wire Line
+	6325 5525 5075 5525
+$Comp
+L power:GND #PWR?
+U 1 1 5A8AEC88
+P 2725 7400
+F 0 "#PWR?" H 2725 7150 50  0001 C CNN
+F 1 "GND" H 2750 7200 50  0000 C CNN
+F 2 "" H 2725 7400 50  0001 C CNN
+F 3 "" H 2725 7400 50  0001 C CNN
+	1    2725 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A8AEC8E
+P 3450 7400
+F 0 "#PWR?" H 3450 7150 50  0001 C CNN
+F 1 "GND" H 3500 7200 50  0000 C CNN
+F 2 "" H 3450 7400 50  0001 C CNN
+F 3 "" H 3450 7400 50  0001 C CNN
+	1    3450 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A8AEC94
+P 5450 4950
+F 0 "#PWR?" H 5450 4700 50  0001 C CNN
+F 1 "GND" H 5500 4750 50  0000 C CNN
+F 2 "" H 5450 4950 50  0001 C CNN
+F 3 "" H 5450 4950 50  0001 C CNN
+	1    5450 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4425 6325 4425
+Connection ~ 5450 4425
+Wire Wire Line
+	4700 5800 3600 5800
+Connection ~ 3600 5800
+Wire Wire Line
+	5000 5800 6325 5800
+Text Label 5450 4425 0    50   ~ 0
+5V_USB_HS
+Text Label 2825 4425 0    50   ~ 0
+5V_USB
+Text Label 4025 5325 0    50   ~ 0
+D-
+Text Label 4025 5525 0    50   ~ 0
+D+
+Text Label 5450 5325 0    50   ~ 0
+USB_OTG1_D-
+Text Label 5450 5525 0    50   ~ 0
+USB_OTG1_D+
+Text Label 5450 5800 0    50   ~ 0
+USB_OTG1_ID
+Text HLabel 6325 4425 2    50   BiDi ~ 0
+5V_USB_HS
+Text HLabel 6325 5325 2    50   BiDi ~ 0
+USB_OTG2_D-
+Text HLabel 6325 5525 2    50   BiDi ~ 0
+USB_OTG2_D+
+Text HLabel 6325 5800 2    50   BiDi ~ 0
+USB_OTG2_ID
+NoConn ~ 4000 6175
+NoConn ~ 4000 6375
+Text HLabel 1975 5275 0    50   Input ~ 0
+5V_USB_HS_EXTERN
+Text HLabel 1975 5375 0    50   Input ~ 0
+USB_OTG2_D-_EXTERN
+Text HLabel 1975 5475 0    50   Input ~ 0
+USB_OTG2_D+_EXTERN
+Text HLabel 1975 5575 0    50   Input ~ 0
+USB_OTG2_ID_EXTERN
+Text HLabel 1975 5675 0    50   Input ~ 0
+USB_GND_EXTERN
+Wire Wire Line
+	1975 5675 2175 5675
+Wire Wire Line
+	2575 5675 2725 5675
 $EndSCHEMATC
