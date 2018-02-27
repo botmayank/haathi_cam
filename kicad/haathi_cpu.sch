@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:haathi_cpu-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
@@ -160,7 +159,7 @@ F 8 "I.MXRT1050" H 4850 7650 50  0001 L BNN "Field8"
 $EndComp
 Wire Wire Line
 	4350 2950 3950 2950
-Text HLabel 3800 2850 0    50   BiDi ~ 0
+Text HLabel 3625 2850 0    50   BiDi ~ 0
 ONOFF
 Wire Wire Line
 	4350 3050 3250 3050
@@ -178,22 +177,16 @@ $EndComp
 Wire Wire Line
 	3950 2950 3950 2850
 Wire Wire Line
-	3950 2850 3800 2850
-Wire Wire Line
 	3250 2800 3250 3050
 Connection ~ 3250 3050
 Wire Wire Line
 	3250 3050 3100 3050
 Wire Wire Line
 	3250 2500 3250 2400
-Wire Wire Line
-	3250 2400 3050 2400
-Text HLabel 3050 2400 0    50   BiDi ~ 0
+Text HLabel 2600 2400 0    50   BiDi ~ 0
 VDD_SNVS_IN
-Text HLabel 2750 2550 0    50   BiDi ~ 0
+Text HLabel 2200 2550 0    50   BiDi ~ 0
 MCU_RESET_N
-Wire Wire Line
-	2750 2550 3100 2550
 Wire Wire Line
 	3100 2550 3100 3050
 Connection ~ 3100 3050
@@ -250,17 +243,6 @@ F 2 "" V 1130 3050 30  0000 C CNN
 F 3 "" H 1200 3050 30  0000 C CNN
 	1    1200 3050
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5A7C4204
-P 800 3050
-F 0 "#PWR?" H 800 2900 50  0001 C CNN
-F 1 "VCC" H 817 3223 50  0000 C CNN
-F 2 "" H 800 3050 50  0001 C CNN
-F 3 "" H 800 3050 50  0001 C CNN
-	1    800  3050
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG?
@@ -619,7 +601,7 @@ L haathi_mayank:Test_Point_Probe TP?
 U 1 1 5A82D279
 P 3700 3450
 F 0 "TP?" H 4000 3550 50  0000 R CNN
-F 1 "Test_Point_Probe" H 4100 3650 50  0000 R CNN
+F 1 "TP_WAKEUP" H 4100 3650 50  0000 R CNN
 F 2 "" H 3900 3450 50  0001 C CNN
 F 3 "~" H 3900 3450 50  0001 C CNN
 	1    3700 3450
@@ -880,17 +862,6 @@ Connection ~ 7150 2650
 Wire Wire Line
 	7150 2650 7150 2550
 $Comp
-L power:VCC #PWR?
-U 1 1 5A8827A5
-P 10350 2550
-F 0 "#PWR?" H 10350 2400 50  0001 C CNN
-F 1 "VCC" H 10367 2723 50  0000 C CNN
-F 2 "" H 10350 2550 50  0001 C CNN
-F 3 "" H 10350 2550 50  0001 C CNN
-	1    10350 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5A88299F
 P 10250 2550
@@ -1053,13 +1024,9 @@ Wire Wire Line
 	5100 5850 5100 5950
 Wire Wire Line
 	5850 5850 5850 5950
-Wire Wire Line
-	5100 5550 5200 5550
-Wire Wire Line
-	5850 5550 5950 5550
-Text HLabel 5950 5550 2    50   Input ~ 0
+Text HLabel 6325 5300 2    50   Input ~ 0
 VDD_SNVS_CAP
-Text HLabel 5200 5550 2    50   Input ~ 0
+Text HLabel 5250 5125 2    50   Input ~ 0
 VDD_SNVS_IN
 Text HLabel 7300 2250 2    50   Input ~ 0
 VDD_SNVS_CAP
@@ -1314,8 +1281,6 @@ Wire Wire Line
 	8100 1650 8550 1650
 Connection ~ 8550 1650
 Wire Wire Line
-	8550 1650 8750 1650
-Wire Wire Line
 	8100 1950 8550 1950
 $Comp
 L power:GND #PWR?
@@ -1329,7 +1294,7 @@ F 3 "" H 8550 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8550 1950
-Text HLabel 8750 1650 2    50   Input ~ 0
+Text HLabel 9075 1650 2    50   Input ~ 0
 DCDC_OUT
 $Comp
 L haathi_mayank:C_NP C?
@@ -1373,17 +1338,6 @@ F 1 "0.1uF" H 2853 5012 40  0000 L CNN
 F 2 "" H 2750 5050 60  0000 C CNN
 F 3 "" H 2750 5050 60  0000 C CNN
 	1    2750 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5A953EBB
-P 3200 4900
-F 0 "#PWR?" H 3200 4750 50  0001 C CNN
-F 1 "VCC" H 3217 5073 50  0000 C CNN
-F 2 "" H 3200 4900 50  0001 C CNN
-F 3 "" H 3200 4900 50  0001 C CNN
-	1    3200 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1471,17 +1425,6 @@ F 3 "" H 2750 5700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
-U 1 1 5A98E531
-P 3200 5550
-F 0 "#PWR?" H 3200 5400 50  0001 C CNN
-F 1 "VCC" H 3217 5723 50  0000 C CNN
-F 2 "" H 3200 5550 50  0001 C CNN
-F 3 "" H 3200 5550 50  0001 C CNN
-	1    3200 5550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5A98E537
 P 3350 5550
@@ -1501,11 +1444,6 @@ Connection ~ 2300 4900
 Wire Wire Line
 	2300 4900 2750 4900
 Connection ~ 2750 4900
-Wire Wire Line
-	2750 4900 3200 4900
-Connection ~ 3200 4900
-Wire Wire Line
-	3200 4900 3350 4900
 Wire Wire Line
 	1500 5200 1900 5200
 Connection ~ 1900 5200
@@ -1531,11 +1469,6 @@ Connection ~ 2300 5550
 Wire Wire Line
 	2300 5550 2750 5550
 Connection ~ 2750 5550
-Wire Wire Line
-	2750 5550 3200 5550
-Connection ~ 3200 5550
-Wire Wire Line
-	3200 5550 3350 5550
 $Comp
 L power:GND #PWR?
 U 1 1 5A9BEA9E
@@ -1739,7 +1672,7 @@ F 3 "" H 8950 6450 60  0000 C CNN
 $EndComp
 Text HLabel 8950 6100 0    50   Input ~ 0
 VDD_SOC_IN
-Text HLabel 9550 6300 2    50   Input ~ 0
+Text HLabel 9850 6300 2    50   Input ~ 0
 DCDC_OUT
 $Comp
 L power:GND #PWR?
@@ -1821,7 +1754,7 @@ L haathi_mayank:Conn_01x02 J?
 U 1 1 5AB0DE1A
 P 9250 5950
 F 0 "J?" V 9216 5762 50  0000 R CNN
-F 1 "Conn_01x02" V 9125 5762 50  0000 R CNN
+F 1 "Conn12_I_DCDC_OUT" V 9125 5762 50  0000 R CNN
 F 2 "" H 9250 5950 50  0001 C CNN
 F 3 "~" H 9250 5950 50  0001 C CNN
 	1    9250 5950
@@ -1831,8 +1764,6 @@ Wire Wire Line
 	8950 6300 9250 6300
 Wire Wire Line
 	9250 6300 9250 6150
-Wire Wire Line
-	9550 6300 9350 6300
 Wire Wire Line
 	9350 6300 9350 6150
 Text Notes 1350 1750 0    197  ~ 0
@@ -2207,7 +2138,7 @@ L haathi_mayank:Test_Point_Probe TP?
 U 1 1 5A9831FB
 P 11450 1975
 F 0 "TP?" H 11750 2075 50  0000 R CNN
-F 1 "Test_Point_Probe" H 11850 2175 50  0000 R CNN
+F 1 "TP_JTAG_MOD" H 11850 2175 50  0000 R CNN
 F 2 "" H 11650 1975 50  0001 C CNN
 F 3 "~" H 11650 1975 50  0001 C CNN
 	1    11450 1975
@@ -2271,75 +2202,15 @@ Wire Wire Line
 Wire Wire Line
 	11850 1975 14550 1975
 Wire Wire Line
-	13000 2275 13000 2475
-Wire Wire Line
-	13000 2475 12700 2475
-Connection ~ 13000 2275
-Wire Wire Line
 	13000 2275 14550 2275
-Text HLabel 12700 2475 0    50   Input ~ 0
-INT2_COMBO
-Wire Wire Line
-	13000 2475 13000 2625
-Wire Wire Line
-	13000 2625 12700 2625
-Connection ~ 13000 2475
-Text HLabel 12700 2625 0    50   Input ~ 0
-LCD_TOUCH_INT
-Connection ~ 13300 1775
 Wire Wire Line
 	13300 1775 14550 1775
-Text HLabel 12700 2825 0    50   Input ~ 0
-SWD_DIO
-Wire Wire Line
-	13200 1875 13200 2725
-Wire Wire Line
-	13200 2725 12700 2725
-Connection ~ 13200 1875
 Wire Wire Line
 	13200 1875 14550 1875
 Wire Wire Line
-	12700 2825 13300 2825
-Wire Wire Line
-	13300 1775 13300 2825
-Text HLabel 12700 2725 0    50   Input ~ 0
-SWD_SCK
-Wire Wire Line
-	13450 2075 13450 3125
-Wire Wire Line
-	13450 3125 12700 3125
-Connection ~ 13450 2075
-Wire Wire Line
 	13450 2075 14550 2075
 Wire Wire Line
-	12700 3225 13450 3225
-Text HLabel 12700 3125 0    50   Input ~ 0
-ENET_RST
-Text HLabel 12700 3225 0    50   Input ~ 0
-USER_LED
-Wire Wire Line
-	13350 2175 13350 2925
-Wire Wire Line
-	13350 2925 12700 2925
-Connection ~ 13350 2175
-Wire Wire Line
 	13350 2175 14550 2175
-Wire Wire Line
-	12700 3025 13350 3025
-Wire Wire Line
-	13350 3025 13350 2925
-Connection ~ 13350 2925
-Connection ~ 13450 3125
-Wire Wire Line
-	13450 3125 13450 3225
-Text HLabel 12700 2925 0    50   Input ~ 0
-INT1_COMBO
-Text HLabel 12700 3025 0    50   Input ~ 0
-ENET_INT
-Text Notes 11575 2650 0    50   ~ 0
-By Default
-Text Notes 11875 3050 0    50   ~ 0
-By Default
 Wire Wire Line
 	14550 4525 13825 4525
 Wire Wire Line
@@ -2598,8 +2469,6 @@ Wire Wire Line
 	11100 10850 10325 10850
 Wire Wire Line
 	11100 10950 10325 10950
-Wire Wire Line
-	11100 11050 10800 11050
 Text HLabel 10325 9950 0    50   Input ~ 0
 ENET_RXD0
 Text HLabel 10325 10050 0    50   Input ~ 0
@@ -2622,17 +2491,6 @@ Text HLabel 10325 10850 0    50   Input ~ 0
 WDOG_B
 Text HLabel 10325 10950 0    50   Input ~ 0
 SD0_VSELECT
-Text HLabel 10325 11050 0    50   Input ~ 0
-USB_HOST_PWR
-Text HLabel 10300 11150 0    50   Input ~ 0
-BACKLIGHT_CTL
-Wire Wire Line
-	10300 11150 10800 11150
-Wire Wire Line
-	10800 11150 10800 11050
-Connection ~ 10800 11050
-Wire Wire Line
-	10800 11050 10325 11050
 Text Label 17425 7700 0    50   ~ 0
 GPIO_SD_B0_00
 Text Label 17425 7900 0    50   ~ 0
@@ -2707,7 +2565,7 @@ L haathi_mayank:Test_Point_Probe TP?
 U 1 1 5A9925A6
 P 17725 8375
 F 0 "TP?" H 18025 8475 50  0000 R CNN
-F 1 "Test_Point_Probe" H 18125 8575 50  0000 R CNN
+F 1 "TP_CLK_01" H 18125 8575 50  0000 R CNN
 F 2 "" H 17925 8375 50  0001 C CNN
 F 3 "~" H 17925 8375 50  0001 C CNN
 	1    17725 8375
@@ -2718,7 +2576,7 @@ L haathi_mayank:Test_Point_Probe TP?
 U 1 1 5A992C3E
 P 18125 8600
 F 0 "TP?" H 18425 8700 50  0000 R CNN
-F 1 "Test_Point_Probe" H 18525 8800 50  0000 R CNN
+F 1 "TP_CLK_02" H 18525 8800 50  0000 R CNN
 F 2 "" H 18325 8600 50  0001 C CNN
 F 3 "~" H 18325 8600 50  0001 C CNN
 	1    18125 8600
@@ -2837,7 +2695,7 @@ L haathi_mayank:Test_Point_Probe TP?
 U 1 1 5ABA0815
 P 3450 8000
 F 0 "TP?" H 3750 8100 50  0000 R CNN
-F 1 "Test_Point_Probe" H 3850 8200 50  0000 R CNN
+F 1 "TP_USB_CHG_DETECT" H 3850 8200 50  0000 R CNN
 F 2 "" H 3650 8000 50  0001 C CNN
 F 3 "~" H 3650 8000 50  0001 C CNN
 	1    3450 8000
@@ -2898,7 +2756,7 @@ L haathi_mayank:SW_DIP_x03 SW?
 U 1 1 5A8805B2
 P 6050 12300
 F 0 "SW?" V 6004 12630 50  0000 L CNN
-F 1 "SW_DIP_x03" V 6095 12630 50  0000 L CNN
+F 1 "SW_DIP_3_BOOT" V 6095 12630 50  0000 L CNN
 F 2 "" H 6050 12300 50  0001 C CNN
 F 3 "" H 6050 12300 50  0001 C CNN
 	1    6050 12300
@@ -3291,17 +3149,6 @@ Connection ~ 6250 11300
 Wire Wire Line
 	6250 11300 6450 11300
 $Comp
-L power:VCC #PWR?
-U 1 1 5AEDE27E
-P 6500 11300
-F 0 "#PWR?" H 6500 11150 50  0001 C CNN
-F 1 "VCC" H 6517 11473 50  0000 C CNN
-F 2 "" H 6500 11300 50  0001 C CNN
-F 3 "" H 6500 11300 50  0001 C CNN
-	1    6500 11300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5AEDE637
 P 6450 11300
@@ -3313,8 +3160,6 @@ F 3 "" H 6450 11300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 6450 11300
-Wire Wire Line
-	6450 11300 6500 11300
 $Comp
 L haathi_mayank:R R?
 U 1 1 5AEDEBDD
@@ -3537,10 +3382,155 @@ Wire Wire Line
 Connection ~ 4050 11300
 Text Notes 4500 10950 0    100  ~ 0
 Boot Configuration\n
-Wire Bus Line
-	21100 950  21100 1750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5A9B411A
+P 10350 2550
+F 0 "#PWR?" H 10350 2400 50  0001 C CNN
+F 1 "+3V3" H 10365 2723 50  0000 C CNN
+F 2 "" H 10350 2550 50  0001 C CNN
+F 3 "" H 10350 2550 50  0001 C CNN
+	1    10350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5A9B420A
+P 800 3050
+F 0 "#PWR?" H 800 2900 50  0001 C CNN
+F 1 "+3V3" H 815 3223 50  0000 C CNN
+F 2 "" H 800 3050 50  0001 C CNN
+F 3 "" H 800 3050 50  0001 C CNN
+	1    800  3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5A9B49EE
+P 3250 4900
+F 0 "#PWR?" H 3250 4750 50  0001 C CNN
+F 1 "+3V3" H 3265 5073 50  0000 C CNN
+F 2 "" H 3250 4900 50  0001 C CNN
+F 3 "" H 3250 4900 50  0001 C CNN
+	1    3250 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 4900
+Wire Wire Line
+	3250 4900 3350 4900
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5A9B4F3A
+P 3250 5550
+F 0 "#PWR?" H 3250 5400 50  0001 C CNN
+F 1 "+3V3" H 3265 5723 50  0000 C CNN
+F 2 "" H 3250 5550 50  0001 C CNN
+F 3 "" H 3250 5550 50  0001 C CNN
+	1    3250 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 5550
+Wire Wire Line
+	3250 5550 3350 5550
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5A9B55D5
+P 6650 11300
+F 0 "#PWR?" H 6650 11150 50  0001 C CNN
+F 1 "+3V3" H 6665 11473 50  0000 C CNN
+F 2 "" H 6650 11300 50  0001 C CNN
+F 3 "" H 6650 11300 50  0001 C CNN
+	1    6650 11300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4900 3250 4900
+Wire Wire Line
+	2750 5550 3250 5550
+Wire Wire Line
+	6450 11300 6650 11300
+Wire Wire Line
+	9350 6300 9850 6300
+Text Label 9425 6300 0    50   ~ 0
+DCDC_OUT
+Text Label 8275 6300 0    50   ~ 0
+VDD_SOC_IN
+Text Label 7150 5550 2    50   ~ 0
+VDD_USB_CAP
+Wire Wire Line
+	5850 5550 5850 5300
+Wire Wire Line
+	5850 5300 6325 5300
+Text Label 6300 5300 2    50   ~ 0
+VDD_SNVS_CAP
+Wire Wire Line
+	5100 5125 5100 5550
+Text Label 5100 5600 1    50   ~ 0
+VDD_SNVS_IN
+Wire Wire Line
+	5100 5125 5250 5125
+Text Label 3875 5550 0    50   ~ 0
+NVCC_SD0
+Text Label 3875 4900 0    50   ~ 0
+NVCC_SD1
+Text Label 3375 6150 0    50   ~ 0
+VDDA_ADC_3P3
+Text Label 2075 6150 0    50   ~ 0
+VDD_HIGH_CAP
+Text Label 850  6150 0    50   ~ 0
+VDD_HIGH_IN
+Text Label 1400 5550 0    50   ~ 0
+NVCC_SEMC_3V3
+Text Label 1400 4900 0    50   ~ 0
+NVCC_GPIO_3V3
+Text Label 3725 8300 0    50   ~ 0
+5V_USB_OTG
+Text Label 3725 8500 0    50   ~ 0
+USB_OTG1_D+
+Text Label 3725 8600 0    50   ~ 0
+USB_OTG1_D-
+Text Label 3600 8400 0    50   ~ 0
+USB_OTG_CHD_B
+Text Label 3750 8800 0    50   ~ 0
+5V_USB_HS
+Text Label 3725 8900 0    50   ~ 0
+USB_OTG2_D+
+Text Label 3725 9000 0    50   ~ 0
+USB_OTG2_D-
+Text HLabel 10325 11050 0    50   Input ~ 0
+BACKLIGHT_CTL
+Wire Wire Line
+	8500 4900 8500 5100
+Wire Wire Line
+	10325 11050 11100 11050
+Wire Wire Line
+	2200 2550 3100 2550
+Text Label 2325 2550 0    50   ~ 0
+MCU_RESET_N
+Wire Wire Line
+	2600 2400 3250 2400
+Text Label 2700 2400 0    50   ~ 0
+VDD_SNVS_IN
+Wire Wire Line
+	3625 2850 3950 2850
+Text Label 3750 2850 0    50   ~ 0
+ONOFF
+Text Label 3900 3350 0    50   ~ 0
+WAKEUP_BUTTON
+Wire Wire Line
+	8550 1650 9075 1650
+Text Label 8675 1650 0    50   ~ 0
+DCDC_OUT
+Text Label 6325 1000 2    50   ~ 0
+NVCC_GPIO_3V3
+Text Label 6325 1150 2    50   ~ 0
+NVCC_SEMC_3V3
+Text Label 4750 1250 0    50   ~ 0
+VDD_SOC_IN
 Wire Bus Line
 	21850 4000 21850 4750
+Wire Bus Line
+	21100 950  21100 1750
 Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
