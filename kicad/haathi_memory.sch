@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_memory-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 12
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -114,59 +114,15 @@ F 3 "" H 5975 2300 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L haathi:R R12
-U 1 1 5A6E3401
-P 5975 3100
-F 0 "R12" H 6000 3250 50  0000 L CNN
-F 1 "10k" V 5975 3025 50  0000 L CNN
-F 2 "" V 5905 3100 30  0000 C CNN
-F 3 "" H 5975 3100 30  0000 C CNN
-	1    5975 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L haathi:R R9
-U 1 1 5A6E3455
-P 6350 2300
-F 0 "R9" H 6375 2450 50  0000 L CNN
-F 1 "10k" V 6350 2225 50  0000 L CNN
-F 2 "" V 6280 2300 30  0000 C CNN
-F 3 "" H 6350 2300 30  0000 C CNN
-	1    6350 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L haathi:R R10
-U 1 1 5A6E34C9
-P 6875 2475
-F 0 "R10" V 6775 2475 50  0000 C CNN
-F 1 "0E" V 6875 2475 50  0000 C CNN
-F 2 "" V 6805 2475 30  0000 C CNN
-F 3 "" H 6875 2475 30  0000 C CNN
-	1    6875 2475
-	0    1    1    0   
-$EndComp
-$Comp
 L haathi:R R7
 U 1 1 5A6E355E
-P 6875 1850
-F 0 "R7" V 6775 1850 50  0000 C CNN
-F 1 "0E" V 6875 1850 50  0000 C CNN
-F 2 "" V 6805 1850 30  0000 C CNN
-F 3 "" H 6875 1850 30  0000 C CNN
-	1    6875 1850
+P 6350 2700
+F 0 "R7" V 6250 2700 50  0000 C CNN
+F 1 "0E" V 6350 2700 50  0000 C CNN
+F 2 "" V 6280 2700 30  0000 C CNN
+F 3 "" H 6350 2700 30  0000 C CNN
+	1    6350 2700
 	0    1    1    0   
-$EndComp
-$Comp
-L haathi:BC817 Q1
-U 1 1 5A6E58D8
-P 6250 2700
-F 0 "Q1" H 6475 2775 50  0000 L CNN
-F 1 "BC817" H 6475 2700 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6450 2625 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 6250 2700 50  0001 L CNN
-	1    6250 2700
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4350 2600 2300 2600
@@ -333,11 +289,6 @@ Wire Wire Line
 Wire Wire Line
 	5975 2450 5975 2700
 Wire Wire Line
-	6100 2700 5975 2700
-Connection ~ 5975 2700
-Wire Wire Line
-	5975 2700 5975 2950
-Wire Wire Line
 	5350 2700 5475 2700
 Wire Wire Line
 	5475 2700 5475 2950
@@ -347,54 +298,19 @@ Wire Wire Line
 	5475 2700 5975 2700
 Connection ~ 5475 2700
 Wire Wire Line
-	6350 2500 6350 2475
-Wire Wire Line
-	6725 2475 6350 2475
-Connection ~ 6350 2475
-Wire Wire Line
-	6350 2475 6350 2450
-Wire Wire Line
-	6350 2900 6350 3300
-Wire Wire Line
-	6350 3300 5975 3300
-Connection ~ 5200 3300
-Wire Wire Line
-	5975 3250 5975 3300
-Connection ~ 5975 3300
-Wire Wire Line
-	5975 3300 5200 3300
-Wire Wire Line
-	7025 2475 7125 2475
-Wire Wire Line
-	7125 2475 7125 1850
-Wire Wire Line
-	7125 1850 7025 1850
-Wire Wire Line
-	6725 1850 5475 1850
-Wire Wire Line
-	5475 1850 5475 2700
-Wire Wire Line
 	5975 2150 5975 1700
-Wire Wire Line
-	5975 1700 6350 1700
-Wire Wire Line
-	6350 1700 6350 2150
-Wire Wire Line
-	7125 1850 7125 1300
 Wire Wire Line
 	7125 1300 2300 1300
 Wire Wire Line
 	2300 1300 2300 2400
 Wire Wire Line
 	2300 2400 1700 2400
-Connection ~ 7125 1850
 Wire Wire Line
 	2800 1700 1700 1700
 Connection ~ 2800 1700
 Wire Wire Line
 	4225 1700 5975 1700
 Connection ~ 4225 1700
-Connection ~ 5975 1700
 Text Label 1700 1700 0    50   ~ 0
 VSD_3V3
 Text Label 1700 2400 0    50   ~ 0
@@ -413,6 +329,11 @@ Text Label 1700 3100 0    50   ~ 0
 SD_CLK
 Text Label 1700 2800 0    50   ~ 0
 GPIO_SD_B0_01_B
-Text Notes 6475 3325 0    40   ~ 0
-FOR SD BOOT, ROM NEED SD_CD_SW PIN KEPT LOW\n===========================================\nCARD INSERT\nCD1&CD2 FLOAT-->Q14 ON-->SD_CD_SW LOW\n\nCARD OFF\nCD1&CD2 GND-->Q14 OFF-->SD_CD_SW HIGH
+Wire Wire Line
+	5975 2700 6200 2700
+Connection ~ 5975 2700
+Wire Wire Line
+	6500 2700 7125 2700
+Wire Wire Line
+	7125 1300 7125 2700
 $EndSCHEMATC
