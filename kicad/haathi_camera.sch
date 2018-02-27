@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 12
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -19,7 +18,7 @@ L haathi_mayank:Conn_02x10_Odd_Even J?
 U 1 1 5A865EBE
 P 5850 2300
 F 0 "J?" H 5900 2917 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 5900 2826 50  0000 C CNN
+F 1 "Conn2x10_ArduCAM_Box" H 5900 2826 50  0000 C CNN
 F 2 "" H 5850 2300 50  0001 C CNN
 F 3 "~" H 5850 2300 50  0001 C CNN
 	1    5850 2300
@@ -644,7 +643,7 @@ L haathi_mayank:Conn_01x30 J?
 U 1 1 5A8A94B7
 P 3100 2750
 F 0 "J?" H 3180 2742 50  0000 L CNN
-F 1 "Conn_01x30" H 3180 2651 50  0000 L CNN
+F 1 "Conn_01x30_ArduCAM_FRC" H 3180 2651 50  0000 L CNN
 F 2 "" H 3100 2750 50  0001 C CNN
 F 3 "~" H 3100 2750 50  0001 C CNN
 	1    3100 2750
