@@ -422,11 +422,11 @@ D-
 Text Label 4025 5525 0    50   ~ 0
 D+
 Text Label 5450 5325 0    50   ~ 0
-USB_OTG1_D-
+USB_OTG2_D-
 Text Label 5450 5525 0    50   ~ 0
-USB_OTG1_D+
+USB_OTG2_D+
 Text Label 5450 5800 0    50   ~ 0
-USB_OTG1_ID
+USB_OTG2_ID
 Text HLabel 6325 4425 2    50   BiDi ~ 0
 5V_USB_HS
 Text HLabel 6325 5325 2    50   BiDi ~ 0
