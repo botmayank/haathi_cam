@@ -5,3 +5,13 @@
 # backup files
 *.bak
 kicad/haathi-cache.lib
+kicad/haathi_camera-cache.lib
+kicad/haathi_camera.pro
+kicad/haathi_cpu-cache.lib
+kicad/haathi_cpu.pro
+kicad/haathi_interfaces.pro
+kicad/haathi_memory.pro
+kicad/haathi_power-cache.lib
+kicad/haathi_power.pro
+kicad/haathi_usb-cache.lib
+kicad/haathi_usb.pro
