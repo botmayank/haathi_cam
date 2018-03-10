@@ -336,4 +336,111 @@ Wire Wire Line
 	6500 2700 7125 2700
 Wire Wire Line
 	7125 1300 7125 2700
+$Comp
+L haathi_mayank:IS25WP080D U?
+U 1 1 5AA454AE
+P 4800 5125
+F 0 "U?" H 4350 5450 50  0000 C CNN
+F 1 "IS25WP080D" H 5125 4625 50  0000 C CNN
+F 2 "" H 4350 4975 50  0001 C CNN
+F 3 "" H 4350 4975 50  0001 C CNN
+	1    4800 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5075 3850 5075
+Wire Wire Line
+	4200 5175 3850 5175
+Wire Wire Line
+	4200 5275 3850 5275
+Wire Wire Line
+	4200 5375 3850 5375
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5AA46B0D
+P 5675 4400
+F 0 "#PWR?" H 5675 4250 50  0001 C CNN
+F 1 "+1V8" H 5690 4573 50  0000 C CNN
+F 2 "" H 5675 4400 50  0001 C CNN
+F 3 "" H 5675 4400 50  0001 C CNN
+	1    5675 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 4400 4800 4400
+Wire Wire Line
+	4800 4400 4800 4775
+$Comp
+L power:GND #PWR?
+U 1 1 5AA47F6E
+P 4800 5775
+F 0 "#PWR?" H 4800 5525 50  0001 C CNN
+F 1 "GND" H 4900 5775 50  0000 C CNN
+F 2 "" H 4800 5775 50  0001 C CNN
+F 3 "" H 4800 5775 50  0001 C CNN
+	1    4800 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5675 4800 5775
+Wire Wire Line
+	5450 5075 5925 5075
+Wire Wire Line
+	5450 5275 5925 5275
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5AA4AEFD
+P 5125 4550
+F 0 "C?" H 5228 4588 40  0000 L CNN
+F 1 "0.1uF" H 5228 4512 40  0000 L CNN
+F 2 "" H 5125 4550 60  0000 C CNN
+F 3 "" H 5125 4550 60  0000 C CNN
+	1    5125 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5AA4AF9F
+P 5500 4550
+F 0 "C?" H 5603 4588 40  0000 L CNN
+F 1 "1uF" H 5603 4512 40  0000 L CNN
+F 2 "" H 5500 4550 60  0000 C CNN
+F 3 "" H 5500 4550 60  0000 C CNN
+	1    5500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 4400 5500 4400
+Connection ~ 5125 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5AA4C96A
+P 5250 4700
+F 0 "#PWR?" H 5250 4450 50  0001 C CNN
+F 1 "GND" H 5375 4625 50  0000 C CNN
+F 2 "" H 5250 4700 50  0001 C CNN
+F 3 "" H 5250 4700 50  0001 C CNN
+	1    5250 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 4700 5250 4700
+Connection ~ 5250 4700
+Wire Wire Line
+	5250 4700 5500 4700
+Wire Wire Line
+	5500 4400 5675 4400
+Connection ~ 5500 4400
+Text HLabel 3850 5275 0    50   Input ~ 0
+FlexSPI_D0_A
+Text HLabel 3850 5175 0    50   Input ~ 0
+FlexSPI_D1_A
+Text HLabel 5925 5075 2    50   Input ~ 0
+FlexSPI_D2_A
+Text HLabel 5925 5275 2    50   Input ~ 0
+FlexSPI_D3_A
+Text HLabel 3850 5075 0    50   Input ~ 0
+FlexSPI_SS0
+Text HLabel 3850 5375 0    50   Input ~ 0
+FlexSPI_CLK
 $EndSCHEMATC
