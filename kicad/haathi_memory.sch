@@ -310,7 +310,7 @@ Wire Wire Line
 	4225 1700 5975 1700
 Connection ~ 4225 1700
 Text Label 1700 1700 0    50   ~ 0
-VSD_3V3
+NVCC_SD0
 Text Label 1700 2400 0    50   ~ 0
 SD_CD_SW
 Text Label 1700 2500 0    50   ~ 0
@@ -452,7 +452,7 @@ SD1_CLK
 Text HLabel 1700 2400 0    50   Input ~ 0
 SD_CD_SW
 Text HLabel 1700 1700 0    50   Input ~ 0
-VSD_3V3
+NVCC_SD0
 $Comp
 L haathi_mayank:TLV70218 U?
 U 1 1 5AA5874B
@@ -514,7 +514,7 @@ Wire Wire Line
 	7575 5325 7575 5250
 Connection ~ 7200 5325
 Wire Wire Line
-	7200 5325 7575 5325
+	7200 5325 7325 5325
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5AA5FB84
@@ -577,4 +577,250 @@ Wire Wire Line
 	6500 2700 6500 1300
 Wire Wire Line
 	2300 1300 6500 1300
+$Comp
+L haathi_mayank:TPS73101 U?
+U 1 1 5AA68D56
+P 8625 2325
+F 0 "U?" H 8625 2690 50  0000 C CNN
+F 1 "TPS73101" H 8625 2599 50  0000 C CNN
+F 2 "" H 8625 2325 50  0001 C CNN
+F 3 "" H 8625 2325 50  0001 C CNN
+	1    8625 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5AA68EC5
+P 7900 2200
+F 0 "#PWR?" H 7900 2050 50  0001 C CNN
+F 1 "+3V3" H 7915 2373 50  0000 C CNN
+F 2 "" H 7900 2200 50  0001 C CNN
+F 3 "" H 7900 2200 50  0001 C CNN
+	1    7900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2200 7900 2225
+Wire Wire Line
+	7900 2225 8200 2225
+Wire Wire Line
+	8325 2425 8200 2425
+Wire Wire Line
+	8200 2425 8200 2225
+Connection ~ 8200 2225
+Wire Wire Line
+	8200 2225 8325 2225
+Wire Wire Line
+	8325 2325 8250 2325
+Wire Wire Line
+	8250 2325 8250 2575
+$Comp
+L power:GND #PWR?
+U 1 1 5AA6F6C1
+P 8250 2575
+F 0 "#PWR?" H 8250 2325 50  0001 C CNN
+F 1 "GND" H 8350 2575 50  0000 C CNN
+F 2 "" H 8250 2575 50  0001 C CNN
+F 3 "" H 8250 2575 50  0001 C CNN
+	1    8250 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8925 2225 9425 2225
+Text HLabel 10150 2225 2    50   Input ~ 0
+NVCC_SD0
+Text Label 9650 2225 0    50   ~ 0
+VSD_3V3
+$Comp
+L haathi_mayank:R R?
+U 1 1 5AA72443
+P 9225 2325
+F 0 "R?" V 9175 2150 50  0000 C CNN
+F 1 "47K" V 9225 2325 50  0000 C CNN
+F 2 "" V 9155 2325 30  0000 C CNN
+F 3 "" H 9225 2325 30  0000 C CNN
+	1    9225 2325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8925 2325 9050 2325
+Wire Wire Line
+	9375 2325 9425 2325
+Wire Wire Line
+	9425 2325 9425 2225
+Connection ~ 9425 2225
+$Comp
+L haathi_mayank:R R?
+U 1 1 5AA771CB
+P 9050 2800
+F 0 "R?" V 9000 2625 50  0000 C CNN
+F 1 "93.1K" V 9150 2800 50  0000 C CNN
+F 2 "" V 8980 2800 30  0000 C CNN
+F 3 "" H 9050 2800 30  0000 C CNN
+	1    9050 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 2325
+Wire Wire Line
+	9050 2325 9075 2325
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5AA79ADE
+P 9575 2375
+F 0 "C?" H 9678 2413 40  0000 L CNN
+F 1 "0.1uF" H 9678 2337 40  0000 L CNN
+F 2 "" H 9575 2375 60  0000 C CNN
+F 3 "" H 9575 2375 60  0000 C CNN
+	1    9575 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5AA79D25
+P 9950 2375
+F 0 "C?" H 10053 2413 40  0000 L CNN
+F 1 "0.1uF" H 10053 2337 40  0000 L CNN
+F 2 "" H 9950 2375 60  0000 C CNN
+F 3 "" H 9950 2375 60  0000 C CNN
+	1    9950 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9575 2525 9750 2525
+$Comp
+L power:GND #PWR?
+U 1 1 5AA7F108
+P 8825 3625
+F 0 "#PWR?" H 8825 3375 50  0001 C CNN
+F 1 "GND" H 8925 3625 50  0000 C CNN
+F 2 "" H 8825 3625 50  0001 C CNN
+F 3 "" H 8825 3625 50  0001 C CNN
+	1    8825 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5AA7F278
+P 8825 2800
+F 0 "R?" V 8775 2625 50  0000 C CNN
+F 1 "37.4K" V 8925 2800 50  0000 C CNN
+F 2 "" V 8755 2800 30  0000 C CNN
+F 3 "" H 8825 2800 30  0000 C CNN
+	1    8825 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2325 9050 2550
+$Comp
+L haathi_mayank:Q_NMOS_GSD Q?
+U 1 1 5AA85036
+P 8725 3275
+F 0 "Q?" H 8625 3150 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 8250 3050 50  0000 L CNN
+F 2 "" H 8925 3375 50  0001 C CNN
+F 3 "~" H 8725 3275 50  0001 C CNN
+	1    8725 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 3075 8825 2950
+Wire Wire Line
+	8825 2650 8825 2550
+Wire Wire Line
+	8825 2550 9050 2550
+Connection ~ 9050 2550
+Wire Wire Line
+	9050 2550 9050 2650
+Wire Wire Line
+	9425 2225 9575 2225
+Connection ~ 9575 2225
+Wire Wire Line
+	9575 2225 9950 2225
+Connection ~ 9950 2225
+Wire Wire Line
+	9950 2225 10100 2225
+$Comp
+L power:GND #PWR?
+U 1 1 5AA9887A
+P 9750 2525
+F 0 "#PWR?" H 9750 2275 50  0001 C CNN
+F 1 "GND" H 9875 2450 50  0000 C CNN
+F 2 "" H 9750 2525 50  0001 C CNN
+F 3 "" H 9750 2525 50  0001 C CNN
+	1    9750 2525
+	1    0    0    -1  
+$EndComp
+Connection ~ 9750 2525
+Wire Wire Line
+	9750 2525 9950 2525
+Wire Wire Line
+	8825 3475 8825 3550
+Wire Wire Line
+	9050 2950 9050 3550
+Wire Wire Line
+	9050 3550 8825 3550
+Connection ~ 8825 3550
+Wire Wire Line
+	8825 3550 8825 3625
+$Comp
+L haathi_mayank:R R?
+U 1 1 5AA9E7B3
+P 8450 3125
+F 0 "R?" V 8400 2950 50  0000 C CNN
+F 1 "100K" V 8550 3125 50  0000 C CNN
+F 2 "" V 8380 3125 30  0000 C CNN
+F 3 "" H 8450 3125 30  0000 C CNN
+	1    8450 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8525 3275 8450 3275
+Connection ~ 8450 3275
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5AAA1A38
+P 8450 2925
+F 0 "#PWR?" H 8450 2775 50  0001 C CNN
+F 1 "+3V3" H 8465 3098 50  0000 C CNN
+F 2 "" H 8450 2925 50  0001 C CNN
+F 3 "" H 8450 2925 50  0001 C CNN
+	1    8450 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2925 8450 2975
+Text HLabel 7725 3275 0    50   Input ~ 0
+SD0_VSELECT
+Text Label 8350 3275 2    50   ~ 0
+SD0_VSELECT
+Wire Wire Line
+	7725 3275 8450 3275
+$Comp
+L haathi_mayank:Test_Point_Probe TP?
+U 1 1 5AAA90E0
+P 7325 5325
+F 0 "TP?" V 7615 5381 50  0000 C CNN
+F 1 "TP_1V8" V 7524 5381 50  0000 C CNN
+F 2 "" H 7525 5325 50  0001 C CNN
+F 3 "" H 7525 5325 50  0001 C CNN
+	1    7325 5325
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7325 5325
+Wire Wire Line
+	7325 5325 7575 5325
+$Comp
+L haathi_mayank:Test_Point_Probe TP?
+U 1 1 5AAA9481
+P 10100 2225
+F 0 "TP?" V 10390 2281 50  0000 C CNN
+F 1 "TP_NVCC_SD0" V 10299 2281 50  0000 C CNN
+F 2 "" H 10300 2225 50  0001 C CNN
+F 3 "" H 10300 2225 50  0001 C CNN
+	1    10100 2225
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10100 2225
+Wire Wire Line
+	10100 2225 10150 2225
 $EndSCHEMATC
