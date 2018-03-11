@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_cpu-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 11
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -2182,8 +2182,6 @@ Wire Wire Line
 Connection ~ 11850 1975
 Wire Wire Line
 	11850 2275 11850 2325
-Wire Wire Line
-	12700 1775 13300 1775
 Wire Notes Line
 	12200 1675 12750 1675
 Wire Notes Line
@@ -2193,25 +2191,7 @@ Wire Notes Line
 Wire Notes Line
 	12200 2325 12200 1675
 Wire Wire Line
-	12700 1875 13200 1875
-Wire Wire Line
-	12700 2075 13450 2075
-Wire Wire Line
-	12700 2175 13350 2175
-Wire Wire Line
-	12700 2275 13000 2275
-Wire Wire Line
 	11850 1975 14550 1975
-Wire Wire Line
-	13000 2275 14550 2275
-Wire Wire Line
-	13300 1775 14550 1775
-Wire Wire Line
-	13200 1875 14550 1875
-Wire Wire Line
-	13450 2075 14550 2075
-Wire Wire Line
-	13350 2175 14550 2175
 Wire Wire Line
 	14550 4525 13825 4525
 Wire Wire Line
@@ -2631,8 +2611,6 @@ Text HLabel 18200 9650 2    50   Input ~ 0
 FlexSPI_D0_B
 Text HLabel 18200 9750 2    50   Input ~ 0
 FlexSPI_CLK_B
-Text HLabel 18200 9850 2    50   Input ~ 0
-FlexSPI_DQS
 Text HLabel 18200 9950 2    50   Input ~ 0
 FlexSPI_SS0
 Text HLabel 18200 10050 2    50   Input ~ 0
@@ -3528,6 +3506,16 @@ Text Label 6325 1150 2    50   ~ 0
 NVCC_SEMC_3V3
 Text Label 4750 1250 0    50   ~ 0
 VDD_SOC_IN
+Wire Wire Line
+	12700 1775 14550 1775
+Wire Wire Line
+	12700 1875 14550 1875
+Wire Wire Line
+	12700 2075 14550 2075
+Wire Wire Line
+	12700 2175 14550 2175
+Wire Wire Line
+	12700 2275 14550 2275
 Wire Bus Line
 	21850 4000 21850 4750
 Wire Bus Line
@@ -3536,4 +3524,6 @@ Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
 	9425 8000 9425 9800
+Text HLabel 18200 9850 2    50   Input ~ 0
+FlexSPI_SS_B
 $EndSCHEMATC
