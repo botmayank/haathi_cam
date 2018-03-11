@@ -703,7 +703,7 @@ Wire Bus Line
 Wire Bus Line
 	8100 3700 8100 5300
 Text HLabel 8250 3700 2    50   Input ~ 0
-LCDIF_D[15:0]
+LCDIF_D[0..15]
 Text Label 7050 3850 0    50   ~ 0
 LCDIF_D0
 Text Label 7050 3950 0    50   ~ 0

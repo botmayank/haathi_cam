@@ -1770,7 +1770,7 @@ Wire Wire Line
 Text Notes 1350 1750 0    197  ~ 0
 MCU Power Circuit
 Text HLabel 21250 950  2    50   Input ~ 0
-SEMC_D[7:0]
+SEMC_D[0..7]
 Text Label 20550 1150 0    50   ~ 0
 SEMC_D0
 Text Label 20550 1250 0    50   ~ 0
@@ -1926,7 +1926,7 @@ Wire Wire Line
 Wire Wire Line
 	20500 3450 21800 3450
 Text HLabel 22050 1900 2    50   Input ~ 0
-SEMC_A[12:0]
+SEMC_A[0..12]
 Wire Wire Line
 	20500 3550 20950 3550
 Wire Wire Line
@@ -2002,7 +2002,7 @@ Entry Wire Line
 Wire Bus Line
 	21850 4000 22000 4000
 Text HLabel 22000 4000 2    50   Input ~ 0
-SEMC_D[15:8]
+SEMC_D[8..15]
 Wire Wire Line
 	20500 4950 20950 4950
 Wire Wire Line
@@ -2427,7 +2427,7 @@ Entry Wire Line
 Wire Bus Line
 	9425 8000 9200 8000
 Text HLabel 9200 8000 0    50   Input ~ 0
-LCDIF_D[15:0]
+LCDIF_D[0..15]
 Wire Wire Line
 	11100 9950 10325 9950
 Wire Wire Line
