@@ -4,14 +4,578 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
-Title ""
-Date ""
-Rev ""
+Sheet 9 11
+Title "haathi_cam"
+Date "2018-03-11"
+Rev "rev 1"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "Gitter Room: https://gitter.im/iMX-RT-Camera/Lobby"
+Comment2 "Schematic Google Sheet: https://goo.gl/2Ju1re"
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L haathi:MT48LC16M16A2B4 U?
+U 1 1 5AA58D90
+P 6000 4000
+F 0 "U?" H 6075 6025 60  0000 C CNN
+F 1 "MT48LC16M16A2B4" H 6075 5925 60  0000 C CNB
+F 2 "" H 6050 4350 50  0001 C CNN
+F 3 "" H 6050 4350 50  0001 C CNN
+F 4 "mfr_pn" H 6000 4000 50  0001 C CNN "manf#"
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2300 4100 2300
+Wire Wire Line
+	4100 2400 5100 2400
+Wire Wire Line
+	5100 2500 4100 2500
+Wire Wire Line
+	4100 2600 5100 2600
+Wire Wire Line
+	5100 2700 4100 2700
+Wire Wire Line
+	4100 2800 5100 2800
+Wire Wire Line
+	5100 2900 4100 2900
+Wire Wire Line
+	4100 3000 5100 3000
+Wire Wire Line
+	5100 3100 4100 3100
+Wire Wire Line
+	4100 3200 5100 3200
+Wire Wire Line
+	5100 3300 4100 3300
+Wire Wire Line
+	4100 3400 5100 3400
+Wire Wire Line
+	5100 3500 4100 3500
+Wire Wire Line
+	5100 3700 4100 3700
+Wire Wire Line
+	4100 3800 5100 3800
+Wire Wire Line
+	5100 4000 4100 4000
+Wire Wire Line
+	4100 4100 5100 4100
+Wire Wire Line
+	5100 4200 4100 4200
+Wire Wire Line
+	4100 4300 5100 4300
+Wire Wire Line
+	5100 4500 4100 4500
+Wire Wire Line
+	4100 4600 5100 4600
+Wire Wire Line
+	4500 4800 4100 4800
+Wire Wire Line
+	4100 4900 5100 4900
+Wire Wire Line
+	5100 5100 5000 5100
+Wire Wire Line
+	5000 5200 5100 5200
+Wire Wire Line
+	5100 5300 5000 5300
+Wire Wire Line
+	5000 5400 5100 5400
+Wire Wire Line
+	5100 5500 5000 5500
+Wire Wire Line
+	5000 5600 5100 5600
+Wire Wire Line
+	5100 5700 5000 5700
+Wire Wire Line
+	8000 3300 7000 3300
+Wire Wire Line
+	7000 3400 8000 3400
+Wire Wire Line
+	8000 3500 7000 3500
+Wire Wire Line
+	7000 3600 8000 3600
+Wire Wire Line
+	8000 3700 7000 3700
+Wire Wire Line
+	7000 3800 8000 3800
+Wire Wire Line
+	8000 3900 7000 3900
+Wire Wire Line
+	7000 4000 8000 4000
+Wire Wire Line
+	8000 4100 7000 4100
+Wire Wire Line
+	7000 4200 8000 4200
+Wire Wire Line
+	8000 4300 7000 4300
+Wire Wire Line
+	7000 4400 8000 4400
+Wire Wire Line
+	8000 4500 7000 4500
+Wire Wire Line
+	8000 4600 7000 4600
+Wire Wire Line
+	7000 4700 8000 4700
+Wire Wire Line
+	8000 4800 7000 4800
+NoConn ~ 7000 5000
+Text Label 7000 5000 0    50   ~ 0
+E2
+Text Label 4100 2300 0    50   ~ 0
+SEMC_A0
+Text Label 4100 2400 0    50   ~ 0
+SEMC_A1
+Text Label 4100 2500 0    50   ~ 0
+SEMC_A2
+Text Label 4100 2600 0    50   ~ 0
+SEMC_A3
+Text Label 4100 2700 0    50   ~ 0
+SEMC_A4
+Text Label 4100 2800 0    50   ~ 0
+SEMC_A5
+Text Label 4100 2900 0    50   ~ 0
+SEMC_A6
+Text Label 4100 3000 0    50   ~ 0
+SEMC_A7
+Text Label 4100 3100 0    50   ~ 0
+SEMC_A8
+Text Label 4100 3200 0    50   ~ 0
+SEMC_A9
+Text Label 4100 3300 0    50   ~ 0
+SEMC_A10
+Text Label 4100 3400 0    50   ~ 0
+SEMC_A11
+Text Label 4100 3500 0    50   ~ 0
+SEMC_A12
+Entry Wire Line
+	4000 3400 4100 3500
+Entry Wire Line
+	4000 3300 4100 3400
+Entry Wire Line
+	4000 3200 4100 3300
+Entry Wire Line
+	4000 3100 4100 3200
+Entry Wire Line
+	4000 3000 4100 3100
+Entry Wire Line
+	4000 2900 4100 3000
+Entry Wire Line
+	4000 2800 4100 2900
+Entry Wire Line
+	4000 2700 4100 2800
+Entry Wire Line
+	4000 2600 4100 2700
+Entry Wire Line
+	4000 2500 4100 2600
+Entry Wire Line
+	4000 2400 4100 2500
+Entry Wire Line
+	4000 2300 4100 2400
+Entry Wire Line
+	4000 2200 4100 2300
+Text HLabel 3825 2200 0    50   Input ~ 0
+SEMC_A[0..12]
+Text Label 4100 3700 0    50   ~ 0
+SEMC_BA0
+Text Label 4100 3800 0    50   ~ 0
+SEMC_BA1
+Text Label 4100 4000 0    50   ~ 0
+SEMC_RAS
+Text Label 4100 4100 0    50   ~ 0
+SEMC_CAS
+Text Label 4100 4200 0    50   ~ 0
+SEMC_WE
+Text Label 4100 4300 0    50   ~ 0
+SEMC_CS0
+Text Label 4100 4500 0    50   ~ 0
+SEMC_DM0
+Text Label 4100 4600 0    50   ~ 0
+SEMC_DM1
+Text Label 4100 4800 0    50   ~ 0
+SEMC_CLK
+Text Label 4100 4900 0    50   ~ 0
+SEMC_CKE
+Wire Wire Line
+	5000 5100 5000 5200
+Wire Wire Line
+	5000 5200 5000 5300
+Connection ~ 5000 5200
+Wire Wire Line
+	5000 5300 5000 5400
+Connection ~ 5000 5300
+Wire Wire Line
+	5000 5400 5000 5500
+Connection ~ 5000 5400
+Wire Wire Line
+	5000 5600 5000 5500
+Connection ~ 5000 5500
+Wire Wire Line
+	5000 5600 5000 5700
+Connection ~ 5000 5600
+Wire Wire Line
+	5000 5700 5000 6000
+Connection ~ 5000 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5AA69D4E
+P 5000 6000
+F 0 "#PWR?" H 5000 5750 50  0001 C CNN
+F 1 "GND" H 5050 5800 50  0000 C CNN
+F 2 "" H 5000 6000 50  0001 C CNN
+F 3 "" H 5000 6000 50  0001 C CNN
+	1    5000 6000
+	1    0    0    -1  
+$EndComp
+Text Label 8000 3300 2    50   ~ 0
+SEMC_D0
+Text Label 8000 3400 2    50   ~ 0
+SEMC_D1
+Text Label 8000 3500 2    50   ~ 0
+SEMC_D2
+Text Label 8000 3600 2    50   ~ 0
+SEMC_D3
+Text Label 8000 3700 2    50   ~ 0
+SEMC_D4
+Text Label 8000 3800 2    50   ~ 0
+SEMC_D5
+Text Label 8000 3900 2    50   ~ 0
+SEMC_D6
+Text Label 8000 4000 2    50   ~ 0
+SEMC_D7
+Text Label 8000 4100 2    50   ~ 0
+SEMC_D8
+Text Label 8000 4200 2    50   ~ 0
+SEMC_D9
+Text Label 8000 4300 2    50   ~ 0
+SEMC_D10
+Text Label 8000 4400 2    50   ~ 0
+SEMC_D11
+Text Label 8000 4500 2    50   ~ 0
+SEMC_D12
+Text Label 8000 4600 2    50   ~ 0
+SEMC_D13
+Text Label 8000 4700 2    50   ~ 0
+SEMC_D14
+Text Label 8000 4800 2    50   ~ 0
+SEMC_D15
+Entry Wire Line
+	8000 3300 8100 3200
+Entry Wire Line
+	8000 3400 8100 3300
+Entry Wire Line
+	8000 3500 8100 3400
+Entry Wire Line
+	8000 3600 8100 3500
+Entry Wire Line
+	8000 3700 8100 3600
+Entry Wire Line
+	8000 3800 8100 3700
+Entry Wire Line
+	8000 3900 8100 3800
+Entry Wire Line
+	8000 4000 8100 3900
+Entry Wire Line
+	8000 4100 8100 4000
+Entry Wire Line
+	8000 4200 8100 4100
+Entry Wire Line
+	8000 4300 8100 4200
+Entry Wire Line
+	8000 4400 8100 4300
+Entry Wire Line
+	8000 4500 8100 4400
+Entry Wire Line
+	8000 4600 8100 4500
+Entry Wire Line
+	8000 4700 8100 4600
+Entry Wire Line
+	8000 4800 8100 4700
+Wire Bus Line
+	8100 4000 8275 4000
+Wire Bus Line
+	8100 3200 8275 3200
+Text HLabel 8275 3200 2    50   Input ~ 0
+SEMC_D[0..7]
+Text HLabel 8275 4000 2    50   Input ~ 0
+SEMC_D[8..15]
+Wire Bus Line
+	3825 2200 4000 2200
+Text Label 8000 2300 2    50   ~ 0
+SD_RAM_3V3
+Wire Wire Line
+	975  900  1575 900 
+Text HLabel 975  900  0    50   Input ~ 0
+DCDC_IN
+Text Label 1075 900  0    50   ~ 0
+DCDC_IN
+$Comp
+L haathi:R R?
+U 1 1 5AA7F608
+P 1725 900
+F 0 "R?" V 1625 900 50  0000 C CNN
+F 1 "0E" V 1725 900 50  0000 C CNN
+F 2 "" V 1655 900 30  0000 C CNN
+F 3 "" H 1725 900 30  0000 C CNN
+	1    1725 900 
+	0    1    1    0   
+$EndComp
+Text Label 2325 900  2    50   ~ 0
+SD_RAM_3V3
+Text Label 8000 2400 2    50   ~ 0
+SD_RAM_3V3
+Text Label 8000 2500 2    50   ~ 0
+SD_RAM_3V3
+Text Label 8000 2600 2    50   ~ 0
+SD_RAM_3V3
+Text Label 8000 2700 2    50   ~ 0
+SD_RAM_3V3
+Text Label 8000 2800 2    50   ~ 0
+SD_RAM_3V3
+Text Label 8000 2900 2    50   ~ 0
+SD_RAM_3V3
+$Comp
+L haathi:C_NP C?
+U 1 1 5AA94B59
+P 9850 3150
+F 0 "C?" V 9900 3225 40  0000 L CNN
+F 1 "100nF" V 9900 2875 40  0000 L CNN
+F 2 "0603" V 9800 2975 40  0000 C CNN
+F 3 "" H 9850 3150 60  0000 C CNN
+F 4 "mfr_pn" H 9850 3150 50  0001 C CNN "manf#"
+	1    9850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11050 3000 11050 2300
+Wire Wire Line
+	7000 2300 11050 2300
+Wire Wire Line
+	10850 3000 10850 2400
+Wire Wire Line
+	7000 2400 10850 2400
+Wire Wire Line
+	10650 3000 10650 2500
+Wire Wire Line
+	7000 2500 10650 2500
+Wire Wire Line
+	10450 3000 10450 2600
+Wire Wire Line
+	7000 2600 10450 2600
+Wire Wire Line
+	10250 3000 10250 2700
+Wire Wire Line
+	7000 2700 10250 2700
+Wire Wire Line
+	10050 3000 10050 2800
+Wire Wire Line
+	7000 2800 10050 2800
+Wire Wire Line
+	9850 3000 9850 2900
+Wire Wire Line
+	7000 2900 9850 2900
+Wire Wire Line
+	9850 3300 9850 3550
+Wire Wire Line
+	9850 3550 10050 3550
+Wire Wire Line
+	11050 3550 11050 3300
+Wire Wire Line
+	10850 3300 10850 3550
+Connection ~ 10850 3550
+Wire Wire Line
+	10850 3550 11050 3550
+Wire Wire Line
+	10650 3300 10650 3550
+Connection ~ 10650 3550
+Wire Wire Line
+	10650 3550 10850 3550
+Wire Wire Line
+	10450 3300 10450 3550
+Connection ~ 10450 3550
+Wire Wire Line
+	10450 3550 10650 3550
+Wire Wire Line
+	10250 3300 10250 3550
+Connection ~ 10250 3550
+Wire Wire Line
+	10250 3550 10450 3550
+Wire Wire Line
+	10050 3300 10050 3550
+Connection ~ 10050 3550
+Wire Wire Line
+	10050 3550 10250 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5AAA95B6
+P 9850 3650
+F 0 "#PWR?" H 9850 3400 50  0001 C CNN
+F 1 "GND" H 9950 3650 50  0000 C CNN
+F 2 "" H 9850 3650 50  0001 C CNN
+F 3 "" H 9850 3650 50  0001 C CNN
+	1    9850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3650 9850 3550
+Connection ~ 9850 3550
+$Comp
+L haathi:C_NP C?
+U 1 1 5AAAB501
+P 2350 1200
+F 0 "C?" V 2400 1275 40  0000 L CNN
+F 1 "22uF,6.3V" V 2400 825 40  0000 L CNN
+F 2 "0603" V 2300 1025 40  0000 C CNN
+F 3 "" H 2350 1200 60  0000 C CNN
+F 4 "mfr_pn" H 2350 1200 50  0001 C CNN "manf#"
+	1    2350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:C_NP C?
+U 1 1 5AAAB583
+P 2650 1200
+F 0 "C?" V 2700 1275 40  0000 L CNN
+F 1 "4.7uF,6.3V" V 2700 800 40  0000 L CNN
+F 2 "0603" V 2600 1000 40  0000 C CNN
+F 3 "" H 2650 1200 60  0000 C CNN
+F 4 "mfr_pn" H 2650 1200 50  0001 C CNN "manf#"
+	1    2650 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1050 2650 900 
+Wire Wire Line
+	1875 900  2350 900 
+Wire Wire Line
+	2350 1050 2350 900 
+Connection ~ 2350 900 
+Wire Wire Line
+	2350 900  2650 900 
+Wire Wire Line
+	2350 1350 2350 1650
+Wire Wire Line
+	2350 1650 2650 1650
+Wire Wire Line
+	2650 1650 2650 1350
+$Comp
+L power:GND #PWR?
+U 1 1 5AAB16E5
+P 2650 1750
+F 0 "#PWR?" H 2650 1500 50  0001 C CNN
+F 1 "GND" H 2750 1750 50  0000 C CNN
+F 2 "" H 2650 1750 50  0001 C CNN
+F 3 "" H 2650 1750 50  0001 C CNN
+	1    2650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1750 2650 1650
+Connection ~ 2650 1650
+$Comp
+L haathi:C_NP C?
+U 1 1 5AACAD8E
+P 10050 3150
+F 0 "C?" V 10100 3225 40  0000 L CNN
+F 1 "100nF" V 10100 2875 40  0000 L CNN
+F 2 "0603" V 10000 2975 40  0000 C CNN
+F 3 "" H 10050 3150 60  0000 C CNN
+F 4 "mfr_pn" H 10050 3150 50  0001 C CNN "manf#"
+	1    10050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:C_NP C?
+U 1 1 5AACADB8
+P 10250 3150
+F 0 "C?" V 10300 3225 40  0000 L CNN
+F 1 "100nF" V 10300 2875 40  0000 L CNN
+F 2 "0603" V 10200 2975 40  0000 C CNN
+F 3 "" H 10250 3150 60  0000 C CNN
+F 4 "mfr_pn" H 10250 3150 50  0001 C CNN "manf#"
+	1    10250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:C_NP C?
+U 1 1 5AACADE4
+P 10450 3150
+F 0 "C?" V 10500 3225 40  0000 L CNN
+F 1 "100nF" V 10500 2875 40  0000 L CNN
+F 2 "0603" V 10400 2975 40  0000 C CNN
+F 3 "" H 10450 3150 60  0000 C CNN
+F 4 "mfr_pn" H 10450 3150 50  0001 C CNN "manf#"
+	1    10450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:C_NP C?
+U 1 1 5AACAE12
+P 10650 3150
+F 0 "C?" V 10700 3225 40  0000 L CNN
+F 1 "100nF" V 10700 2875 40  0000 L CNN
+F 2 "0603" V 10600 2975 40  0000 C CNN
+F 3 "" H 10650 3150 60  0000 C CNN
+F 4 "mfr_pn" H 10650 3150 50  0001 C CNN "manf#"
+	1    10650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:C_NP C?
+U 1 1 5AACAE42
+P 10850 3150
+F 0 "C?" V 10900 3225 40  0000 L CNN
+F 1 "100nF" V 10900 2875 40  0000 L CNN
+F 2 "0603" V 10800 2975 40  0000 C CNN
+F 3 "" H 10850 3150 60  0000 C CNN
+F 4 "mfr_pn" H 10850 3150 50  0001 C CNN "manf#"
+	1    10850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi:C_NP C?
+U 1 1 5AACAE74
+P 11050 3150
+F 0 "C?" V 11100 3225 40  0000 L CNN
+F 1 "100nF" V 11100 2875 40  0000 L CNN
+F 2 "0603" V 11000 2975 40  0000 C CNN
+F 3 "" H 11050 3150 60  0000 C CNN
+F 4 "mfr_pn" H 11050 3150 50  0001 C CNN "manf#"
+	1    11050 3150
+	1    0    0    -1  
+$EndComp
+Text Notes 575  1025 0    40   ~ 0
+150mA @ 3V3
+$Comp
+L haathi:R R?
+U 1 1 5AACF89B
+P 4650 4800
+F 0 "R?" V 4550 4800 50  0000 C CNN
+F 1 "0E" V 4650 4800 50  0000 C CNN
+F 2 "" V 4580 4800 30  0000 C CNN
+F 3 "" H 4650 4800 30  0000 C CNN
+	1    4650 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 4800 4800 4800
+Text Label 4825 4800 0    40   ~ 0
+SDRAM_CLK
+Wire Notes Line
+	9725 3700 9725 3800
+Wire Notes Line
+	9725 3800 9825 3900
+Wire Notes Line
+	9825 3900 11075 3900
+Wire Notes Line
+	11075 3900 11175 3800
+Wire Notes Line
+	11175 3775 11175 3700
+Text Notes 10075 3900 0    40   ~ 0
+One Capacitor for each\npower pin pair
+Wire Bus Line
+	8100 3200 8100 3900
+Wire Bus Line
+	8100 4000 8100 4700
+Wire Bus Line
+	4000 2200 4000 3400
 $EndSCHEMATC

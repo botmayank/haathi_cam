@@ -4,19 +4,19 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 12
-Title ""
-Date ""
-Rev ""
+Sheet 2 11
+Title "haathi_cam"
+Date "2018-03-11"
+Rev "rev 1"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "Gitter Room: https://gitter.im/iMX-RT-Camera/Lobby"
+Comment2 "Schematic Google Sheet: https://goo.gl/2Ju1re"
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Bitmap
 Pos 5750 3775
-Scale 1,500000
+Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 07 D0 00 00 03 F0 08 06 00 00 00 69 DB E5 
 5C 00 00 00 04 73 42 49 54 08 08 08 08 7C 08 64 88 00 00 00 09 70 48 59 73 00 00 27 10 00 00 27 

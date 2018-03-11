@@ -18,8 +18,8 @@ Text Notes 1400 1150 0    150  ~ 30
 :: INDEX ::
 Wire Notes Line
 	1400 1200 2575 1200
-Text Notes 1400 3700 0    120  ~ 24
-1. Block Diagram\n\n2. Schematic\n     a. Power\n     b. MCU i.MXRT1052\n     c. LCD\n     d. USB\n     e. Memory (SD card, QSPI Flash)\n     f. Interfaces (GPIO/JTAG)\n     g. SD-RAM\n     h. CSI Camera\n     i. Misc (Jumpers etc)
+Text Notes 1350 4650 0    120  ~ 24
+1. Block Diagram\n\n2. Schematic\n     a. Power\n     b. MCU i.MXRT1052\n     c. LCD\n     d. USB\n     e. Memory (SD card, QSPI Flash)\n     f. Interfaces (GPIO/JTAG)\n     g. SD-RAM\n     h. CSI Camera\n     i. Misc (Jumpers etc)\n3. References and Discussion\n    a. Schematic Google Sheet: https://goo.gl/2Ju1re\n    b. Gitter Room: https://gitter.im/iMX-RT-Camera/Lobby
 $Sheet
 S 6400 850  2500 1250
 U 5A56B6F6
