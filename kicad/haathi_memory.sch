@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -629,8 +628,6 @@ Wire Wire Line
 	8925 2225 9425 2225
 Text HLabel 10150 2225 2    50   Input ~ 0
 NVCC_SD0
-Text Label 9650 2225 0    50   ~ 0
-VSD_3V3
 $Comp
 L haathi_mayank:R R?
 U 1 1 5AA72443
@@ -823,4 +820,6 @@ $EndComp
 Connection ~ 10100 2225
 Wire Wire Line
 	10100 2225 10150 2225
+Text Label 9525 2225 0    50   ~ 0
+NVCC_SD0
 $EndSCHEMATC
