@@ -277,9 +277,6 @@ F 3 "" H 3200 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 2800 1700 2800
-Connection ~ 3400 2800
-Wire Wire Line
 	2200 2650 2200 2600
 Wire Wire Line
 	2200 2600 1700 2600
@@ -308,8 +305,6 @@ Connection ~ 2800 1700
 Wire Wire Line
 	4225 1700 5975 1700
 Connection ~ 4225 1700
-Text Label 1700 1700 0    50   ~ 0
-NVCC_SD0
 Text Label 1700 2400 0    50   ~ 0
 SD_CD_SW
 Text Label 1700 2500 0    50   ~ 0
@@ -324,8 +319,6 @@ Text Label 1700 3000 0    50   ~ 0
 SD_D1
 Text Label 1700 3100 0    50   ~ 0
 SD_CLK
-Text Label 1700 2800 0    50   ~ 0
-GPIO_SD_B0_01_B
 Wire Wire Line
 	5975 2700 6200 2700
 Connection ~ 5975 2700
@@ -450,8 +443,6 @@ Text HLabel 1700 3100 0    50   Input ~ 0
 SD1_CLK
 Text HLabel 1700 2400 0    50   Input ~ 0
 SD_CD_SW
-Text HLabel 1700 1700 0    50   Input ~ 0
-NVCC_SD0
 $Comp
 L haathi_mayank:TLV70218 U?
 U 1 1 5AA5874B
@@ -590,12 +581,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5AA68EC5
-P 7900 2200
-F 0 "#PWR?" H 7900 2050 50  0001 C CNN
-F 1 "+3V3" H 7915 2373 50  0000 C CNN
-F 2 "" H 7900 2200 50  0001 C CNN
-F 3 "" H 7900 2200 50  0001 C CNN
-	1    7900 2200
+P 1700 1700
+F 0 "#PWR?" H 1700 1550 50  0001 C CNN
+F 1 "+3V3" H 1715 1873 50  0000 C CNN
+F 2 "" H 1700 1700 50  0001 C CNN
+F 3 "" H 1700 1700 50  0001 C CNN
+	1    1700 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -822,4 +813,15 @@ Wire Wire Line
 	10100 2225 10150 2225
 Text Label 9525 2225 0    50   ~ 0
 NVCC_SD0
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5AA6DC7F
+P 7900 2200
+F 0 "#PWR?" H 7900 2050 50  0001 C CNN
+F 1 "+3V3" H 7915 2373 50  0000 C CNN
+F 2 "" H 7900 2200 50  0001 C CNN
+F 3 "" H 7900 2200 50  0001 C CNN
+	1    7900 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
