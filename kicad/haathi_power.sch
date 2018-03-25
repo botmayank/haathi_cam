@@ -1777,4 +1777,6 @@ Wire Wire Line
 	2775 3425 3425 3425
 Wire Wire Line
 	7450 4500 8050 4500
+Text Notes 10050 1450 0    50   ~ 0
+Add silk note warning\nto not put coin cell other\nway around
 $EndSCHEMATC
