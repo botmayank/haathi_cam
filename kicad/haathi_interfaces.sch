@@ -450,8 +450,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 5300 4050 5300
 Wire Wire Line
-	3700 5400 4050 5400
-Wire Wire Line
 	3200 3600 2850 3600
 Wire Wire Line
 	3200 3700 2850 3700
@@ -700,8 +698,6 @@ Entry Wire Line
 	8000 5350 8100 5250
 Wire Bus Line
 	8100 3700 8250 3700
-Wire Bus Line
-	8100 3700 8100 5300
 Text HLabel 8250 3700 2    50   Input ~ 0
 LCDIF_D[0..15]
 Text Label 7050 3850 0    50   ~ 0
@@ -762,4 +758,41 @@ Text HLabel 2850 5100 0    50   Input ~ 0
 ENET_TX_CLK
 Text HLabel 2850 5200 0    50   Input ~ 0
 ENET_RXER
+Text HLabel 4050 4200 2    50   Input ~ 0
+I2C2_SCL
+Text HLabel 4050 4300 2    50   Input ~ 0
+I2C2_SDA
+Text HLabel 4050 4000 2    50   Input ~ 0
+GPIO_AD_B0_00
+Text HLabel 4050 4500 2    50   Input ~ 0
+GPIO_AD_B0_01
+Text HLabel 4050 4700 2    50   Input ~ 0
+GPIO_AD_B1_04
+Text HLabel 4050 4800 2    50   Input ~ 0
+GPIO_AD_B1_05
+Text HLabel 4050 5000 2    50   Input ~ 0
+GPIO_AD_B1_06
+Text HLabel 4050 5200 2    50   Input ~ 0
+GPIO_AD_B1_07
+Text HLabel 2850 5300 0    50   Input ~ 0
+SPDIF_IN
+Text HLabel 4050 5300 2    50   Input ~ 0
+SPDIF_OUT
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5AB7B7C5
+P 4200 3350
+F 0 "#PWR?" H 4200 3200 50  0001 C CNN
+F 1 "+3V3" H 4215 3523 50  0000 C CNN
+F 2 "" H 4200 3350 50  0001 C CNN
+F 3 "" H 4200 3350 50  0001 C CNN
+	1    4200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3350 4200 5400
+Wire Wire Line
+	3700 5400 4200 5400
+Wire Bus Line
+	8100 3700 8100 5300
 $EndSCHEMATC

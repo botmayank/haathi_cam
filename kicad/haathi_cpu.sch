@@ -2045,30 +2045,18 @@ Wire Wire Line
 	21650 5050 21650 5100
 Wire Wire Line
 	20500 5050 21650 5050
-Wire Wire Line
-	14550 1175 14400 1175
-Text HLabel 13750 1175 0    50   Input ~ 0
-GPIO_AD_B0_00
-Text HLabel 13750 1275 0    50   Input ~ 0
-GPIO_AD_B0_1
 Text HLabel 13750 1375 0    50   Input ~ 0
-GPIO_AD_B0_2
+GPIO_AD_B0_02
 Text HLabel 13750 1475 0    50   Input ~ 0
-GPIO_AD_B0_3
-Text HLabel 13750 1575 0    50   Input ~ 0
-GPIO_AD_B0_4
-Text HLabel 13750 1675 0    50   Input ~ 0
-GPIO_AD_B0_5
-Wire Wire Line
-	13750 1275 14050 1275
+GPIO_AD_B0_03
 Wire Wire Line
 	13750 1375 14550 1375
 Wire Wire Line
 	13750 1475 14550 1475
 Wire Wire Line
-	13750 1575 14550 1575
+	13750 1575 14400 1575
 Wire Wire Line
-	13750 1675 14550 1675
+	13750 1675 14050 1675
 Text HLabel 14650 775  2    50   Input ~ 0
 NVCC_GPIO_3V3
 $Comp
@@ -2098,16 +2086,6 @@ Wire Wire Line
 Connection ~ 14400 775 
 Wire Wire Line
 	14400 775  14650 775 
-Wire Wire Line
-	14400 1075 14400 1175
-Connection ~ 14400 1175
-Wire Wire Line
-	14400 1175 13750 1175
-Wire Wire Line
-	14050 1075 14050 1275
-Connection ~ 14050 1275
-Wire Wire Line
-	14050 1275 14550 1275
 Text HLabel 12700 1775 0    50   Input ~ 0
 JTAG_TMS
 Text HLabel 12700 1875 0    50   Input ~ 0
@@ -2193,9 +2171,7 @@ Wire Notes Line
 Wire Wire Line
 	11850 1975 14550 1975
 Wire Wire Line
-	14550 4525 13825 4525
-Wire Wire Line
-	14550 4625 13825 4625
+	14550 4625 13950 4625
 Wire Wire Line
 	14550 4725 13825 4725
 Wire Wire Line
@@ -2217,23 +2193,23 @@ Wire Wire Line
 Text Label 13975 4525 0    50   ~ 0
 GPIO_AD_B1_00
 Text Label 13975 4625 0    50   ~ 0
-GPIO_AD_B1_1
+GPIO_AD_B1_01
 Text Label 13975 4725 0    50   ~ 0
-GPIO_AD_B1_2
+GPIO_AD_B1_02
 Text Label 13975 4825 0    50   ~ 0
-GPIO_AD_B1_3
+GPIO_AD_B1_03
 Text Label 13975 4925 0    50   ~ 0
-GPIO_AD_B1_4
+GPIO_AD_B1_04
 Text Label 13975 5025 0    50   ~ 0
-GPIO_AD_B1_5
+GPIO_AD_B1_05
 Text Label 13975 5125 0    50   ~ 0
-GPIO_AD_B1_6
+GPIO_AD_B1_06
 Text Label 13975 5225 0    50   ~ 0
-GPIO_AD_B1_7
+GPIO_AD_B1_07
 Text Label 13975 5325 0    50   ~ 0
-GPIO_AD_B1_8
+GPIO_AD_B1_08
 Text Label 13975 5425 0    50   ~ 0
-GPIO_AD_B1_9
+GPIO_AD_B1_09
 Text Label 13975 5525 0    50   ~ 0
 GPIO_AD_B1_10
 Text Label 13975 5625 0    50   ~ 0
@@ -2270,14 +2246,6 @@ Text HLabel 13825 5925 0    50   Input ~ 0
 SAI1_TX_BCLK
 Text HLabel 13825 6025 0    50   Input ~ 0
 SAI1_TX_SYNC
-Wire Wire Line
-	13975 4925 14550 4925
-Wire Wire Line
-	13975 5025 14550 5025
-Wire Wire Line
-	13975 5125 14550 5125
-Wire Wire Line
-	13975 5225 14550 5225
 Wire Wire Line
 	13825 5325 14550 5325
 Wire Wire Line
@@ -3516,6 +3484,99 @@ Wire Wire Line
 	12700 2175 14550 2175
 Wire Wire Line
 	12700 2275 14550 2275
+Text HLabel 18200 9850 2    50   Input ~ 0
+FlexSPI_SS_B
+Text Label 13950 1175 0    50   ~ 0
+GPIO_AD_B0_00
+Text Label 13950 1275 0    50   ~ 0
+GPIO_AD_B0_01
+$Comp
+L haathi_mayank:R R?
+U 1 1 5AC7CED4
+P 13875 4025
+F 0 "R?" V 14082 4025 50  0000 C CNN
+F 1 "4.7k_DNP" V 13991 4025 50  0000 C CNN
+F 2 "" V 13805 4025 30  0000 C CNN
+F 3 "" H 13875 4025 30  0000 C CNN
+	1    13875 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5AC7D594
+P 14175 4025
+F 0 "R?" V 14382 4025 50  0000 C CNN
+F 1 "4.7k_DNP" V 14291 4025 50  0000 C CNN
+F 2 "" V 14105 4025 30  0000 C CNN
+F 3 "" H 14175 4025 30  0000 C CNN
+	1    14175 4025
+	1    0    0    -1  
+$EndComp
+Text HLabel 14400 3725 2    50   Input ~ 0
+NVCC_GPIO_3V3
+Wire Wire Line
+	14400 3725 14175 3725
+Wire Wire Line
+	14175 3875 14175 3725
+Connection ~ 14175 3725
+Wire Wire Line
+	14175 3725 13875 3725
+Wire Wire Line
+	14175 4175 14175 4275
+Wire Wire Line
+	14175 4275 13950 4275
+Wire Wire Line
+	13950 4275 13950 4625
+Connection ~ 13950 4625
+Wire Wire Line
+	13950 4625 13825 4625
+Wire Wire Line
+	13825 4525 13875 4525
+Connection ~ 13875 4525
+Wire Wire Line
+	13875 4525 14550 4525
+Wire Wire Line
+	13875 4175 13875 4525
+Wire Wire Line
+	13875 3875 13875 3725
+Text HLabel 13750 1575 0    50   Input ~ 0
+I2C2_SCL
+Text HLabel 13750 1675 0    50   Input ~ 0
+I2C2_SDA
+Wire Wire Line
+	14050 1075 14050 1675
+Connection ~ 14050 1675
+Wire Wire Line
+	14050 1675 14550 1675
+Wire Wire Line
+	14400 1075 14400 1575
+Connection ~ 14400 1575
+Wire Wire Line
+	14400 1575 14550 1575
+Wire Wire Line
+	14550 1275 13750 1275
+Wire Wire Line
+	14550 1175 13750 1175
+Text HLabel 13750 1175 0    50   Input ~ 0
+GPIO_AD_B0_00
+Text HLabel 13750 1275 0    50   Input ~ 0
+GPIO_AD_B0_01
+Text Label 13950 1375 0    50   ~ 0
+GPIO_AD_B0_02
+Text Label 13950 1475 0    50   ~ 0
+GPIO_AD_B0_03
+Text Label 13950 1575 0    50   ~ 0
+GPIO_AD_B0_04
+Text Label 13950 1675 0    50   ~ 0
+GPIO_AD_B0_05
+Wire Wire Line
+	13825 4925 14550 4925
+Wire Wire Line
+	13825 5025 14550 5025
+Wire Wire Line
+	13825 5125 14550 5125
+Wire Wire Line
+	13825 5225 14550 5225
 Wire Bus Line
 	21850 4000 21850 4750
 Wire Bus Line
@@ -3524,6 +3585,12 @@ Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
 	9425 8000 9425 9800
-Text HLabel 18200 9850 2    50   Input ~ 0
-FlexSPI_SS_B
+Text HLabel 13825 4925 0    50   Input ~ 0
+GPIO_AD_B1_04
+Text HLabel 13825 5025 0    50   Input ~ 0
+GPIO_AD_B1_05
+Text HLabel 13825 5125 0    50   Input ~ 0
+GPIO_AD_B1_06
+Text HLabel 13825 5225 0    50   Input ~ 0
+GPIO_AD_B1_07
 $EndSCHEMATC
