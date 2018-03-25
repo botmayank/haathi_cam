@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:haathi_interfaces-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -460,8 +461,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 4100 2850 4100
 Wire Wire Line
-	3200 4200 2850 4200
-Wire Wire Line
 	3200 4400 2850 4400
 Wire Wire Line
 	3200 4500 2850 4500
@@ -528,7 +527,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 3500 3200 3500
 Wire Wire Line
-	2600 4300 2600 3500
+	2600 4300 2600 4200
 Wire Wire Line
 	2600 4300 3200 4300
 Connection ~ 2600 3500
@@ -622,12 +621,10 @@ Wire Wire Line
 Connection ~ 5750 5350
 Wire Wire Line
 	5750 5350 5750 5450
-Text HLabel 7350 3650 2    50   Input ~ 0
+Text HLabel 4050 5300 2    50   Input ~ 0
 CAN2_TX
-Text HLabel 7350 3750 2    50   Input ~ 0
+Text HLabel 2850 5300 0    50   Input ~ 0
 CAN2_RX
-Wire Wire Line
-	7000 3650 7350 3650
 Wire Wire Line
 	5750 4750 5750 5350
 Wire Wire Line
@@ -746,7 +743,7 @@ Text HLabel 2850 4000 0    50   Input ~ 0
 ENET_RXD0
 Text HLabel 2850 4100 0    50   Input ~ 0
 ENET_TXD0
-Text HLabel 2850 4200 0    50   Input ~ 0
+Text HLabel 7350 3750 2    50   Input ~ 0
 BACKLIGHT_CTL
 Text HLabel 2850 4800 0    50   Input ~ 0
 ENET_RXD1
@@ -774,10 +771,6 @@ Text HLabel 4050 5000 2    50   Input ~ 0
 GPIO_AD_B1_06
 Text HLabel 4050 5200 2    50   Input ~ 0
 GPIO_AD_B1_07
-Text HLabel 2850 5300 0    50   Input ~ 0
-SPDIF_IN
-Text HLabel 4050 5300 2    50   Input ~ 0
-SPDIF_OUT
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5AB7B7C5
@@ -803,6 +796,26 @@ Text HLabel 5650 2200 2    50   Input ~ 0
 FlexSPI_D3_B
 Text HLabel 5650 2300 2    50   Input ~ 0
 FlexSPI_CLK_B
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5AB7D289
+P 7775 3325
+F 0 "#PWR?" H 7775 3175 50  0001 C CNN
+F 1 "+3V3" H 7790 3498 50  0000 C CNN
+F 2 "" H 7775 3325 50  0001 C CNN
+F 3 "" H 7775 3325 50  0001 C CNN
+	1    7775 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 3650 7775 3325
+Wire Wire Line
+	7000 3650 7775 3650
+Wire Wire Line
+	2600 4200 3200 4200
 Wire Bus Line
 	8100 3700 8100 5300
+Connection ~ 2600 4200
+Wire Wire Line
+	2600 4200 2600 3500
 $EndSCHEMATC
