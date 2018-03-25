@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_power-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -913,8 +913,8 @@ $EndComp
 Connection ~ 4000 7200
 Wire Wire Line
 	4000 7200 4200 7200
-Text HLabel 7750 4500 2    50   Input ~ 0
-V_USB
+Text HLabel 8050 4500 2    50   Input ~ 0
+5V_USB_OTG
 Text Label 950  1500 2    50   ~ 0
 VIN
 Text Label 7750 4600 0    50   ~ 0
@@ -1359,8 +1359,6 @@ F 3 "" H 6625 4775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7450 4500 7750 4500
-Wire Wire Line
 	7450 4600 7750 4600
 Wire Wire Line
 	7050 4600 6950 4600
@@ -1750,7 +1748,7 @@ Wire Wire Line
 	9575 5300 10175 5300
 Connection ~ 9575 5300
 Text Label 7500 4500 0    50   ~ 0
-V_USB
+5V_USB_OTG
 Text Label 4900 5450 0    50   ~ 0
 VDD_HIGH_IN
 Text Label 4950 6100 0    50   ~ 0
@@ -1777,4 +1775,6 @@ Text Label 2825 3425 0    50   ~ 0
 POR_BUTTON
 Wire Wire Line
 	2775 3425 3425 3425
+Wire Wire Line
+	7450 4500 8050 4500
 $EndSCHEMATC
