@@ -786,10 +786,6 @@ Wire Wire Line
 	4200 3350 4200 5400
 Wire Wire Line
 	3700 5400 4200 5400
-Text HLabel 5650 1600 2    50   Input ~ 0
-FlexSPI_D0_B
-Text HLabel 5650 1800 2    50   Input ~ 0
-FlexSPI_D1_B
 Text HLabel 5650 2000 2    50   Input ~ 0
 FlexSPI_D2_B
 Text HLabel 5650 2200 2    50   Input ~ 0
@@ -818,4 +814,8 @@ Wire Bus Line
 Connection ~ 2600 4200
 Wire Wire Line
 	2600 4200 2600 3500
+Text HLabel 5650 1600 2    50   Input ~ 0
+SPDIF_IN
+Text HLabel 5650 1800 2    50   Input ~ 0
+SPDIF_OUT
 $EndSCHEMATC
