@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:haathi_cpu-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
@@ -236,23 +237,23 @@ Wire Wire Line
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A7C3889
-P 1200 3050
-F 0 "R?" V 1407 3050 50  0000 C CNN
-F 1 "1.5k 1%" V 1316 3050 50  0000 C CNN
-F 2 "" V 1130 3050 30  0000 C CNN
-F 3 "" H 1200 3050 30  0000 C CNN
-	1    1200 3050
+P 1150 3050
+F 0 "R?" V 1357 3050 50  0000 C CNN
+F 1 "1.5k 1%" V 1266 3050 50  0000 C CNN
+F 2 "" V 1080 3050 30  0000 C CNN
+F 3 "" H 1150 3050 30  0000 C CNN
+	1    1150 3050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5A7C425A
-P 950 3050
-F 0 "#FLG?" H 950 3125 50  0001 C CNN
-F 1 "PWR_FLAG" H 950 3223 50  0000 C CNN
-F 2 "" H 950 3050 50  0001 C CNN
-F 3 "" H 950 3050 50  0001 C CNN
-	1    950  3050
+P 900 3050
+F 0 "#FLG?" H 900 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 3223 50  0000 C CNN
+F 2 "" H 900 3050 50  0001 C CNN
+F 3 "" H 900 3050 50  0001 C CNN
+	1    900  3050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -291,11 +292,8 @@ F 3 "" H 1700 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 4200 1700 4300
-Connection ~ 950  3050
 Wire Wire Line
-	950  3050 1050 3050
-Wire Wire Line
-	800  3050 950  3050
+	800  3050 900  3050
 $Comp
 L power:GND #PWR?
 U 1 1 5A7C79CE
@@ -2225,10 +2223,10 @@ Text HLabel 13825 4525 0    50   Input ~ 0
 I2C1_SCL
 Text HLabel 13825 4625 0    50   Input ~ 0
 I2C1_SDA
-Text HLabel 13825 4725 0    50   Input ~ 0
-SPDIF_OUT
+Text HLabel 13825 4725 0    50   Output ~ 0
+SD_PWREN
 Text HLabel 13825 4825 0    50   Input ~ 0
-SPDIF_IN
+GPIO_AD_B1_03
 Text HLabel 13825 5325 0    50   Input ~ 0
 AUD_INT
 Text HLabel 13825 5425 0    50   Input ~ 0
@@ -3584,6 +3582,38 @@ Text HLabel 13825 5125 0    50   Input ~ 0
 GPIO_AD_B1_06
 Text HLabel 13825 5225 0    50   Input ~ 0
 GPIO_AD_B1_07
+$Comp
+L haathi_mayank:C_NP C?
+U 1 1 5AC009C6
+P 1350 3250
+F 0 "C?" H 1453 3288 40  0000 L CNN
+F 1 "0.1uF" H 1453 3212 40  0000 L CNN
+F 2 "" H 1350 3250 60  0000 C CNN
+F 3 "" H 1350 3250 60  0000 C CNN
+	1    1350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3050 1350 3100
+Connection ~ 1350 3050
+Wire Wire Line
+	1350 3050 1300 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5AC5894C
+P 1350 3450
+F 0 "#PWR?" H 1350 3200 50  0001 C CNN
+F 1 "GND" H 1250 3350 50  0000 C CNN
+F 2 "" H 1350 3450 50  0001 C CNN
+F 3 "" H 1350 3450 50  0001 C CNN
+	1    1350 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3400 1350 3450
+Connection ~ 900  3050
+Wire Wire Line
+	900  3050 1000 3050
 Wire Bus Line
 	21850 4000 21850 4750
 Wire Bus Line
