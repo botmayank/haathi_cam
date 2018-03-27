@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -784,7 +784,7 @@ L haathi_mayank:R R?
 U 1 1 5A869801
 P 7350 4450
 F 0 "R?" V 7557 4450 50  0000 C CNN
-F 1 "0E" V 7466 4450 50  0000 C CNN
+F 1 "30k" V 7466 4450 50  0000 C CNN
 F 2 "" V 7280 4450 30  0000 C CNN
 F 3 "" H 7350 4450 30  0000 C CNN
 	1    7350 4450
@@ -3576,14 +3576,6 @@ Wire Wire Line
 	13825 5125 14550 5125
 Wire Wire Line
 	13825 5225 14550 5225
-Wire Bus Line
-	21850 4000 21850 4750
-Wire Bus Line
-	21100 950  21100 1750
-Wire Bus Line
-	21900 1900 21900 3350
-Wire Bus Line
-	9425 8000 9425 9800
 Text HLabel 13825 4925 0    50   Input ~ 0
 GPIO_AD_B1_04
 Text HLabel 13825 5025 0    50   Input ~ 0
@@ -3592,4 +3584,12 @@ Text HLabel 13825 5125 0    50   Input ~ 0
 GPIO_AD_B1_06
 Text HLabel 13825 5225 0    50   Input ~ 0
 GPIO_AD_B1_07
+Wire Bus Line
+	21850 4000 21850 4750
+Wire Bus Line
+	21100 950  21100 1750
+Wire Bus Line
+	21900 1900 21900 3350
+Wire Bus Line
+	9425 8000 9425 9800
 $EndSCHEMATC
