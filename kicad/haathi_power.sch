@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -1364,40 +1364,6 @@ Wire Wire Line
 NoConn ~ 7450 4700
 Text Notes 7550 4750 0    50   ~ 0
 OFF
-$Comp
-L haathi_mayank:APX811 U?
-U 1 1 5A8B233D
-P 2425 3325
-F 0 "U?" H 2400 3640 50  0000 C CNN
-F 1 "APX811" H 2400 3549 50  0000 C CNN
-F 2 "" H 2275 3225 50  0001 C CNN
-F 3 "" H 2275 3225 50  0001 C CNN
-	1    2425 3325
-	1    0    0    -1  
-$EndComp
-Text HLabel 3425 3425 2    50   Input ~ 0
-POR_BUTTON
-Text HLabel 1275 3425 0    50   Input ~ 0
-MCU_RESET_N
-Wire Wire Line
-	2775 3275 2925 3275
-$Comp
-L power:GND #PWR?
-U 1 1 5A92FBAD
-P 1925 3525
-F 0 "#PWR?" H 1925 3275 50  0001 C CNN
-F 1 "GND" H 1930 3352 50  0000 C CNN
-F 2 "" H 1925 3525 50  0001 C CNN
-F 3 "" H 1925 3525 50  0001 C CNN
-	1    1925 3525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2025 3275 1925 3275
-Wire Wire Line
-	1925 3275 1925 3525
-Text Notes 2675 2925 2    50   ~ 0
-Power Monitoring and Reset
 Text Label 6950 4600 2    50   ~ 0
 V_INPUT
 $Comp
@@ -1679,17 +1645,6 @@ F 3 "" H 6250 1250 50  0001 C CNN
 $EndComp
 $Comp
 L power:+3V3 #PWR?
-U 1 1 5A9D23A7
-P 2925 3275
-F 0 "#PWR?" H 2925 3125 50  0001 C CNN
-F 1 "+3V3" H 2940 3448 50  0000 C CNN
-F 2 "" H 2925 3275 50  0001 C CNN
-F 3 "" H 2925 3275 50  0001 C CNN
-	1    2925 3275
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
 U 1 1 5A9D2AD9
 P 5800 1100
 F 0 "#PWR?" H 5800 950 50  0001 C CNN
@@ -1766,14 +1721,6 @@ Text Label 1550 6850 0    50   ~ 0
 VDD_HIGH_CAP
 Text Label 1575 4600 0    50   ~ 0
 DCDC_IN
-Wire Wire Line
-	1275 3425 2025 3425
-Text Label 1325 3425 0    50   ~ 0
-MCU_RESET_N
-Text Label 2825 3425 0    50   ~ 0
-POR_BUTTON
-Wire Wire Line
-	2775 3425 3425 3425
 Wire Wire Line
 	7450 4500 8050 4500
 Text Notes 10050 1450 0    50   ~ 0
