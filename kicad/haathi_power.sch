@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -165,8 +166,6 @@ Wire Wire Line
 Connection ~ 2000 1500
 Wire Wire Line
 	2000 1850 2000 2150
-Wire Wire Line
-	2000 2150 2100 2150
 Connection ~ 2400 2150
 Wire Wire Line
 	2400 2150 2400 2200
@@ -373,8 +372,6 @@ Wire Wire Line
 	6800 1600 6800 1250
 Connection ~ 6800 1250
 Wire Wire Line
-	6800 1250 6650 1250
-Wire Wire Line
 	6950 1900 6800 1900
 Wire Wire Line
 	6800 1900 6800 1600
@@ -410,7 +407,6 @@ F 3 "" H 6650 1250 50  0001 C CNN
 	1    6650 1250
 	-1   0    0    1   
 $EndComp
-Connection ~ 6650 1250
 Text HLabel 7700 1250 2    50   Input ~ 0
 DCDC_IN
 Text HLabel 7700 1600 2    50   Input ~ 0
@@ -887,8 +883,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 7200 3800 7200
 Connection ~ 3800 7200
-Wire Wire Line
-	3800 7200 4000 7200
 Connection ~ 4200 7200
 Wire Wire Line
 	4200 7200 4600 7200
@@ -909,9 +903,6 @@ F 3 "" H 4000 7200 50  0001 C CNN
 	1    4000 7200
 	1    0    0    -1  
 $EndComp
-Connection ~ 4000 7200
-Wire Wire Line
-	4000 7200 4200 7200
 Text HLabel 8050 4500 2    50   Input ~ 0
 5V_USB_OTG
 Text Label 950  1500 2    50   ~ 0
@@ -1030,9 +1021,6 @@ F 3 "" H 2100 2150 50  0001 C CNN
 	1    2100 2150
 	1    0    0    1   
 $EndComp
-Connection ~ 2100 2150
-Wire Wire Line
-	2100 2150 2400 2150
 Wire Wire Line
 	1550 1800 1550 2150
 Wire Wire Line
@@ -1276,7 +1264,6 @@ Wire Wire Line
 	9950 2150 9950 2500
 Wire Wire Line
 	10250 2350 10250 2500
-Connection ~ 10250 2500
 $Comp
 L power:GND #PWR?
 U 1 1 5A7FB66D
@@ -1448,8 +1435,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 1100 6450 1250
 Connection ~ 6450 1250
-Wire Wire Line
-	6450 1250 6650 1250
 $Comp
 L haathi_mayank:Conn_01x02 J?
 U 1 1 5A8106D5
@@ -1490,16 +1475,6 @@ Wire Wire Line
 	4300 700  2400 700 
 Text Label 5250 1100 2    50   ~ 0
 VCC_3V3
-Wire Wire Line
-	5800 1100 5650 1100
-Connection ~ 5650 1100
-Wire Wire Line
-	5650 1100 5350 1100
-Wire Wire Line
-	1150 1500 1050 1500
-Connection ~ 1050 1500
-Wire Wire Line
-	1050 1500 950  1500
 Wire Wire Line
 	2000 1500 1550 1500
 $Comp
@@ -1627,11 +1602,6 @@ Wire Wire Line
 	9575 5350 9575 5300
 Text Label 9825 1100 0    50   ~ 0
 VDD_SNVS_IN
-Connection ~ 10400 1100
-Wire Wire Line
-	10400 1100 10450 1100
-Wire Wire Line
-	9750 1100 10400 1100
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5A9D0CFB
@@ -1725,4 +1695,16 @@ Wire Wire Line
 	7450 4500 8050 4500
 Text Notes 10050 1450 0    50   ~ 0
 Add silk note warning\nto not put coin cell other\nway around
+Wire Wire Line
+	2000 2150 2400 2150
+Wire Wire Line
+	6450 1250 6800 1250
+Wire Wire Line
+	3800 7200 4200 7200
+Wire Wire Line
+	5350 1100 5800 1100
+Wire Wire Line
+	950  1500 1150 1500
+Wire Wire Line
+	9750 1100 10450 1100
 $EndSCHEMATC
