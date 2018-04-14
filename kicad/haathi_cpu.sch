@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi_cpu-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -248,7 +248,7 @@ F 3 "" H 900 2400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2300 3900 2300 3050
+	2300 3900 2300 3250
 Connection ~ 2300 3050
 Wire Wire Line
 	2300 3050 1850 3050
@@ -3305,17 +3305,6 @@ Text Notes 4500 10950 0    100  ~ 0
 Boot Configuration\n
 $Comp
 L power:+3V3 #PWR?
-U 1 1 5A9B411A
-P 10350 2550
-F 0 "#PWR?" H 10350 2400 50  0001 C CNN
-F 1 "+3V3" H 10365 2723 50  0000 C CNN
-F 2 "" H 10350 2550 50  0001 C CNN
-F 3 "" H 10350 2550 50  0001 C CNN
-	1    10350 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
 U 1 1 5A9B420A
 P 900 2200
 F 0 "#PWR?" H 900 2050 50  0001 C CNN
@@ -3611,6 +3600,14 @@ Wire Wire Line
 	1100 3900 1350 3900
 Wire Wire Line
 	2600 2400 3050 2400
+Text Notes 1200 4100 0    50   ~ 0
+Power Monitoring and Reset
+Text Notes 950  2600 0    50   ~ 0
+Replace by 0E if \nRC isn't needed
+Text HLabel 2250 3250 0    50   Input ~ 0
+MCU_RESET_N
+Wire Wire Line
+	2250 3250 2300 3250
 Wire Bus Line
 	21850 4000 21850 4750
 Wire Bus Line
@@ -3619,8 +3616,9 @@ Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
 	9425 8000 9425 9800
-Text Notes 1200 4100 0    50   ~ 0
-Power Monitoring and Reset
-Text Notes 950  2600 0    50   ~ 0
-Replace by 0E if \nRC isn't needed
+Connection ~ 2300 3250
+Wire Wire Line
+	2300 3250 2300 3050
+Text HLabel 10350 2550 2    50   Input ~ 0
+DCDC_IN
 $EndSCHEMATC
