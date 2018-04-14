@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi_sdram-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -302,12 +302,6 @@ Wire Bus Line
 	3825 2200 4000 2200
 Text Label 8000 2300 2    50   ~ 0
 SD_RAM_3V3
-Wire Wire Line
-	975  900  1575 900 
-Text HLabel 975  900  0    50   Input ~ 0
-DCDC_IN
-Text Label 1075 900  0    50   ~ 0
-DCDC_IN
 $Comp
 L haathi:R R?
 U 1 1 5AA7F608
@@ -543,8 +537,6 @@ F 4 "mfr_pn" H 11050 3150 50  0001 C CNN "manf#"
 	1    11050 3150
 	1    0    0    -1  
 $EndComp
-Text Notes 575  1025 0    40   ~ 0
-150mA @ 3V3
 $Comp
 L haathi:R R?
 U 1 1 5AACF89B
@@ -572,6 +564,41 @@ Wire Notes Line
 	11175 3775 11175 3700
 Text Notes 10075 3900 0    40   ~ 0
 One Capacitor for each\npower pin pair
+Text HLabel 4100 3700 0    50   Input ~ 0
+SEMC_BA0
+Text HLabel 4100 3800 0    50   Input ~ 0
+SEMC_BA1
+Text HLabel 4100 4000 0    50   Input ~ 0
+SEMC_RAS
+Text HLabel 4100 4100 0    50   Input ~ 0
+SEMC_CAS
+Text HLabel 4100 4200 0    50   Input ~ 0
+SEMC_WE
+Text HLabel 4100 4300 0    50   Input ~ 0
+SEMC_CS0
+Text HLabel 4100 4500 0    50   Input ~ 0
+SEMC_DM0
+Text HLabel 4100 4600 0    50   Input ~ 0
+SEMC_DM1
+Text HLabel 4100 4800 0    50   Input ~ 0
+SEMC_CLK
+Text HLabel 4100 4900 0    50   Input ~ 0
+SEMC_CKE
+$Comp
+L haathi_mayank:+3V3 #PWR?
+U 1 1 5AD204E9
+P 1400 875
+F 0 "#PWR?" H 1400 725 50  0001 C CNN
+F 1 "+3V3" H 1415 1048 50  0000 C CNN
+F 2 "" H 1400 875 50  0001 C CNN
+F 3 "" H 1400 875 50  0001 C CNN
+	1    1400 875 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 875  1400 900 
+Wire Wire Line
+	1400 900  1575 900 
 Wire Bus Line
 	8100 3200 8100 3900
 Wire Bus Line
