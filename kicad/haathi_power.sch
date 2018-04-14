@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi_power-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -300,7 +300,7 @@ F 3 "" H 7100 1250 30  0000 C CNN
 $EndComp
 $Comp
 L haathi_mayank:R R?
-U 1 1 5A6ED45D
+U 1 1 5A6ED4CD
 P 7100 1600
 F 0 "R?" H 7170 1646 50  0000 L CNN
 F 1 "0E" H 7170 1555 50  0000 L CNN
@@ -311,7 +311,7 @@ F 3 "" H 7100 1600 30  0000 C CNN
 $EndComp
 $Comp
 L haathi_mayank:R R?
-U 1 1 5A6ED497
+U 1 1 5A6ED6D7
 P 7100 1900
 F 0 "R?" H 7170 1946 50  0000 L CNN
 F 1 "0E" H 7170 1855 50  0000 L CNN
@@ -322,7 +322,7 @@ F 3 "" H 7100 1900 30  0000 C CNN
 $EndComp
 $Comp
 L haathi_mayank:R R?
-U 1 1 5A6ED4CD
+U 1 1 5A6ED735
 P 7100 2200
 F 0 "R?" H 7170 2246 50  0000 L CNN
 F 1 "0E" H 7170 2155 50  0000 L CNN
@@ -333,44 +333,20 @@ F 3 "" H 7100 2200 30  0000 C CNN
 $EndComp
 $Comp
 L haathi_mayank:R R?
-U 1 1 5A6ED6D7
-P 7100 2500
-F 0 "R?" H 7170 2546 50  0000 L CNN
-F 1 "0E" H 7170 2455 50  0000 L CNN
-F 2 "" V 7030 2500 30  0000 C CNN
-F 3 "" H 7100 2500 30  0000 C CNN
-	1    7100 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L haathi_mayank:R R?
-U 1 1 5A6ED735
-P 7100 2800
-F 0 "R?" H 7170 2846 50  0000 L CNN
-F 1 "0E" H 7170 2755 50  0000 L CNN
-F 2 "" V 7030 2800 30  0000 C CNN
-F 3 "" H 7100 2800 30  0000 C CNN
-	1    7100 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L haathi_mayank:R R?
 U 1 1 5A6ED769
-P 7100 3050
-F 0 "R?" H 7170 3096 50  0000 L CNN
-F 1 "0E" H 7170 3005 50  0000 L CNN
-F 2 "" V 7030 3050 30  0000 C CNN
-F 3 "" H 7100 3050 30  0000 C CNN
-	1    7100 3050
+P 7100 2450
+F 0 "R?" H 7170 2496 50  0000 L CNN
+F 1 "0E" H 7170 2405 50  0000 L CNN
+F 2 "" V 7030 2450 30  0000 C CNN
+F 3 "" H 7100 2450 30  0000 C CNN
+	1    7100 2450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6950 1250 6800 1250
+Connection ~ 6800 1250
 Wire Wire Line
 	6950 1600 6800 1600
-Wire Wire Line
-	6800 1600 6800 1250
-Connection ~ 6800 1250
 Wire Wire Line
 	6950 1900 6800 1900
 Wire Wire Line
@@ -382,20 +358,10 @@ Wire Wire Line
 	6800 2200 6800 1900
 Connection ~ 6800 1900
 Wire Wire Line
-	6950 2500 6800 2500
+	6950 2450 6800 2450
 Wire Wire Line
-	6800 2500 6800 2200
+	6800 2450 6800 2200
 Connection ~ 6800 2200
-Wire Wire Line
-	6950 2800 6800 2800
-Wire Wire Line
-	6800 2800 6800 2500
-Connection ~ 6800 2500
-Wire Wire Line
-	6950 3050 6800 3050
-Wire Wire Line
-	6800 3050 6800 2800
-Connection ~ 6800 2800
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5A6FEDB5
@@ -410,16 +376,12 @@ $EndComp
 Text HLabel 7700 1250 2    50   Input ~ 0
 DCDC_IN
 Text HLabel 7700 1600 2    50   Input ~ 0
-NVCC_SD0
-Text HLabel 7700 1900 2    50   Input ~ 0
-NVCC_SD1
-Text HLabel 7700 2200 2    50   Input ~ 0
 NVCC_EMC
-Text HLabel 7700 2500 2    50   Input ~ 0
+Text HLabel 7700 1900 2    50   Input ~ 0
 NVCC_GPIO
-Text HLabel 7875 2800 2    50   Input ~ 0
+Text HLabel 7875 2200 2    50   Input ~ 0
 VDDA_ADC_3P3
-Text HLabel 7875 3050 2    50   Input ~ 0
+Text HLabel 7875 2450 2    50   Input ~ 0
 VDD_HIGH_IN
 Text HLabel 1300 4600 0    50   Input ~ 0
 DCDC_IN
@@ -1630,28 +1592,20 @@ Wire Wire Line
 	7250 1600 7700 1600
 Wire Wire Line
 	7250 1900 7700 1900
-Wire Wire Line
-	7250 2200 7700 2200
-Wire Wire Line
-	7250 2500 7700 2500
 Text Label 7325 1250 0    50   ~ 0
 DCDC_IN
-Text Label 7300 1600 0    50   ~ 0
-NVCC_SD0
-Text Label 7300 1900 0    50   ~ 0
-NVCC_SD1
-Text Label 7275 2200 0    50   ~ 0
+Text Label 7275 1600 0    50   ~ 0
 NVCC_EMC
-Text Label 7275 2500 0    50   ~ 0
+Text Label 7275 1900 0    50   ~ 0
 NVCC_GPIO
-Text Label 7250 2800 0    50   ~ 0
+Text Label 7250 2200 0    50   ~ 0
 VDDA_ADC_3P3
-Text Label 7275 3050 0    50   ~ 0
+Text Label 7275 2450 0    50   ~ 0
 VDD_HIGH_IN
 Wire Wire Line
-	7250 2800 7875 2800
+	7250 2200 7875 2200
 Wire Wire Line
-	7250 3050 7875 3050
+	7250 2450 7875 2450
 Wire Wire Line
 	4500 4600 5000 4600
 Text Label 4600 4600 0    50   ~ 0
@@ -1696,15 +1650,35 @@ Wire Wire Line
 Text Notes 10050 1450 0    50   ~ 0
 Add silk note warning\nto not put coin cell other\nway around
 Wire Wire Line
-	2000 2150 2400 2150
+	2000 2150 2100 2150
 Wire Wire Line
-	6450 1250 6800 1250
+	6450 1250 6650 1250
 Wire Wire Line
-	3800 7200 4200 7200
+	3800 7200 4000 7200
 Wire Wire Line
-	5350 1100 5800 1100
+	5350 1100 5650 1100
 Wire Wire Line
-	950  1500 1150 1500
+	950  1500 1050 1500
 Wire Wire Line
-	9750 1100 10450 1100
+	9750 1100 10400 1100
+Connection ~ 10400 1100
+Wire Wire Line
+	10400 1100 10450 1100
+Connection ~ 1050 1500
+Wire Wire Line
+	1050 1500 1150 1500
+Connection ~ 2100 2150
+Wire Wire Line
+	2100 2150 2400 2150
+Connection ~ 5650 1100
+Wire Wire Line
+	5650 1100 5800 1100
+Connection ~ 6650 1250
+Wire Wire Line
+	6650 1250 6800 1250
+Connection ~ 4000 7200
+Wire Wire Line
+	4000 7200 4200 7200
+Wire Wire Line
+	6800 1250 6800 1600
 $EndSCHEMATC
