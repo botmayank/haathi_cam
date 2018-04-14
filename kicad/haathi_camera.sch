@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -25,34 +24,6 @@ F 3 "~" H 5850 2300 50  0001 C CNN
 	1    5850 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5650 2000 5400 2000
-Wire Wire Line
-	5650 2100 5400 2100
-Wire Wire Line
-	5650 2200 5400 2200
-Wire Wire Line
-	5650 2300 5400 2300
-Wire Wire Line
-	5650 2400 5400 2400
-Wire Wire Line
-	5650 2500 5400 2500
-Wire Wire Line
-	5650 2600 5400 2600
-Wire Wire Line
-	6150 2000 6400 2000
-Wire Wire Line
-	6150 2100 6400 2100
-Wire Wire Line
-	6150 2200 6400 2200
-Wire Wire Line
-	6150 2300 6400 2300
-Wire Wire Line
-	6150 2400 6400 2400
-Wire Wire Line
-	6150 2500 6400 2500
-Wire Wire Line
-	6150 2600 6400 2600
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5A866259
@@ -67,20 +38,16 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5A86664D
-P 7050 1900
-F 0 "#PWR?" H 7050 1650 50  0001 C CNN
-F 1 "GND" H 7055 1727 50  0000 C CNN
-F 2 "" H 7050 1900 50  0001 C CNN
-F 3 "" H 7050 1900 50  0001 C CNN
-	1    7050 1900
+P 7350 1900
+F 0 "#PWR?" H 7350 1650 50  0001 C CNN
+F 1 "GND" H 7355 1727 50  0000 C CNN
+F 2 "" H 7350 1900 50  0001 C CNN
+F 3 "" H 7350 1900 50  0001 C CNN
+	1    7350 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 1900 7050 1900
-Text HLabel 6400 2000 2    50   Input ~ 0
-CSI_I2C_SDA
-Text HLabel 5400 2000 0    50   Input ~ 0
-CSI_I2C_SCL
+	6150 1900 7350 1900
 Wire Wire Line
 	5650 1900 5150 1900
 Wire Wire Line
@@ -88,36 +55,6 @@ Wire Wire Line
 Connection ~ 5150 1700
 Wire Wire Line
 	5150 1700 5150 1650
-Text HLabel 5400 2100 0    50   Input ~ 0
-CSI_VSYNC
-Text HLabel 6400 2100 2    50   Input ~ 0
-CSI_HSYNC
-Text HLabel 5400 2200 0    50   Input ~ 0
-CSI_PCLK
-Text HLabel 6400 2200 2    50   Input ~ 0
-CSI_XCLK
-Text HLabel 5400 2400 0    50   Input ~ 0
-CSI_D7
-Text HLabel 5400 2500 0    50   Input ~ 0
-CSI_D5
-Text HLabel 5400 2600 0    50   Input ~ 0
-CSI_D3
-Text HLabel 5400 2700 0    50   Input ~ 0
-CSI_D1
-Text HLabel 6400 2400 2    50   Input ~ 0
-CSI_D6
-Text HLabel 6400 2500 2    50   Input ~ 0
-CSI_D4
-Text HLabel 6400 2600 2    50   Input ~ 0
-CSI_D2
-Text HLabel 6400 2700 2    50   Input ~ 0
-CSI_D0
-Text HLabel 5400 2800 0    50   Input ~ 0
-CSI_GIO_3
-Text HLabel 6400 2800 2    50   Input ~ 0
-CSI_GIO_2
-Text HLabel 5550 3650 0    50   Input ~ 0
-CSI_I2C_SCL
 Text HLabel 6250 3650 2    50   Input ~ 0
 I2C1_SCL
 $Comp
@@ -149,11 +86,7 @@ Wire Wire Line
 Connection ~ 5850 3250
 Wire Wire Line
 	5850 3250 5850 3350
-Wire Wire Line
-	5550 3650 5850 3650
 Connection ~ 5850 3650
-Text HLabel 5550 4500 0    50   Input ~ 0
-CSI_I2C_SDA
 Text HLabel 6250 4500 2    50   Input ~ 0
 I2C1_SDA
 $Comp
@@ -185,41 +118,7 @@ Wire Wire Line
 Connection ~ 5850 4100
 Wire Wire Line
 	5850 4100 5850 4200
-Wire Wire Line
-	5550 4500 5850 4500
 Connection ~ 5850 4500
-Text HLabel 8100 1550 0    50   Input ~ 0
-CSI_VSYNC
-Text HLabel 8100 1650 0    50   Input ~ 0
-CSI_HSYNC
-Text HLabel 8100 1300 0    50   Input ~ 0
-CSI_PCLK
-Text HLabel 8100 2400 0    50   Input ~ 0
-CSI_D7
-Text HLabel 8100 2600 0    50   Input ~ 0
-CSI_D5
-Text HLabel 8100 2800 0    50   Input ~ 0
-CSI_D3
-Text HLabel 8100 3000 0    50   Input ~ 0
-CSI_D1
-Text HLabel 8100 3500 0    50   Input ~ 0
-CSI_GIO_3
-Text HLabel 8100 3800 0    50   Input ~ 0
-CSI_GIO_1
-Text HLabel 8100 1400 0    50   Input ~ 0
-CSI_XCLK
-Text HLabel 8100 2500 0    50   Input ~ 0
-CSI_D6
-Text HLabel 8100 2700 0    50   Input ~ 0
-CSI_D4
-Text HLabel 8100 2900 0    50   Input ~ 0
-CSI_D2
-Text HLabel 8100 3100 0    50   Input ~ 0
-CSI_D0
-Text HLabel 8100 3600 0    50   Input ~ 0
-CSI_GIO_2
-Text HLabel 8100 3900 0    50   Input ~ 0
-CSI_GIO_0
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A8692BD
@@ -232,7 +131,7 @@ F 3 "" H 8600 1550 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8100 1550 8450 1550
+	8000 1550 8450 1550
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A869870
@@ -399,11 +298,11 @@ F 3 "" H 8600 3900 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8100 1650 8450 1650
+	8000 1650 8450 1650
 Wire Wire Line
-	8100 1300 8450 1300
+	8000 1300 8450 1300
 Wire Wire Line
-	8100 1400 8450 1400
+	8000 1400 8450 1400
 Wire Wire Line
 	8100 2400 8450 2400
 Wire Wire Line
@@ -421,13 +320,9 @@ Wire Wire Line
 Wire Wire Line
 	8100 3100 8450 3100
 Wire Wire Line
-	8100 3500 8450 3500
+	8000 3800 8450 3800
 Wire Wire Line
-	8100 3600 8450 3600
-Wire Wire Line
-	8100 3800 8450 3800
-Wire Wire Line
-	8100 3900 8450 3900
+	8000 3900 8450 3900
 Wire Wire Line
 	8750 1550 9100 1550
 Wire Wire Line
@@ -484,10 +379,6 @@ Text HLabel 9150 3000 2    50   Input ~ 0
 GPIO_B1_11
 Text HLabel 9150 3100 2    50   Input ~ 0
 GPIO_B1_10
-Text HLabel 8100 2300 0    50   Input ~ 0
-CSI_D8
-Text HLabel 8100 2200 0    50   Input ~ 0
-CSI_D9
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A870B35
@@ -528,10 +419,6 @@ Text HLabel 9150 2100 2    50   Input ~ 0
 GPIO_B1_09
 Text Notes 8150 1000 0    98   ~ 0
 CSI Pin Mappings\n
-Text HLabel 2250 5800 0    50   Input ~ 0
-CSI_RESET
-Text HLabel 3150 5800 2    50   Input ~ 0
-CSI_GIO_1
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A882679
@@ -543,14 +430,10 @@ F 3 "" H 2900 5800 30  0000 C CNN
 	1    2900 5800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3050 5800 3150 5800
 Text Notes 1850 1050 0    98   ~ 0
 Camera FRC Connector
 Text Notes 4800 1000 0    98   ~ 0
 Arducam Camera Connector
-Wire Wire Line
-	2250 5800 2400 5800
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A8B8661
@@ -583,18 +466,6 @@ Wire Wire Line
 Connection ~ 2400 5450
 Wire Wire Line
 	2400 5450 2400 5500
-Wire Wire Line
-	5400 2700 5650 2700
-Wire Wire Line
-	6150 2700 6400 2700
-Wire Wire Line
-	5400 2800 5650 2800
-Wire Wire Line
-	6150 2800 6400 2800
-Text HLabel 5400 2300 0    50   Input ~ 0
-CSI_D9
-Text HLabel 6400 2300 2    50   Input ~ 0
-CSI_D8
 $Comp
 L haathi_mayank:Conn_01x30 J?
 U 1 1 5A8A94B7
@@ -606,50 +477,6 @@ F 3 "~" H 3100 2750 50  0001 C CNN
 	1    3100 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 1450 2550 1450
-Wire Wire Line
-	2900 1550 2550 1550
-Wire Wire Line
-	2900 1650 2550 1650
-Wire Wire Line
-	2900 1750 2550 1750
-Wire Wire Line
-	2900 1850 2550 1850
-Wire Wire Line
-	2900 1950 2550 1950
-Wire Wire Line
-	2900 2050 2550 2050
-Wire Wire Line
-	2900 2150 2550 2150
-Wire Wire Line
-	2900 2250 2550 2250
-Wire Wire Line
-	2900 2350 2550 2350
-Wire Wire Line
-	2900 2450 2550 2450
-Wire Wire Line
-	2900 2650 2550 2650
-Wire Wire Line
-	2900 2750 2550 2750
-Wire Wire Line
-	2900 2850 2550 2850
-Wire Wire Line
-	2900 2950 2550 2950
-Wire Wire Line
-	2900 3050 2550 3050
-Wire Wire Line
-	2900 3150 2550 3150
-Wire Wire Line
-	2900 3250 2550 3250
-Wire Wire Line
-	2900 3350 2550 3350
-Wire Wire Line
-	2900 3450 2550 3450
-Wire Wire Line
-	2900 3550 2550 3550
-Wire Wire Line
-	2900 3850 2550 3850
 Wire Wire Line
 	2900 3950 2550 3950
 Wire Wire Line
@@ -671,26 +498,6 @@ F 3 "" H 1950 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1950 1350 2900 1350
-Text HLabel 2700 4800 2    50   Input ~ 0
-CSI_GIO_3
-Text HLabel 2700 4950 2    50   Input ~ 0
-CSI_GIO_2
-Text HLabel 2550 1450 0    50   Input ~ 0
-CSI_FLASH
-Text HLabel 2550 1550 0    50   Input ~ 0
-CSI_TRIG
-Text HLabel 2300 4800 0    50   Input ~ 0
-CSI_FLASH
-Text HLabel 2300 4950 0    50   Input ~ 0
-CSI_TRIG
-Wire Wire Line
-	2300 4800 2700 4800
-Wire Wire Line
-	2300 4950 2700 4950
-Text HLabel 2550 1650 0    50   Input ~ 0
-CSI_VSYNC
-Text HLabel 2550 1750 0    50   Input ~ 0
-CSI_HSYNC
 Text HLabel 9150 2000 2    50   Input ~ 0
 GPIO_B1_08
 Text HLabel 9150 3500 2    50   Input ~ 0
@@ -731,48 +538,8 @@ Wire Wire Line
 	8450 2000 8100 2000
 Wire Wire Line
 	8450 2100 8100 2100
-Text HLabel 8100 2000 0    50   Input ~ 0
-CSI_D11
-Text HLabel 8100 2100 0    50   Input ~ 0
-CSI_D10
-Text HLabel 2550 1850 0    50   Input ~ 0
-CSI_D11
-Text HLabel 2550 1950 0    50   Input ~ 0
-CSI_D10
-Text HLabel 2550 2050 0    50   Input ~ 0
-CSI_D9
-Text HLabel 2550 2150 0    50   Input ~ 0
-CSI_D8
-Text HLabel 2550 2250 0    50   Input ~ 0
-CSI_D7
-Text HLabel 2550 2350 0    50   Input ~ 0
-CSI_D6
-Text HLabel 2550 2450 0    50   Input ~ 0
-CSI_D5
-Text HLabel 2550 2650 0    50   Input ~ 0
-CSI_D4
 Wire Wire Line
 	1950 2550 2900 2550
-Text HLabel 2550 2750 0    50   Input ~ 0
-CSI_D3
-Text HLabel 2550 2850 0    50   Input ~ 0
-CSI_D2
-Text HLabel 2550 2950 0    50   Input ~ 0
-CSI_D1
-Text HLabel 2550 3050 0    50   Input ~ 0
-CSI_D0
-Text HLabel 2550 3150 0    50   Input ~ 0
-CSI_XCLK
-Text HLabel 2550 3250 0    50   Input ~ 0
-CSI_PCLK
-Text HLabel 2550 3350 0    50   Input ~ 0
-CSI_I2C_SCL
-Text HLabel 2550 3450 0    50   Input ~ 0
-CSI_I2C_SDA
-Text HLabel 2550 3550 0    50   Input ~ 0
-CSI_RESET
-Text HLabel 2550 3850 0    50   Input ~ 0
-CSI_STANDBY
 Wire Wire Line
 	2550 4250 2550 4150
 Connection ~ 2550 4050
@@ -815,10 +582,6 @@ Wire Wire Line
 Connection ~ 1950 3750
 Wire Wire Line
 	1950 3750 1950 4250
-Text HLabel 2250 6000 0    50   Input ~ 0
-CSI_STANDBY
-Text HLabel 3150 6000 2    50   Input ~ 0
-CSI_GIO_0
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A95922F
@@ -830,10 +593,6 @@ F 3 "" H 2900 6000 30  0000 C CNN
 	1    2900 6000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3050 6000 3150 6000
-Wire Wire Line
-	2250 6000 2400 6000
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A959238
@@ -916,4 +675,236 @@ F 3 "" H 2400 5400 50  0001 C CNN
 	1    2400 5400
 	1    0    0    -1  
 $EndComp
+Text Label 8000 1300 0    50   ~ 0
+CSI_PCLK
+Text Label 8000 1400 0    50   ~ 0
+CSI_XCLK
+Text Label 8000 1550 0    50   ~ 0
+CSI_VSYNC
+Text Label 8000 1650 0    50   ~ 0
+CSI_HSYNC
+Text Label 8100 2000 0    50   ~ 0
+CSI_D11
+Text Label 8100 2100 0    50   ~ 0
+CSI_D10
+Text Label 8100 2200 0    50   ~ 0
+CSI_D9
+Text Label 8100 2300 0    50   ~ 0
+CSI_D8
+Text Label 8100 2400 0    50   ~ 0
+CSI_D7
+Text Label 8100 2500 0    50   ~ 0
+CSI_D6
+Text Label 8100 2600 0    50   ~ 0
+CSI_D5
+Text Label 8100 2700 0    50   ~ 0
+CSI_D4
+Text Label 8100 2800 0    50   ~ 0
+CSI_D3
+Text Label 8100 2900 0    50   ~ 0
+CSI_D2
+Text Label 8100 3000 0    50   ~ 0
+CSI_D1
+Text Label 8100 3100 0    50   ~ 0
+CSI_D0
+Text Label 8000 3500 0    50   ~ 0
+CSI_GIO_3
+Text Label 8000 3600 0    50   ~ 0
+CSI_GIO_2
+Text Label 8000 3800 0    50   ~ 0
+CSI_GIO_1
+Text Label 8000 3900 0    50   ~ 0
+CSI_GIO_0
+Text Label 5250 3650 0    50   ~ 0
+CSI_I2C_SCL
+Wire Wire Line
+	5250 3650 5850 3650
+Wire Wire Line
+	5250 4500 5850 4500
+Text Label 5250 4500 0    50   ~ 0
+CSI_I2C_SDA
+Wire Wire Line
+	3050 5800 3550 5800
+Wire Wire Line
+	3050 6000 3550 6000
+Text Label 3550 5800 2    50   ~ 0
+CSI_GIO_1
+Text Label 3550 6000 2    50   ~ 0
+CSI_GIO_0
+Wire Wire Line
+	1850 5800 2400 5800
+Wire Wire Line
+	1850 6000 2400 6000
+Text Label 1850 5800 0    50   ~ 0
+CSI_RESET
+Text Label 1850 6000 0    50   ~ 0
+CSI_STANDBY
+Wire Wire Line
+	7550 3500 8450 3500
+Wire Wire Line
+	7550 3600 8450 3600
+Text Label 7550 3500 0    50   ~ 0
+CSI_FLASH
+Text Label 7550 3600 0    50   ~ 0
+CSI_TRIG
+Text Label 5150 2000 0    50   ~ 0
+CSI_I2C_SCL
+Wire Wire Line
+	5150 2000 5650 2000
+Wire Wire Line
+	5150 2100 5650 2100
+Wire Wire Line
+	5150 2200 5650 2200
+Wire Wire Line
+	5150 2300 5650 2300
+Wire Wire Line
+	5150 2400 5650 2400
+Wire Wire Line
+	5150 2500 5650 2500
+Wire Wire Line
+	5150 2600 5650 2600
+Wire Wire Line
+	5150 2700 5650 2700
+Wire Wire Line
+	5150 2800 5650 2800
+Text Label 6650 2000 2    50   ~ 0
+CSI_I2C_SCL
+Wire Wire Line
+	6150 2000 6650 2000
+Wire Wire Line
+	6150 2100 6650 2100
+Wire Wire Line
+	6150 2200 6650 2200
+Wire Wire Line
+	6150 2300 6650 2300
+Wire Wire Line
+	6150 2400 6650 2400
+Wire Wire Line
+	6150 2500 6650 2500
+Wire Wire Line
+	6150 2600 6650 2600
+Wire Wire Line
+	6150 2700 6650 2700
+Wire Wire Line
+	6150 2800 6650 2800
+Text Label 6650 2100 2    50   ~ 0
+CSI_HSYNC
+Text Label 6650 2200 2    50   ~ 0
+CSI_XCLK
+Text Label 6650 2300 2    50   ~ 0
+CSI_D8
+Text Label 6650 2400 2    50   ~ 0
+CSI_D6
+Text Label 6650 2500 2    50   ~ 0
+CSI_D4
+Text Label 6650 2600 2    50   ~ 0
+CSI_D2
+Text Label 6650 2700 2    50   ~ 0
+CSI_D0
+Text Label 5150 2100 0    50   ~ 0
+CSI_VSYNC
+Text Label 5150 2200 0    50   ~ 0
+CSI_PCLK
+Text Label 5150 2300 0    50   ~ 0
+CSI_D9
+Text Label 5150 2400 0    50   ~ 0
+CSI_D7
+Text Label 5150 2500 0    50   ~ 0
+CSI_D5
+Text Label 5150 2600 0    50   ~ 0
+CSI_D3
+Text Label 5150 2700 0    50   ~ 0
+CSI_D1
+Text Label 5150 2800 0    50   ~ 0
+CSI_GIO_3
+Text Label 6650 2800 2    50   ~ 0
+CSI_GIO_2
+Text Label 2450 1450 0    50   ~ 0
+CSI_FLASH
+Wire Wire Line
+	2450 1450 2900 1450
+Wire Wire Line
+	2450 1550 2900 1550
+Wire Wire Line
+	2450 1650 2900 1650
+Wire Wire Line
+	2450 1750 2900 1750
+Wire Wire Line
+	2450 1850 2900 1850
+Wire Wire Line
+	2450 1950 2900 1950
+Wire Wire Line
+	2450 2050 2900 2050
+Wire Wire Line
+	2450 2150 2900 2150
+Wire Wire Line
+	2450 2250 2900 2250
+Wire Wire Line
+	2450 2350 2900 2350
+Wire Wire Line
+	2450 2450 2900 2450
+Text Label 2450 1550 0    50   ~ 0
+CSI_TRIG
+Text Label 2450 1650 0    50   ~ 0
+CSI_VSYNC
+Text Label 2450 1750 0    50   ~ 0
+CSI_HSYNC
+Text Label 2450 1850 0    50   ~ 0
+CSI_D11
+Text Label 2450 1950 0    50   ~ 0
+CSI_D10
+Text Label 2450 2050 0    50   ~ 0
+CSI_D9
+Text Label 2450 2150 0    50   ~ 0
+CSI_D8
+Text Label 2450 2250 0    50   ~ 0
+CSI_D7
+Text Label 2450 2350 0    50   ~ 0
+CSI_D6
+Text Label 2450 2450 0    50   ~ 0
+CSI_D5
+Wire Wire Line
+	2350 2650 2900 2650
+Wire Wire Line
+	2350 2750 2900 2750
+Wire Wire Line
+	2350 2850 2900 2850
+Wire Wire Line
+	2350 2950 2900 2950
+Wire Wire Line
+	2350 3050 2900 3050
+Wire Wire Line
+	2350 3150 2900 3150
+Wire Wire Line
+	2350 3250 2900 3250
+Wire Wire Line
+	2350 3350 2900 3350
+Wire Wire Line
+	2350 3450 2900 3450
+Wire Wire Line
+	2350 3550 2900 3550
+Text Label 2350 2650 0    50   ~ 0
+CSI_D4
+Text Label 2350 2750 0    50   ~ 0
+CSI_D3
+Text Label 2350 2850 0    50   ~ 0
+CSI_D2
+Text Label 2350 2950 0    50   ~ 0
+CSI_D1
+Text Label 2350 3050 0    50   ~ 0
+CSI_D0
+Text Label 2350 3150 0    50   ~ 0
+CSI_XCLK
+Text Label 2350 3250 0    50   ~ 0
+CSI_PCLK
+Text Label 2350 3350 0    50   ~ 0
+CSI_I2C_SCL
+Text Label 2350 3450 0    50   ~ 0
+CSI_I2C_SDA
+Text Label 2350 3550 0    50   ~ 0
+CSI_RESET
+Wire Wire Line
+	2350 3850 2900 3850
+Text Label 2350 3850 0    50   ~ 0
+CSI_STANDBY
 $EndSCHEMATC
