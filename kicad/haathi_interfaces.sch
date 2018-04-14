@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -142,12 +141,6 @@ $EndComp
 Connection ~ 1550 1500
 Wire Wire Line
 	1550 1500 1550 1450
-Text HLabel 1000 2450 0    50   Input ~ 0
-LED_R
-Text HLabel 1000 2550 0    50   Input ~ 0
-LED_G
-Text HLabel 1000 2650 0    50   Input ~ 0
-LED_B
 $Comp
 L haathi_mayank:SW-SPST-M S?
 U 1 1 5A86D4EB
@@ -176,13 +169,9 @@ Wire Wire Line
 	2950 2250 2950 2200
 Wire Wire Line
 	3250 2250 3250 2200
-Wire Wire Line
-	3250 2200 3450 2200
 Connection ~ 3250 2200
 Wire Wire Line
 	3250 1750 3250 1700
-Wire Wire Line
-	3250 1700 3450 1700
 Connection ~ 3250 1700
 Wire Wire Line
 	2950 1700 2700 1700
@@ -206,10 +195,6 @@ F 3 "" H 2700 2400 50  0001 C CNN
 	1    2700 2400
 	1    0    0    -1  
 $EndComp
-Text HLabel 3450 1700 2    50   Input ~ 0
-USER_SW_0
-Text HLabel 3450 2200 2    50   Input ~ 0
-USER_SW_1
 Wire Wire Line
 	8950 1500 9200 1500
 Wire Wire Line
@@ -289,12 +274,6 @@ Wire Wire Line
 	8450 1100 8450 1200
 Text Notes 2850 5650 0    50   ~ 0
 Raspberry Pi compatible Header\n
-Text HLabel 4800 1600 0    50   Input ~ 0
-LED_R
-Text HLabel 4800 1800 0    50   Input ~ 0
-LED_G
-Text HLabel 4800 2000 0    50   Input ~ 0
-LED_B
 Wire Wire Line
 	4800 1600 5100 1600
 Wire Wire Line
@@ -340,14 +319,6 @@ Wire Wire Line
 	5400 1800 5650 1800
 Wire Wire Line
 	5400 2000 5650 2000
-Text HLabel 4800 2300 0    50   Input ~ 0
-USER_SW_1
-Text HLabel 4800 2200 0    50   Input ~ 0
-USER_SW_0
-Wire Wire Line
-	4800 2200 5100 2200
-Wire Wire Line
-	4800 2300 5100 2300
 $Comp
 L haathi_mayank:R R?
 U 1 1 5A85C0CC
@@ -809,8 +780,6 @@ Wire Wire Line
 	7000 3650 7775 3650
 Wire Wire Line
 	2600 4200 3200 4200
-Wire Bus Line
-	8100 3700 8100 5300
 Connection ~ 2600 4200
 Wire Wire Line
 	2600 4200 2600 3500
@@ -818,4 +787,34 @@ Text HLabel 5650 1600 2    50   Input ~ 0
 SPDIF_IN
 Text HLabel 5650 1800 2    50   Input ~ 0
 SPDIF_OUT
+Text Label 4800 1600 0    50   ~ 0
+LED_R
+Text Label 4800 1800 0    50   ~ 0
+LED_G
+Text Label 4800 2000 0    50   ~ 0
+LED_B
+Text Label 4650 2200 0    50   ~ 0
+USER_SW_0
+Wire Wire Line
+	4650 2200 5100 2200
+Wire Wire Line
+	4650 2300 5100 2300
+Text Label 4650 2300 0    50   ~ 0
+USER_SW_1
+Wire Wire Line
+	3250 1700 3700 1700
+Wire Wire Line
+	3250 2200 3700 2200
+Text Label 3700 1700 2    50   ~ 0
+USER_SW_0
+Text Label 3700 2200 2    50   ~ 0
+USER_SW_1
+Text Label 1000 2450 0    50   ~ 0
+LED_R
+Text Label 1000 2550 0    50   ~ 0
+LED_G
+Text Label 1000 2650 0    50   ~ 0
+LED_B
+Wire Bus Line
+	8100 3700 8100 5300
 $EndSCHEMATC
