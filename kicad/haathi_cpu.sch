@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_cpu-cache
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 1
+Sheet 3 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -3608,6 +3608,11 @@ Text HLabel 2250 3250 0    50   Input ~ 0
 MCU_RESET_N
 Wire Wire Line
 	2250 3250 2300 3250
+Connection ~ 2300 3250
+Wire Wire Line
+	2300 3250 2300 3050
+Text HLabel 10350 2550 2    50   Input ~ 0
+DCDC_IN
 Wire Bus Line
 	21850 4000 21850 4750
 Wire Bus Line
@@ -3616,9 +3621,4 @@ Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
 	9425 8000 9425 9800
-Connection ~ 2300 3250
-Wire Wire Line
-	2300 3250 2300 3050
-Text HLabel 10350 2550 2    50   Input ~ 0
-DCDC_IN
 $EndSCHEMATC
