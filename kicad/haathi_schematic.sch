@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 11
+Sheet 1 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -266,7 +266,8 @@ F52 "GPIO_AD_B1_05" I L 12500 4450 50
 F53 "GPIO_AD_B1_06" I L 12500 4550 50 
 F54 "GPIO_AD_B1_07" I L 12500 4650 50 
 F55 "GPIO_B1_15" I R 14550 4550 50 
-F57 "GPIO_AD_B1_03" I R 14550 4650 50 
+F56 "GPIO_AD_B1_03" I R 14550 4650 50 
+F57 "MCU_RESET_N" I L 12500 2050 50 
 $EndSheet
 $Sheet
 S 12500 5075 2050 775 
@@ -1357,4 +1358,8 @@ Text Label 10850 7750 2    50   ~ 0
 GPIO_B1_15
 Wire Wire Line
 	14550 4550 15200 4550
+Wire Wire Line
+	12500 2050 11800 2050
+Text Label 11800 2050 0    50   ~ 0
+MCU_RESET_N
 $EndSCHEMATC

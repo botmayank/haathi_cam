@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 1 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -741,8 +741,6 @@ Text HLabel 4050 4800 2    50   Input ~ 0
 GPIO_AD_B1_05
 Text HLabel 4050 5000 2    50   Input ~ 0
 GPIO_AD_B1_06
-Text HLabel 4050 5200 2    50   Input ~ 0
-GPIO_AD_B1_07
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5AB7B7C5
@@ -840,8 +838,10 @@ Text Label 5650 1600 0    50   ~ 0
 SA1_MCLK
 Text Label 5650 1800 0    50   ~ 0
 AUD_INT
-Wire Bus Line
-	8100 3700 8100 5300
 Text HLabel 5650 2200 2    50   Input ~ 0
 GPIO_AD_B1_05
+Wire Bus Line
+	8100 3700 8100 5300
+Text HLabel 4050 5200 2    50   Input ~ 0
+MCU_RESET_N
 $EndSCHEMATC
