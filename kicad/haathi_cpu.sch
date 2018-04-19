@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
@@ -3739,6 +3738,40 @@ Text Label 7200 14650 0    50   ~ 0
 GPIO_AD_B0_04
 Text Label 7200 14750 0    50   ~ 0
 GPIO_AD_B0_05
+Text HLabel 3650 9400 0    50   Input ~ 0
+USB_OTG1_ID
+Text HLabel 3650 9500 0    50   Input ~ 0
+USB_OTG2_ID
+$Comp
+L haathi_mayank:R R?
+U 1 1 5AE1CD1D
+P 3950 9400
+F 0 "R?" V 4157 9400 50  0000 C CNN
+F 1 "0E_DNP" V 4066 9400 50  0000 C CNN
+F 2 "" V 3880 9400 30  0000 C CNN
+F 3 "" H 3950 9400 30  0000 C CNN
+	1    3950 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5AE1DA1A
+P 3950 9500
+F 0 "R?" V 4157 9500 50  0000 C CNN
+F 1 "0E_DNP" V 4066 9500 50  0000 C CNN
+F 2 "" V 3880 9500 30  0000 C CNN
+F 3 "" H 3950 9500 30  0000 C CNN
+	1    3950 9500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3650 9400 3800 9400
+Wire Wire Line
+	3650 9500 3800 9500
+Wire Wire Line
+	4100 9400 4250 9400
+Wire Wire Line
+	4100 9500 4250 9500
 Wire Bus Line
 	21850 4000 21850 4750
 Wire Bus Line
@@ -3747,4 +3780,8 @@ Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
 	9425 8000 9425 9800
+Text Label 4250 9400 0    50   ~ 0
+GPIO_AD_B0_01
+Text Label 4250 9500 0    50   ~ 0
+GPIO_AD_B0_00
 $EndSCHEMATC

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -731,9 +730,9 @@ Text HLabel 4050 4200 2    50   Input ~ 0
 I2C2_SCL
 Text HLabel 4050 4300 2    50   Input ~ 0
 I2C2_SDA
-Text HLabel 4050 4000 2    50   Input ~ 0
+Text HLabel 4450 4000 2    50   Input ~ 0
 GPIO_AD_B0_00
-Text HLabel 4050 4500 2    50   Input ~ 0
+Text HLabel 4450 4500 2    50   Input ~ 0
 GPIO_AD_B0_01
 Text HLabel 4050 4700 2    50   Input ~ 0
 GPIO_AD_B1_04
@@ -816,6 +815,32 @@ Text Label 1000 2550 0    50   ~ 0
 LED_G
 Text Label 1000 2650 0    50   ~ 0
 LED_B
+$Comp
+L haathi_mayank:R R?
+U 1 1 5B03D6DC
+P 4200 4000
+F 0 "R?" V 4150 4100 50  0000 L CNN
+F 1 "0E" V 4200 3950 50  0000 L CNN
+F 2 "" V 4130 4000 30  0000 C CNN
+F 3 "" H 4200 4000 30  0000 C CNN
+	1    4200 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 4000 4450 4000
+$Comp
+L haathi_mayank:R R?
+U 1 1 5B04A370
+P 4200 4500
+F 0 "R?" V 4150 4600 50  0000 L CNN
+F 1 "0E" V 4200 4450 50  0000 L CNN
+F 2 "" V 4130 4500 30  0000 C CNN
+F 3 "" H 4200 4500 30  0000 C CNN
+	1    4200 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 4500 4600 4500
 Wire Bus Line
 	8100 3700 8100 5300
 $EndSCHEMATC
