@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 9
+Sheet 5 11
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -3407,7 +3407,7 @@ Text Label 3725 8900 0    50   ~ 0
 USB_OTG2_D+
 Text Label 3725 9000 0    50   ~ 0
 USB_OTG2_D-
-Text HLabel 10325 11050 0    50   Input ~ 0
+Text HLabel 10350 11400 0    50   Input ~ 0
 BACKLIGHT_CTL
 Wire Wire Line
 	8500 4900 8500 5100
@@ -3773,6 +3773,13 @@ Wire Wire Line
 	4100 9400 4250 9400
 Wire Wire Line
 	4100 9500 4250 9500
+Text Label 4250 9400 0    50   ~ 0
+GPIO_AD_B0_01
+Text Label 4250 9500 0    50   ~ 0
+GPIO_AD_B0_00
+Text HLabel 10325 11050 0    50   Input ~ 0
+GPIO_B1_15
+NoConn ~ 10350 11400
 Wire Bus Line
 	21850 4000 21850 4750
 Wire Bus Line
@@ -3781,8 +3788,4 @@ Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
 	9425 8000 9425 9800
-Text Label 4250 9400 0    50   ~ 0
-GPIO_AD_B0_01
-Text Label 4250 9500 0    50   ~ 0
-GPIO_AD_B0_00
 $EndSCHEMATC

@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 8 11
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -759,11 +759,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 5400 4200 5400
 Text HLabel 5650 2000 2    50   Input ~ 0
-FlexSPI_D2_B
-Text HLabel 5650 2200 2    50   Input ~ 0
-FlexSPI_D3_B
-Text HLabel 5650 2300 2    50   Input ~ 0
-FlexSPI_CLK_B
+GPIO_B1_15
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5AB7D289
@@ -784,10 +780,8 @@ Wire Wire Line
 Connection ~ 2600 4200
 Wire Wire Line
 	2600 4200 2600 3500
-Text HLabel 5650 1600 2    50   Input ~ 0
-SPDIF_IN
-Text HLabel 5650 1800 2    50   Input ~ 0
-SPDIF_OUT
+Text HLabel 5650 2300 2    50   Input ~ 0
+GPIO_AD_B1_03
 Text Label 4800 1600 0    50   ~ 0
 LED_R
 Text Label 4800 1800 0    50   ~ 0
@@ -842,6 +836,12 @@ Wire Wire Line
 	4350 4500 4600 4500
 Wire Wire Line
 	4350 4000 4600 4000
+Text Label 5650 1600 0    50   ~ 0
+SA1_MCLK
+Text Label 5650 1800 0    50   ~ 0
+AUD_INT
 Wire Bus Line
 	8100 3700 8100 5300
+Text HLabel 5650 2200 2    50   Input ~ 0
+GPIO_AD_B1_05
 $EndSCHEMATC
