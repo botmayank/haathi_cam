@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_cpu-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 5 11
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -2069,7 +2069,7 @@ L haathi_mayank:R R?
 U 1 1 5A942A03
 P 11850 2125
 F 0 "R?" V 11750 2075 50  0000 C CNN
-F 1 "10k" V 11966 2125 50  0000 C CNN
+F 1 "10k_DNP" V 11966 2125 50  0000 C CNN
 F 2 "" V 11780 2125 30  0000 C CNN
 F 3 "" H 11850 2125 30  0000 C CNN
 	1    11850 2125
@@ -3780,6 +3780,25 @@ GPIO_AD_B0_00
 Text HLabel 10325 11050 0    50   Input ~ 0
 GPIO_B1_15
 NoConn ~ 10350 11400
+$Comp
+L haathi_mayank:R R?
+U 1 1 5ADF8395
+P 11850 1650
+F 0 "R?" V 11750 1600 50  0000 C CNN
+F 1 "10k" V 11966 1650 50  0000 C CNN
+F 2 "" V 11780 1650 30  0000 C CNN
+F 3 "" H 11850 1650 30  0000 C CNN
+	1    11850 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 1800 11850 1950
+Text HLabel 11900 1300 2    50   Input ~ 0
+NVCC_GPIO_3V3
+Wire Wire Line
+	11850 1500 11850 1300
+Wire Wire Line
+	11850 1300 11900 1300
 Wire Bus Line
 	21850 4000 21850 4750
 Wire Bus Line
