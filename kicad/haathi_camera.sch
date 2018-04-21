@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 10 11
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -26,17 +26,6 @@ F 3 "~" H 5850 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG017
-U 1 1 5A866259
-P 5150 1700
-F 0 "#FLG017" H 5150 1775 50  0001 C CNN
-F 1 "PWR_FLAG" V 5150 1828 50  0000 L CNN
-F 2 "" H 5150 1700 50  0001 C CNN
-F 3 "" H 5150 1700 50  0001 C CNN
-	1    5150 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0105
 U 1 1 5A86664D
 P 7350 1900
@@ -51,24 +40,8 @@ Wire Wire Line
 	6150 1900 7350 1900
 Wire Wire Line
 	5650 1900 5150 1900
-Wire Wire Line
-	5150 1900 5150 1700
-Connection ~ 5150 1700
-Wire Wire Line
-	5150 1700 5150 1650
 Text HLabel 6250 3650 2    50   Input ~ 0
 I2C1_SCL
-$Comp
-L power:PWR_FLAG #FLG018
-U 1 1 5A86711E
-P 5850 3250
-F 0 "#FLG018" H 5850 3325 50  0001 C CNN
-F 1 "PWR_FLAG" V 5850 3378 50  0000 L CNN
-F 2 "" H 5850 3250 50  0001 C CNN
-F 3 "" H 5850 3250 50  0001 C CNN
-	1    5850 3250
-	0    1    1    0   
-$EndComp
 $Comp
 L haathi_mayank:R R89
 U 1 1 5A867A89
@@ -82,25 +55,9 @@ F 3 "" H 5850 3500 30  0000 C CNN
 $EndComp
 Wire Wire Line
 	5850 3650 6250 3650
-Wire Wire Line
-	5850 3200 5850 3250
-Connection ~ 5850 3250
-Wire Wire Line
-	5850 3250 5850 3350
 Connection ~ 5850 3650
 Text HLabel 6250 4500 2    50   Input ~ 0
 I2C1_SDA
-$Comp
-L power:PWR_FLAG #FLG019
-U 1 1 5A868A88
-P 5850 4100
-F 0 "#FLG019" H 5850 4175 50  0001 C CNN
-F 1 "PWR_FLAG" V 5850 4228 50  0000 L CNN
-F 2 "" H 5850 4100 50  0001 C CNN
-F 3 "" H 5850 4100 50  0001 C CNN
-	1    5850 4100
-	0    1    1    0   
-$EndComp
 $Comp
 L haathi_mayank:R R90
 U 1 1 5A868A94
@@ -114,11 +71,6 @@ F 3 "" H 5850 4350 30  0000 C CNN
 $EndComp
 Wire Wire Line
 	5850 4500 6250 4500
-Wire Wire Line
-	5850 4050 5850 4100
-Connection ~ 5850 4100
-Wire Wire Line
-	5850 4100 5850 4200
 Connection ~ 5850 4500
 $Comp
 L haathi_mayank:R R93
@@ -450,24 +402,6 @@ Connection ~ 2400 5800
 Wire Wire Line
 	2400 5800 2750 5800
 $Comp
-L power:PWR_FLAG #FLG016
-U 1 1 5A8B87D3
-P 2350 5450
-F 0 "#FLG016" H 2350 5525 50  0001 C CNN
-F 1 "PWR_FLAG" V 2350 5578 50  0000 L CNN
-F 2 "" H 2350 5450 50  0001 C CNN
-F 3 "" H 2350 5450 50  0001 C CNN
-	1    2350 5450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2400 5400 2400 5450
-Wire Wire Line
-	2350 5450 2400 5450
-Connection ~ 2400 5450
-Wire Wire Line
-	2400 5450 2400 5500
-$Comp
 L haathi_mayank:Conn_01x30 J11
 U 1 1 5A8A94B7
 P 3100 2750
@@ -551,23 +485,7 @@ Wire Wire Line
 	2550 4150 2550 4050
 Wire Wire Line
 	2550 3950 1050 3950
-Wire Wire Line
-	1050 3950 1050 3900
 Connection ~ 2550 3950
-$Comp
-L power:PWR_FLAG #FLG015
-U 1 1 5A915050
-P 1050 3900
-F 0 "#FLG015" H 1050 3975 50  0001 C CNN
-F 1 "PWR_FLAG" V 1050 4028 50  0000 L CNN
-F 2 "" H 1050 3900 50  0001 C CNN
-F 3 "" H 1050 3900 50  0001 C CNN
-	1    1050 3900
-	0    -1   -1   0   
-$EndComp
-Connection ~ 1050 3900
-Wire Wire Line
-	1050 3900 1050 3750
 Wire Wire Line
 	1950 3650 2900 3650
 Wire Wire Line
@@ -908,4 +826,14 @@ Wire Wire Line
 	2350 3850 2900 3850
 Text Label 2350 3850 0    50   ~ 0
 CSI_STANDBY
+Wire Wire Line
+	5850 3200 5850 3350
+Wire Wire Line
+	5850 4050 5850 4200
+Wire Wire Line
+	2400 5400 2400 5500
+Wire Wire Line
+	1050 3750 1050 3950
+Wire Wire Line
+	5150 1650 5150 1900
 $EndSCHEMATC

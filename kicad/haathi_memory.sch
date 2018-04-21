@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 4 11
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -1195,4 +1195,18 @@ Wire Wire Line
 	2125 4625 1875 4625
 Text HLabel 1875 4625 0    50   Input ~ 0
 NVCC_SD1
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5B26A5D8
+P 6900 5100
+F 0 "#FLG0102" H 6900 5175 50  0001 C CNN
+F 1 "PWR_FLAG" H 6900 5274 50  0000 C CNN
+F 2 "" H 6900 5100 50  0001 C CNN
+F 3 "~" H 6900 5100 50  0001 C CNN
+	1    6900 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5100 6575 5100
+Connection ~ 6575 5100
 $EndSCHEMATC

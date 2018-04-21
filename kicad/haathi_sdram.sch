@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 7 11
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -599,6 +599,20 @@ Wire Wire Line
 	1400 875  1400 900 
 Wire Wire Line
 	1400 900  1575 900 
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5B25E04F
+P 2650 850
+F 0 "#FLG0101" H 2650 925 50  0001 C CNN
+F 1 "PWR_FLAG" H 2650 1024 50  0000 C CNN
+F 2 "" H 2650 850 50  0001 C CNN
+F 3 "~" H 2650 850 50  0001 C CNN
+	1    2650 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 850  2650 900 
+Connection ~ 2650 900 
 Wire Bus Line
 	8100 3200 8100 3900
 Wire Bus Line

@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 9
+Sheet 3 11
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -264,10 +264,9 @@ F50 "GPIO_AD_B0_01" I L 12500 4250 50
 F51 "GPIO_AD_B1_04" I L 12500 4350 50 
 F52 "GPIO_AD_B1_05" I L 12500 4450 50 
 F53 "GPIO_AD_B1_06" I L 12500 4550 50 
-F54 "GPIO_AD_B1_07" I L 12500 4650 50 
-F55 "GPIO_B1_15" I R 14550 4550 50 
-F56 "GPIO_AD_B1_03" I R 14550 4650 50 
-F57 "MCU_RESET_N" I L 12500 2050 50 
+F54 "GPIO_B1_15" I R 14550 4550 50 
+F55 "GPIO_AD_B1_03" I R 14550 4650 50 
+F56 "MCU_RESET_N" I L 12500 2050 50 
 $EndSheet
 $Sheet
 S 12500 5075 2050 775 
@@ -884,8 +883,6 @@ Wire Wire Line
 	11800 4450 12500 4450
 Wire Wire Line
 	11800 4550 12500 4550
-Wire Wire Line
-	11800 4650 12500 4650
 Text Label 11800 2150 0    50   ~ 0
 JTAG_nTRST
 Text Label 11800 2250 0    50   ~ 0
@@ -938,8 +935,6 @@ Text Label 11800 4450 0    50   ~ 0
 GPIO_AD_B1_05
 Text Label 11800 4550 0    50   ~ 0
 GPIO_AD_B1_06
-Text Label 11800 4650 0    50   ~ 0
-GPIO_AD_B1_07
 Text Label 15200 1650 2    50   ~ 0
 ENET_TX_CLK
 Text Label 15200 1750 2    50   ~ 0
@@ -1267,7 +1262,7 @@ VDD_SNVS_IN
 Text Label 2350 1650 0    50   ~ 0
 DCDC_IN
 Text Label 2350 1750 0    50   ~ 0
-VDD_HIGH_N
+VDD_HIGH_IN
 Text Label 2350 1850 0    50   ~ 0
 VDD_SOC_IN
 Text Label 2350 2050 0    50   ~ 0

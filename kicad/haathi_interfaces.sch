@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 11
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -115,33 +115,6 @@ Wire Wire Line
 	1750 2350 1750 2650
 Wire Wire Line
 	1750 2650 1000 2650
-Wire Wire Line
-	1550 1550 1550 1500
-$Comp
-L power:VCC #PWR084
-U 1 1 5A86CEAC
-P 1550 1450
-F 0 "#PWR084" H 1550 1300 50  0001 C CNN
-F 1 "VCC" H 1567 1623 50  0000 C CNN
-F 2 "" H 1550 1450 50  0001 C CNN
-F 3 "" H 1550 1450 50  0001 C CNN
-	1    1550 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG012
-U 1 1 5A86CF68
-P 1550 1500
-F 0 "#FLG012" H 1550 1575 50  0001 C CNN
-F 1 "PWR_FLAG" V 1550 1628 50  0000 L CNN
-F 2 "" H 1550 1500 50  0001 C CNN
-F 3 "" H 1550 1500 50  0001 C CNN
-	1    1550 1500
-	0    1    1    0   
-$EndComp
-Connection ~ 1550 1500
-Wire Wire Line
-	1550 1500 1550 1450
 $Comp
 L haathi_mayank:SW-SPST-M S4
 U 1 1 5A86D4EB
@@ -229,8 +202,6 @@ F 3 "" H 8450 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8350 2400 8450 2400
-Wire Wire Line
-	8450 2400 8450 2550
 Connection ~ 8450 2400
 $Comp
 L power:VCC #PWR092
@@ -245,20 +216,6 @@ F 3 "" H 8450 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8450 1050 8450 1100
-$Comp
-L power:PWR_FLAG #FLG014
-U 1 1 5A86F0A0
-P 8450 2550
-F 0 "#FLG014" H 8450 2625 50  0001 C CNN
-F 1 "PWR_FLAG" V 8450 2678 50  0000 L CNN
-F 2 "" H 8450 2550 50  0001 C CNN
-F 3 "" H 8450 2550 50  0001 C CNN
-	1    8450 2550
-	0    1    1    0   
-$EndComp
-Connection ~ 8450 2550
-Wire Wire Line
-	8450 2550 8450 2600
 $Comp
 L power:PWR_FLAG #FLG013
 U 1 1 5A86F1E8
@@ -834,14 +791,29 @@ Wire Wire Line
 	4350 4500 4600 4500
 Wire Wire Line
 	4350 4000 4600 4000
-Text Label 5650 1600 0    50   ~ 0
-SA1_MCLK
-Text Label 5650 1800 0    50   ~ 0
-AUD_INT
 Text HLabel 5650 2200 2    50   Input ~ 0
 GPIO_AD_B1_05
 Wire Bus Line
 	8100 3700 8100 5300
 Text HLabel 4050 5200 2    50   Input ~ 0
 MCU_RESET_N
+Wire Wire Line
+	8450 2400 8450 2600
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 5B336EAD
+P 1550 1450
+F 0 "#PWR0107" H 1550 1300 50  0001 C CNN
+F 1 "+3V3" H 1565 1623 50  0000 C CNN
+F 2 "" H 1550 1450 50  0001 C CNN
+F 3 "" H 1550 1450 50  0001 C CNN
+	1    1550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1450 1550 1550
+Text HLabel 5650 1600 2    50   Input ~ 0
+SAI1_MCLK
+Text HLabel 5650 1800 2    50   Input ~ 0
+AUD_INT
 $EndSCHEMATC
