@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_cpu-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 5 11
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -1937,39 +1937,11 @@ Wire Wire Line
 Text HLabel 20950 4950 2    50   Input ~ 0
 SEMC_DM1
 Text HLabel 20950 5150 2    50   Input ~ 0
-ENET_MDC
+GPIO_EMC_40
 Text HLabel 20950 5250 2    50   Input ~ 0
-ENET_MDIO
-Text Label 20550 5050 0    50   ~ 0
-SEMC_DQS
-$Comp
-L haathi_mayank:C_NP C97
-U 1 1 5ABE3BAB
-P 21650 5250
-F 0 "C97" H 21753 5288 40  0000 L CNN
-F 1 "0.1uF" H 21753 5212 40  0000 L CNN
-F 2 "" H 21650 5250 60  0000 C CNN
-F 3 "" H 21650 5250 60  0000 C CNN
-	1    21650 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR063
-U 1 1 5ABE43AF
-P 21650 5450
-F 0 "#PWR063" H 21650 5200 50  0001 C CNN
-F 1 "GND" H 21655 5277 50  0000 C CNN
-F 2 "" H 21650 5450 50  0001 C CNN
-F 3 "" H 21650 5450 50  0001 C CNN
-	1    21650 5450
-	1    0    0    -1  
-$EndComp
+GPIO_EMC_41
 Wire Wire Line
-	21650 5450 21650 5400
-Wire Wire Line
-	21650 5050 21650 5100
-Wire Wire Line
-	20500 5050 21650 5050
+	20500 5050 20950 5050
 Text HLabel 13750 1375 0    50   Input ~ 0
 GPIO_AD_B0_02
 Text HLabel 13750 1475 0    50   Input ~ 0
@@ -1978,39 +1950,6 @@ Wire Wire Line
 	13750 1375 14550 1375
 Wire Wire Line
 	13750 1475 14550 1475
-Wire Wire Line
-	13750 1575 14400 1575
-Wire Wire Line
-	13750 1675 14050 1675
-Text HLabel 14650 775  2    50   Input ~ 0
-NVCC_GPIO_3V3
-$Comp
-L haathi_mayank:R R54
-U 1 1 5A8653A5
-P 14050 925
-F 0 "R54" V 14257 925 50  0000 C CNN
-F 1 "4.7k" V 14166 925 50  0000 C CNN
-F 2 "" V 13980 925 30  0000 C CNN
-F 3 "" H 14050 925 30  0000 C CNN
-	1    14050 925 
-	1    0    0    -1  
-$EndComp
-$Comp
-L haathi_mayank:R R56
-U 1 1 5A865921
-P 14400 925
-F 0 "R56" V 14607 925 50  0000 C CNN
-F 1 "4.7k" V 14516 925 50  0000 C CNN
-F 2 "" V 14330 925 30  0000 C CNN
-F 3 "" H 14400 925 30  0000 C CNN
-	1    14400 925 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14050 775  14400 775 
-Connection ~ 14400 775 
-Wire Wire Line
-	14400 775  14650 775 
 Text HLabel 12700 1775 0    50   Input ~ 0
 JTAG_TMS
 Text HLabel 12700 1875 0    50   Input ~ 0
@@ -2073,13 +2012,13 @@ Wire Wire Line
 Wire Wire Line
 	14550 2675 13950 2675
 Text HLabel 13950 2375 0    50   Input ~ 0
-UART1_TXD
+GPIO_AD_B0_12
 Text HLabel 13950 2475 0    50   Input ~ 0
-UART1_RXD
+GPIO_AD_B0_13
 Text HLabel 13950 2575 0    50   Input ~ 0
-CAN2_TX
+GPIO_AD_B0_14
 Text HLabel 13950 2675 0    50   Input ~ 0
-CAN2_RX
+GPIO_AD_B0_15
 Wire Wire Line
 	11450 1975 11850 1975
 Connection ~ 11850 1975
@@ -2095,8 +2034,6 @@ Wire Notes Line
 	12200 2325 12200 1675
 Wire Wire Line
 	11850 1975 14550 1975
-Wire Wire Line
-	14550 4625 13950 4625
 Wire Wire Line
 	14550 4725 13825 4725
 Wire Wire Line
@@ -2148,29 +2085,29 @@ GPIO_AD_B1_14
 Text Label 13975 6025 0    50   ~ 0
 GPIO_AD_B1_15
 Text HLabel 13825 4525 0    50   Input ~ 0
-I2C1_SCL
+GPIO_AD_B1_00
 Text HLabel 13825 4625 0    50   Input ~ 0
-I2C1_SDA
+GPIO_AD_B1_01
 Text HLabel 13825 4725 0    50   Output ~ 0
-SD_PWREN
+GPIO_AD_B1_02
 Text HLabel 13825 4825 0    50   Input ~ 0
 GPIO_AD_B1_03
 Text HLabel 13825 5325 0    50   Input ~ 0
-AUD_INT
+GPIO_AD_B1_08
 Text HLabel 13825 5425 0    50   Input ~ 0
-SAI1_MCLK
+GPIO_AD_B1_09
 Text HLabel 13825 5525 0    50   Input ~ 0
-SAI1_RX_SYNC
+GPIO_AD_B1_10
 Text HLabel 13825 5625 0    50   Input ~ 0
-SAI1_RX_BCLK
+GPIO_AD_B1_11
 Text HLabel 13825 5725 0    50   Input ~ 0
-SAI1_RXD
+GPIO_AD_B1_12
 Text HLabel 13825 5825 0    50   Input ~ 0
-SAI1_TXD
+GPIO_AD_B1_13
 Text HLabel 13825 5925 0    50   Input ~ 0
-SAI1_TX_BCLK
+GPIO_AD_B1_14
 Text HLabel 13825 6025 0    50   Input ~ 0
-SAI1_TX_SYNC
+GPIO_AD_B1_15
 Wire Wire Line
 	13825 5325 14550 5325
 Wire Wire Line
@@ -2344,96 +2281,47 @@ Wire Wire Line
 Wire Wire Line
 	11100 10950 10325 10950
 Text HLabel 10325 9950 0    50   Input ~ 0
-ENET_RXD0
+GPIO_B1_04
 Text HLabel 10325 10050 0    50   Input ~ 0
-ENET_RXD1
+GPIO_B1_05
 Text HLabel 10325 10150 0    50   Input ~ 0
-ENET_CRS_DV
+GPIO_B1_06
 Text HLabel 10325 10250 0    50   Input ~ 0
-ENET_TXD0
+GPIO_B1_07
 Text HLabel 10325 10350 0    50   Input ~ 0
-ENET_TXD1
+GPIO_B1_08
 Text HLabel 10325 10450 0    50   Input ~ 0
-ENET_TXEN
+GPIO_B1_09
 Text HLabel 10325 10550 0    50   Input ~ 0
-ENET_TX_CLK
+GPIO_B1_10
 Text HLabel 10325 10650 0    50   Input ~ 0
-ENET_RXER
+GPIO_B1_11
 Text HLabel 10325 10750 0    50   Input ~ 0
-SD_CD_SW
+GPIO_B1_12
 Text HLabel 10325 10850 0    50   Input ~ 0
-WDOG_B
+GPIO_B1_13
 Text HLabel 10325 10950 0    50   Input ~ 0
-SD0_VSELECT
-Text Label 17425 7700 0    50   ~ 0
-GPIO_SD_B0_00
-Text Label 17425 7900 0    50   ~ 0
-GPIO_SD_B0_02
-Text Label 17425 8000 0    50   ~ 0
-GPIO_SD_B0_03
-$Comp
-L haathi_mayank:R R57
-U 1 1 5A8CE521
-P 18250 7275
-F 0 "R57" V 18457 7275 50  0000 C CNN
-F 1 "10k" V 18366 7275 50  0000 C CNN
-F 2 "" V 18180 7275 30  0000 C CNN
-F 3 "" H 18250 7275 30  0000 C CNN
-	1    18250 7275
-	1    0    0    -1  
-$EndComp
-$Comp
-L haathi_mayank:R R58
-U 1 1 5A8CEC0F
-P 18575 7275
-F 0 "R58" V 18782 7275 50  0000 C CNN
-F 1 "10k" V 18691 7275 50  0000 C CNN
-F 2 "" V 18505 7275 30  0000 C CNN
-F 3 "" H 18575 7275 30  0000 C CNN
-	1    18575 7275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	18250 7125 18575 7125
-Connection ~ 18575 7125
-Wire Wire Line
-	18575 7125 18800 7125
-Text HLabel 18800 7125 2    50   Input ~ 0
-NVCC_SD0
-Wire Wire Line
-	17400 7700 18250 7700
+GPIO_B1_14
 Text HLabel 18800 7700 2    50   Input ~ 0
-SD1_CMD
+GPIO_SD_B0_00
 Text HLabel 18800 7800 2    50   Input ~ 0
-SD1_CLK
+GPIO_SD_B0_01
 Text HLabel 18800 7900 2    50   Input ~ 0
-SD1_D0
+GPIO_SD_B0_02
 Text HLabel 18800 8000 2    50   Input ~ 0
-SD1_D1
+GPIO_SD_B0_03
 Text HLabel 18800 8100 2    50   Input ~ 0
-SD1_D2
+GPIO_SD_B0_04
 Text HLabel 18800 8200 2    50   Input ~ 0
-SD1_D3
-Wire Wire Line
-	18250 7425 18250 7700
+GPIO_SD_B0_05
 Wire Wire Line
 	17400 7800 18800 7800
-Wire Wire Line
-	17400 7900 18575 7900
 Wire Wire Line
 	17400 8000 18800 8000
 Wire Wire Line
 	17400 8100 17875 8100
 Wire Wire Line
 	17400 8200 18250 8200
-Connection ~ 18250 7700
-Wire Wire Line
-	18250 7700 18800 7700
-Wire Wire Line
-	18575 7425 18575 7900
-Connection ~ 18575 7900
-Wire Wire Line
-	18575 7900 18800 7900
 $Comp
 L haathi_mayank:Test_Point_Probe TP8
 U 1 1 5A9925A6
@@ -2495,27 +2383,27 @@ Wire Wire Line
 Wire Wire Line
 	17400 10450 18200 10450
 Text HLabel 18200 9350 2    50   Input ~ 0
-FlexSPI_D3_B
+GPIO_SD_B1_00
 Text HLabel 18200 9450 2    50   Input ~ 0
-FlexSPI_D2_B
+GPIO_SD_B1_01
 Text HLabel 18200 9550 2    50   Input ~ 0
-FlexSPI_D1_B
+GPIO_SD_B1_02
 Text HLabel 18200 9650 2    50   Input ~ 0
-FlexSPI_D0_B
+GPIO_SD_B1_03
 Text HLabel 18200 9750 2    50   Input ~ 0
-FlexSPI_CLK_B
+GPIO_SD_B1_04
 Text HLabel 18200 9950 2    50   Input ~ 0
-FlexSPI_SS0
+GPIO_SD_B1_06
 Text HLabel 18200 10050 2    50   Input ~ 0
-FlexSPI_CLK
+GPIO_SD_B1_07
 Text HLabel 18200 10150 2    50   Input ~ 0
-FlexSPI_D0_A
+GPIO_SD_B1_08
 Text HLabel 18200 10250 2    50   Input ~ 0
-FlexSPI_D1_A
+GPIO_SD_B1_09
 Text HLabel 18200 10350 2    50   Input ~ 0
-FlexSPI_D2_A
+GPIO_SD_B1_10
 Text HLabel 18200 10450 2    50   Input ~ 0
-FlexSPI_D3_A
+GPIO_SD_B1_11
 Text Label 17450 9450 0    50   ~ 0
 GPIO_SD_B1_01
 Text Label 17450 9550 0    50   ~ 0
@@ -3336,8 +3224,6 @@ Text Label 3725 8900 0    50   ~ 0
 USB_OTG2_D+
 Text Label 3725 9000 0    50   ~ 0
 USB_OTG2_D-
-Text HLabel 10350 11400 0    50   Input ~ 0
-BACKLIGHT_CTL
 Wire Wire Line
 	8500 4900 8500 5100
 Wire Wire Line
@@ -3371,74 +3257,15 @@ Wire Wire Line
 Wire Wire Line
 	12700 2275 14550 2275
 Text HLabel 18200 9850 2    50   Input ~ 0
-FlexSPI_SS_B
+GPIO_SD_B1_05
 Text Label 13950 1175 0    50   ~ 0
 GPIO_AD_B0_00
 Text Label 13950 1275 0    50   ~ 0
 GPIO_AD_B0_01
-$Comp
-L haathi_mayank:R R53
-U 1 1 5AC7CED4
-P 13875 4025
-F 0 "R53" V 14082 4025 50  0000 C CNN
-F 1 "4.7k_DNP" V 13991 4025 50  0000 C CNN
-F 2 "" V 13805 4025 30  0000 C CNN
-F 3 "" H 13875 4025 30  0000 C CNN
-	1    13875 4025
-	1    0    0    -1  
-$EndComp
-$Comp
-L haathi_mayank:R R55
-U 1 1 5AC7D594
-P 14175 4025
-F 0 "R55" V 14382 4025 50  0000 C CNN
-F 1 "4.7k_DNP" V 14291 4025 50  0000 C CNN
-F 2 "" V 14105 4025 30  0000 C CNN
-F 3 "" H 14175 4025 30  0000 C CNN
-	1    14175 4025
-	1    0    0    -1  
-$EndComp
-Text HLabel 14400 3725 2    50   Input ~ 0
-NVCC_GPIO_3V3
-Wire Wire Line
-	14400 3725 14175 3725
-Wire Wire Line
-	14175 3875 14175 3725
-Connection ~ 14175 3725
-Wire Wire Line
-	14175 3725 13875 3725
-Wire Wire Line
-	14175 4175 14175 4275
-Wire Wire Line
-	14175 4275 13950 4275
-Wire Wire Line
-	13950 4275 13950 4625
-Connection ~ 13950 4625
-Wire Wire Line
-	13950 4625 13825 4625
-Wire Wire Line
-	13825 4525 13875 4525
-Connection ~ 13875 4525
-Wire Wire Line
-	13875 4525 14550 4525
-Wire Wire Line
-	13875 4175 13875 4525
-Wire Wire Line
-	13875 3875 13875 3725
 Text HLabel 13750 1575 0    50   Input ~ 0
-I2C2_SCL
+GPIO_AD_B0_04
 Text HLabel 13750 1675 0    50   Input ~ 0
-I2C2_SDA
-Wire Wire Line
-	14050 1075 14050 1675
-Connection ~ 14050 1675
-Wire Wire Line
-	14050 1675 14550 1675
-Wire Wire Line
-	14400 1075 14400 1575
-Connection ~ 14400 1575
-Wire Wire Line
-	14400 1575 14550 1575
+GPIO_AD_B0_05
 Wire Wire Line
 	14550 1275 13750 1275
 Wire Wire Line
@@ -3708,7 +3535,6 @@ Text Label 4250 9500 0    50   ~ 0
 GPIO_AD_B0_00
 Text HLabel 10325 11050 0    50   Input ~ 0
 GPIO_B1_15
-NoConn ~ 10350 11400
 $Comp
 L haathi_mayank:R R51
 U 1 1 5ADF8395
@@ -3814,13 +3640,27 @@ Wire Wire Line
 	8225 3525 7300 3525
 Wire Wire Line
 	7300 3525 7300 3500
-Wire Bus Line
-	21850 4000 21850 4750
+Connection ~ 7300 3500
+Text HLabel 20950 5050 2    50   Input ~ 0
+GPIO_EMC_39
+Wire Wire Line
+	17400 7700 18800 7700
+Wire Wire Line
+	17400 7900 18800 7900
+Wire Wire Line
+	13825 4625 14550 4625
+Wire Wire Line
+	13825 4525 14550 4525
+Wire Wire Line
+	13750 1675 14550 1675
+Wire Wire Line
+	13750 1575 14550 1575
 Wire Bus Line
 	21100 950  21100 1750
+Wire Bus Line
+	21850 4000 21850 4750
 Wire Bus Line
 	21900 1900 21900 3350
 Wire Bus Line
 	9425 8000 9425 9800
-Connection ~ 7300 3500
 $EndSCHEMATC
