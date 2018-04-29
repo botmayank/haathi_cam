@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_camera-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 11
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -41,7 +41,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 1900 5150 1900
 Text HLabel 6250 3650 2    50   Input ~ 0
-I2C1_SCL
+GPIO_AD_B1_00
 $Comp
 L haathi_mayank:R R89
 U 1 1 5A867A89
@@ -57,7 +57,7 @@ Wire Wire Line
 	5850 3650 6250 3650
 Connection ~ 5850 3650
 Text HLabel 6250 4500 2    50   Input ~ 0
-I2C1_SDA
+GPIO_AD_B1_01
 $Comp
 L haathi_mayank:R R90
 U 1 1 5A868A94
@@ -313,9 +313,9 @@ GPIO_AD_B1_04
 Text HLabel 9100 1400 2    50   Input ~ 0
 GPIO_AD_B1_05
 Text HLabel 9100 1550 2    50   Input ~ 0
-GPIO_AD_B1_06
+GPIO_B1_13
 Text HLabel 9100 1650 2    50   Input ~ 0
-GPIO_AD_B1_07
+GPIO_AD_B0_15
 Text HLabel 9150 2400 2    50   Input ~ 0
 GPIO_AD_B1_10
 Text HLabel 9150 2500 2    50   Input ~ 0
@@ -363,9 +363,9 @@ Wire Wire Line
 Wire Wire Line
 	8750 2300 9150 2300
 Text HLabel 9150 2300 2    50   Input ~ 0
-GPIO_AD_B1_09
+GPIO_AD_B0_05
 Text HLabel 9150 2200 2    50   Input ~ 0
-GPIO_AD_B1_08
+GPIO_AD_B0_04
 Text Notes 7750 4150 0    50   ~ 0
 CSI_DATA_20..23 (Table 4-1 Ref Manual)\n
 Text HLabel 9150 2100 2    50   Input ~ 0
@@ -436,13 +436,13 @@ Wire Wire Line
 Text HLabel 9150 2000 2    50   Input ~ 0
 GPIO_B1_08
 Text HLabel 9150 3500 2    50   Input ~ 0
-GPIO_EMC_33
+GPIO_EMC_41
 Text HLabel 9150 3600 2    50   Input ~ 0
-GPIO_EMC_32
+GPIO_EMC_39
 Text HLabel 9150 3800 2    50   Input ~ 0
-GPIO_EMC_31
+GPIO_SD_B1_04
 Text HLabel 9150 3900 2    50   Input ~ 0
-GPIO_EMC_30
+GPIO_SD_B1_05
 $Comp
 L haathi_mayank:R R96
 U 1 1 5A8D5CF3
