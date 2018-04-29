@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_memory-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 11
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -325,7 +325,7 @@ L haathi_mayank:IS25WP080D U4
 U 1 1 5AA454AE
 P 2650 5350
 F 0 "U4" H 2200 5675 50  0000 C CNN
-F 1 "IS25WP080D" H 2975 4850 50  0000 C CNN
+F 1 "IS25LP080D" H 2975 4850 50  0000 C CNN
 F 2 "" H 2200 5200 50  0001 C CNN
 F 3 "" H 2200 5200 50  0001 C CNN
 	1    2650 5350
@@ -339,17 +339,6 @@ Wire Wire Line
 	2050 5500 1700 5500
 Wire Wire Line
 	2050 5600 1700 5600
-$Comp
-L power:+1V8 #PWR066
-U 1 1 5AA46B0D
-P 3525 4625
-F 0 "#PWR066" H 3525 4475 50  0001 C CNN
-F 1 "+1V8" H 3540 4798 50  0000 C CNN
-F 2 "" H 3525 4625 50  0001 C CNN
-F 3 "" H 3525 4625 50  0001 C CNN
-	1    3525 4625
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2975 4625 2650 4625
 Wire Wire Line
@@ -416,31 +405,31 @@ Wire Wire Line
 	3350 4625 3525 4625
 Connection ~ 3350 4625
 Text HLabel 1700 5500 0    50   Input ~ 0
-FlexSPI_D0_A
+GPIO_SD_B1_08
 Text HLabel 1700 5400 0    50   Input ~ 0
-FlexSPI_D1_A
+GPIO_SD_B1_09
 Text HLabel 3775 5300 2    50   Input ~ 0
-FlexSPI_D2_A
+GPIO_SD_B1_10
 Text HLabel 3775 5500 2    50   Input ~ 0
-FlexSPI_D3_A
+GPIO_SD_B1_11
 Text HLabel 1700 5300 0    50   Input ~ 0
-FlexSPI_SS0
+GPIO_SD_B1_06
 Text HLabel 1700 5600 0    50   Input ~ 0
-FlexSPI_CLK
+GPIO_SD_B1_07
 Text HLabel 1700 2500 0    50   Input ~ 0
-SD1_D2
+GIO_SD_B0_04
 Text HLabel 1700 2600 0    50   Input ~ 0
-SD1_D3
+GIO_SD_B0_05
 Text HLabel 1700 2700 0    50   Input ~ 0
-SD1_CMD
+GPIO_SD_B0_00
 Text HLabel 1700 2900 0    50   Input ~ 0
-SD1_D0
+GPIO_SD_B0_02
 Text HLabel 1700 3000 0    50   Input ~ 0
-SD1_D1
+GIO_SD_B0_03
 Text HLabel 1700 3100 0    50   Input ~ 0
-SD1_CLK
+GPIO_SD_B0_01
 Text HLabel 1700 2400 0    50   Input ~ 0
-SD_CD_SW
+GPIO_B1_12
 Wire Wire Line
 	6500 2700 6500 1300
 Wire Wire Line
@@ -604,7 +593,7 @@ F 3 "" H 9350 3450 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text HLabel 9975 3200 2    50   Input ~ 0
-SD0_VSELECT
+GPIO_B1_14
 Text Label 9450 3200 0    50   ~ 0
 SD0_VSELECT
 $Comp
@@ -631,157 +620,6 @@ F 3 "" H 7550 2200 50  0001 C CNN
 	1    7550 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L haathi_mayank:TPS73018 U5
-U 1 1 5AB7E0CD
-P 5675 5450
-F 0 "U5" H 5675 6065 50  0000 C CNN
-F 1 "TPS73018" H 5675 5974 50  0000 C CNN
-F 2 "" H 5675 5450 50  0001 C CNN
-F 3 "" H 5675 5450 50  0001 C CNN
-	1    5675 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR068
-U 1 1 5AB7E31C
-P 5675 5700
-F 0 "#PWR068" H 5675 5450 50  0001 C CNN
-F 1 "GND" H 5775 5700 50  0000 C CNN
-F 2 "" H 5675 5700 50  0001 C CNN
-F 3 "" H 5675 5700 50  0001 C CNN
-	1    5675 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5675 5550 5675 5600
-$Comp
-L power:+3V3 #PWR067
-U 1 1 5AB81803
-P 4800 5100
-F 0 "#PWR067" H 4800 4950 50  0001 C CNN
-F 1 "+3V3" H 4815 5273 50  0000 C CNN
-F 2 "" H 4800 5100 50  0001 C CNN
-F 3 "" H 4800 5100 50  0001 C CNN
-	1    4800 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 5100 4925 5100
-Wire Wire Line
-	5275 5300 5175 5300
-Wire Wire Line
-	5175 5300 5175 5100
-Connection ~ 5175 5100
-Wire Wire Line
-	5175 5100 5275 5100
-$Comp
-L haathi_mayank:C_NP C100
-U 1 1 5AB883EE
-P 4925 5250
-F 0 "C100" H 5028 5288 40  0000 L CNN
-F 1 "1uF" H 5028 5212 40  0000 L CNN
-F 2 "" H 4925 5250 60  0000 C CNN
-F 3 "" H 4925 5250 60  0000 C CNN
-	1    4925 5250
-	1    0    0    -1  
-$EndComp
-Connection ~ 4925 5100
-Wire Wire Line
-	4925 5100 5025 5100
-Wire Wire Line
-	4925 5400 4925 5600
-Wire Wire Line
-	4925 5600 5675 5600
-Connection ~ 5675 5600
-Wire Wire Line
-	5675 5600 5675 5700
-$Comp
-L power:+1V8 #PWR069
-U 1 1 5AB8C060
-P 6575 5100
-F 0 "#PWR069" H 6575 4950 50  0001 C CNN
-F 1 "+1V8" H 6590 5273 50  0000 C CNN
-F 2 "" H 6575 5100 50  0001 C CNN
-F 3 "" H 6575 5100 50  0001 C CNN
-	1    6575 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6075 5100 6325 5100
-$Comp
-L haathi_mayank:C_NP C102
-U 1 1 5AB8FC4D
-P 6475 5250
-F 0 "C102" H 6578 5288 40  0000 L CNN
-F 1 "1uF" H 6578 5212 40  0000 L CNN
-F 2 "" H 6475 5250 60  0000 C CNN
-F 3 "" H 6475 5250 60  0000 C CNN
-	1    6475 5250
-	1    0    0    -1  
-$EndComp
-Connection ~ 6475 5100
-Wire Wire Line
-	6475 5100 6575 5100
-$Comp
-L haathi_mayank:Test_Point_Probe TP10
-U 1 1 5AB8FCDD
-P 6325 5100
-F 0 "TP10" V 6615 5156 50  0000 C CNN
-F 1 "TP_1V8" V 6524 5156 50  0000 C CNN
-F 2 "" H 6525 5100 50  0001 C CNN
-F 3 "" H 6525 5100 50  0001 C CNN
-	1    6325 5100
-	0    -1   -1   0   
-$EndComp
-Connection ~ 6325 5100
-Wire Wire Line
-	6325 5100 6425 5100
-Wire Wire Line
-	6475 5600 6475 5400
-$Comp
-L haathi_mayank:C_NP C101
-U 1 1 5AB9E095
-P 6150 5450
-F 0 "C101" H 6253 5488 40  0000 L CNN
-F 1 "0.01uF" H 6253 5412 40  0000 L CNN
-F 2 "" H 6150 5450 60  0000 C CNN
-F 3 "" H 6150 5450 60  0000 C CNN
-	1    6150 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6075 5300 6150 5300
-Connection ~ 6150 5600
-Wire Wire Line
-	6150 5600 5675 5600
-Wire Wire Line
-	6150 5600 6475 5600
-$Comp
-L haathi_mayank:R R62
-U 1 1 5ABA51DE
-P 5700 4575
-F 0 "R62" V 5650 4400 50  0000 C CNN
-F 1 "0E_DNP" V 5800 4550 50  0000 C CNN
-F 2 "" V 5630 4575 30  0000 C CNN
-F 3 "" H 5700 4575 30  0000 C CNN
-	1    5700 4575
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5550 4575 5025 4575
-Wire Wire Line
-	5025 4575 5025 5100
-Connection ~ 5025 5100
-Wire Wire Line
-	5025 5100 5175 5100
-Wire Wire Line
-	5850 4575 6425 4575
-Wire Wire Line
-	6425 4575 6425 5100
-Connection ~ 6425 5100
-Wire Wire Line
-	6425 5100 6475 5100
 Wire Wire Line
 	9200 2225 9425 2225
 Connection ~ 9200 2225
@@ -1126,7 +964,7 @@ SD_VCC_3V3
 Text HLabel 7400 5900 0    50   Input ~ 0
 MCU_RESET_N
 Text HLabel 7400 6200 0    50   Input ~ 0
-SD_PWREN
+GPIO_AD_B1_02
 $Comp
 L haathi:R R60
 U 1 1 5AD29340
@@ -1182,7 +1020,7 @@ L haathi_mayank:R R59
 U 1 1 5AD2B51F
 P 2275 4625
 F 0 "R59" V 2225 4450 50  0000 C CNN
-F 1 "0E_DNP" V 2375 4600 50  0000 C CNN
+F 1 "0E" V 2375 4600 50  0000 C CNN
 F 2 "" V 2205 4625 30  0000 C CNN
 F 3 "" H 2275 4625 30  0000 C CNN
 	1    2275 4625
@@ -1196,17 +1034,16 @@ Wire Wire Line
 Text HLabel 1875 4625 0    50   Input ~ 0
 NVCC_SD1
 $Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5B26A5D8
-P 6900 5100
-F 0 "#FLG0102" H 6900 5175 50  0001 C CNN
-F 1 "PWR_FLAG" H 6900 5274 50  0000 C CNN
-F 2 "" H 6900 5100 50  0001 C CNN
-F 3 "~" H 6900 5100 50  0001 C CNN
-	1    6900 5100
+L power:+3V3 #PWR?
+U 1 1 5AE730B5
+P 3525 4625
+F 0 "#PWR?" H 3525 4475 50  0001 C CNN
+F 1 "+3V3" H 3540 4798 50  0000 C CNN
+F 2 "" H 3525 4625 50  0001 C CNN
+F 3 "" H 3525 4625 50  0001 C CNN
+	1    3525 4625
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6900 5100 6575 5100
-Connection ~ 6575 5100
+Text Label 7450 6200 0    50   ~ 0
+SD_PWREN
 $EndSCHEMATC

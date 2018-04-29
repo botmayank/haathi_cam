@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# haathi_C_NP
+# haathi:C_NP
 #
-DEF haathi_C_NP C 0 10 N N 1 F N
+DEF haathi:C_NP C 0 10 N N 1 F N
 F0 "C" -100 100 40 H V L CNN
-F1 "haathi_C_NP" 0 -150 40 H V L CNN
+F1 "haathi:C_NP" 0 -150 40 H V L CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -21,11 +21,11 @@ X - 2 0 -150 100 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# haathi_R
+# haathi:R
 #
-DEF haathi_R R 0 0 N Y 1 F N
+DEF haathi:R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "haathi_R" 0 0 50 V V C CNN
+F1 "haathi:R" 0 0 50 V V C CNN
 F2 "" -70 0 30 V V C CNN
 F3 "" 0 0 30 H V C CNN
 $FPLIST
@@ -39,11 +39,11 @@ X ~ 2 0 -150 50 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# haathi_SD_CARD_Micro
+# haathi:SD_CARD_Micro
 #
-DEF haathi_SD_CARD_Micro SD 0 40 Y Y 1 F N
+DEF haathi:SD_CARD_Micro SD 0 40 Y Y 1 F N
 F0 "SD" 150 450 60 H V C CNN
-F1 "haathi_SD_CARD_Micro" 400 550 60 H V C CNN
+F1 "haathi:SD_CARD_Micro" 400 550 60 H V C CNN
 F2 "" -100 0 60 H V C CNN
 F3 "" -100 0 60 H V C CNN
 DRAW
@@ -65,11 +65,11 @@ X ~ G4 750 -250 100 U 30 30 1 1 P
 ENDDRAW
 ENDDEF
 #
-# haathi_mayank_C_NP
+# haathi_mayank:C_NP
 #
-DEF haathi_mayank_C_NP C 0 10 N N 1 F N
+DEF haathi_mayank:C_NP C 0 10 N N 1 F N
 F0 "C" -100 100 40 H V L CNN
-F1 "haathi_mayank_C_NP" 0 -150 40 H V L CNN
+F1 "haathi_mayank:C_NP" 0 -150 40 H V L CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -85,11 +85,11 @@ X - 2 0 -150 100 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# haathi_mayank_D_Schottky
+# haathi_mayank:D_Schottky
 #
-DEF haathi_mayank_D_Schottky D 0 40 N N 1 F N
+DEF haathi_mayank:D_Schottky D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "haathi_mayank_D_Schottky" 0 -100 50 H V C CNN
+F1 "haathi_mayank:D_Schottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -107,11 +107,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# haathi_mayank_IS25WP080D
+# haathi_mayank:IS25WP080D
 #
-DEF haathi_mayank_IS25WP080D U 0 40 Y Y 1 F N
+DEF haathi_mayank:IS25WP080D U 0 40 Y Y 1 F N
 F0 "U" -400 300 50 H V C CNN
-F1 "haathi_mayank_IS25WP080D" 300 -500 50 H V C CNN
+F1 "haathi_mayank:IS25WP080D" 300 -500 50 H V C CNN
 F2 "" -450 -150 50 H I C CNN
 F3 "" -450 -150 50 H I C CNN
 DRAW
@@ -127,11 +127,11 @@ X VCC 8 0 350 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# haathi_mayank_Q_NMOS_GSD
+# haathi_mayank:Q_NMOS_GSD
 #
-DEF haathi_mayank_Q_NMOS_GSD Q 0 0 Y N 1 F N
+DEF haathi_mayank:Q_NMOS_GSD Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "haathi_mayank_Q_NMOS_GSD" 200 -50 50 H V L CNN
+F1 "haathi_mayank:Q_NMOS_GSD" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -159,11 +159,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# haathi_mayank_Q_PMOS_GDS
+# haathi_mayank:Q_PMOS_GDS
 #
-DEF haathi_mayank_Q_PMOS_GDS Q 0 0 Y N 1 F N
+DEF haathi_mayank:Q_PMOS_GDS Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "haathi_mayank_Q_PMOS_GDS" 200 -50 50 H V L CNN
+F1 "haathi_mayank:Q_PMOS_GDS" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -191,11 +191,11 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# haathi_mayank_R
+# haathi_mayank:R
 #
-DEF haathi_mayank_R R 0 0 N Y 1 F N
+DEF haathi_mayank:R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "haathi_mayank_R" 0 0 50 V V C CNN
+F1 "haathi_mayank:R" 0 0 50 V V C CNN
 F2 "" -70 0 30 V V C CNN
 F3 "" 0 0 30 H V C CNN
 $FPLIST
@@ -209,28 +209,11 @@ X ~ 2 0 -150 50 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# haathi_mayank_TPS73018
+# haathi_mayank:TPS73101
 #
-DEF haathi_mayank_TPS73018 U 0 40 Y Y 1 F N
-F0 "U" -250 500 50 H V C CNN
-F1 "haathi_mayank_TPS73018" 250 -50 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -300 450 300 0 0 1 0 N
-X VIN 1 -400 350 100 R 50 50 1 1 P
-X GND 2 0 -100 100 U 50 50 1 1 P
-X EN 3 -400 150 100 R 50 50 1 1 P
-X NR 4 400 150 100 L 50 50 1 1 P
-X VOUT 5 400 350 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# haathi_mayank_TPS73101
-#
-DEF haathi_mayank_TPS73101 U 0 40 Y Y 1 F N
+DEF haathi_mayank:TPS73101 U 0 40 Y Y 1 F N
 F0 "U" -150 250 50 H V C CNN
-F1 "haathi_mayank_TPS73101" 50 -200 50 H V C CNN
+F1 "haathi_mayank:TPS73101" 50 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -243,11 +226,11 @@ X OUT 5 300 100 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# haathi_mayank_Test_Point_Probe
+# haathi_mayank:Test_Point_Probe
 #
-DEF haathi_mayank_Test_Point_Probe TP 0 30 N N 1 F N
+DEF haathi_mayank:Test_Point_Probe TP 0 30 N N 1 F N
 F0 "TP" 65 230 50 H V C CNN
-F1 "haathi_mayank_Test_Point_Probe" 65 160 50 H V C CNN
+F1 "haathi_mayank:Test_Point_Probe" 65 160 50 H V C CNN
 F2 "" 200 0 50 H I C CNN
 F3 "" 200 0 50 H I C CNN
 $FPLIST
@@ -261,26 +244,11 @@ X 1 1 0 0 0 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power_+1V8
+# power:+3V3
 #
-DEF power_+1V8 #PWR 0 0 Y Y 1 F P
+DEF power:+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+1V8" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +1V8 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+3V3
-#
-DEF power_+3V3 #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3V3" 0 140 50 H V C CNN
+F1 "power:+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -292,11 +260,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_GND
+# power:GND
 #
-DEF power_GND #PWR 0 0 Y Y 1 F P
+DEF power:GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
