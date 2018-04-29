@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi-cache
+LIBS:haathi_interfaces-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -495,10 +495,6 @@ Wire Wire Line
 Connection ~ 4400 4900
 Wire Wire Line
 	4400 4900 4400 5100
-Text HLabel 2850 3700 0    50   Input ~ 0
-I2C1_SCL
-Text HLabel 2850 3600 0    50   Input ~ 0
-I2C1_SDA
 Text HLabel 4050 3800 2    50   Input ~ 0
 UART1_TXD
 Text HLabel 4050 3900 2    50   Input ~ 0
@@ -509,8 +505,6 @@ Text HLabel 2850 4500 0    50   Input ~ 0
 FlexSPI_D1_B
 Text HLabel 2850 4600 0    50   Input ~ 0
 FlexSPI_CLK_B
-Text HLabel 4050 4600 2    50   Input ~ 0
-FlexSPI_SS_B
 $Comp
 L power:GND #PWR090
 U 1 1 5AAA953A
@@ -550,10 +544,6 @@ Wire Wire Line
 Connection ~ 5750 5350
 Wire Wire Line
 	5750 5350 5750 5450
-Text HLabel 4050 5300 2    50   Input ~ 0
-CAN2_TX
-Text HLabel 2850 5300 0    50   Input ~ 0
-CAN2_RX
 Wire Wire Line
 	5750 4750 5750 5350
 Wire Wire Line
@@ -674,20 +664,6 @@ Text HLabel 2850 4100 0    50   Input ~ 0
 ENET_TXD0
 Text HLabel 7350 3750 2    50   Input ~ 0
 BACKLIGHT_CTL
-Text HLabel 2850 4800 0    50   Input ~ 0
-ENET_RXD1
-Text HLabel 2850 4900 0    50   Input ~ 0
-ENET_TXD1
-Text HLabel 2850 5000 0    50   Input ~ 0
-ENET_TXEN
-Text HLabel 2850 5100 0    50   Input ~ 0
-ENET_TX_CLK
-Text HLabel 2850 5200 0    50   Input ~ 0
-ENET_RXER
-Text HLabel 4050 4200 2    50   Input ~ 0
-I2C2_SCL
-Text HLabel 4050 4300 2    50   Input ~ 0
-I2C2_SDA
 Text HLabel 4600 4000 2    50   Input ~ 0
 GPIO_AD_B0_00
 Text HLabel 4600 4500 2    50   Input ~ 0
@@ -713,8 +689,6 @@ Wire Wire Line
 	4200 3350 4200 5400
 Wire Wire Line
 	3700 5400 4200 5400
-Text HLabel 5650 2000 2    50   Input ~ 0
-GPIO_B1_15
 $Comp
 L power:+3V3 #PWR091
 U 1 1 5AB7D289
@@ -793,8 +767,6 @@ Wire Wire Line
 	4350 4000 4600 4000
 Text HLabel 5650 2200 2    50   Input ~ 0
 GPIO_AD_B1_05
-Wire Bus Line
-	8100 3700 8100 5300
 Text HLabel 4050 5200 2    50   Input ~ 0
 MCU_RESET_N
 Wire Wire Line
@@ -812,8 +784,64 @@ F 3 "" H 1550 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 1450 1550 1550
+Text Label 2850 3600 0    50   ~ 0
+I2C1_SDA
+Text Label 2850 3700 0    50   ~ 0
+I2C1_SCL
+Wire Wire Line
+	2450 6100 2850 6100
+Text Label 2850 6100 2    50   ~ 0
+I2C1_SDA
+Text Label 2850 6200 2    50   ~ 0
+I2C1_SCL
+Wire Wire Line
+	2450 6200 2850 6200
+Text HLabel 2450 6100 0    50   Input ~ 0
+GPIO_AD_B1_01
+Text HLabel 2450 6200 0    50   Input ~ 0
+GPIO_AD_B1_00
+Text HLabel 2450 6400 0    50   Input ~ 0
+GPIO_AD_B1_06
+Text HLabel 2450 6500 0    50   Input ~ 0
+GPIO_AD_B1_07
+Wire Wire Line
+	2450 6400 2850 6400
+Wire Wire Line
+	2450 6500 2850 6500
+Text Label 2850 6400 2    50   ~ 0
+I2C3_SDA
+Text Label 2850 6500 2    50   ~ 0
+I2C3_SCL
+Text Label 4050 4200 2    50   ~ 0
+I2C3_SCL
+Text Label 4050 4300 2    50   ~ 0
+I2C3_SDA
 Text HLabel 5650 1600 2    50   Input ~ 0
-SAI1_MCLK
+GPIO_SD_B1_00
 Text HLabel 5650 1800 2    50   Input ~ 0
-AUD_INT
+GPIO_SD_B1_02
+Text HLabel 5650 2000 2    50   Input ~ 0
+GPIO_AD_B0_01
+Text HLabel 4050 4600 2    50   Input ~ 0
+FlexSPI_SS_B
+Text HLabel 2850 4800 0    50   Input ~ 0
+GPIO_B1_15
+Text Label 2850 5300 0    50   ~ 0
+CAN1_RX
+Text Label 4050 5300 2    50   ~ 0
+CAN1_TX
+Text Label 2800 6700 2    50   ~ 0
+CAN1_RX
+Text Label 2800 6800 2    50   ~ 0
+CAN1_TX
+Wire Wire Line
+	2800 6700 2400 6700
+Wire Wire Line
+	2800 6800 2400 6800
+Wire Bus Line
+	8100 3700 8100 5300
+Text HLabel 2400 6700 0    50   Input ~ 0
+GPIO_SD_B1_03
+Text HLabel 2400 6800 0    50   Input ~ 0
+GPIO_AD_B1_08
 $EndSCHEMATC
