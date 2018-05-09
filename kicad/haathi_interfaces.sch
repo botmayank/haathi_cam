@@ -356,10 +356,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 3600 4050 3600
 Wire Wire Line
-	3700 3800 4050 3800
-Wire Wire Line
-	3700 3900 4050 3900
-Wire Wire Line
 	3700 4000 4050 4000
 Wire Wire Line
 	3700 4200 4050 4200
@@ -367,8 +363,6 @@ Wire Wire Line
 	3700 4300 4050 4300
 Wire Wire Line
 	3700 4500 4050 4500
-Wire Wire Line
-	3700 4600 4050 4600
 Wire Wire Line
 	3700 4700 4050 4700
 Wire Wire Line
@@ -389,12 +383,6 @@ Wire Wire Line
 	3200 4000 2850 4000
 Wire Wire Line
 	3200 4100 2850 4100
-Wire Wire Line
-	3200 4400 2850 4400
-Wire Wire Line
-	3200 4500 2850 4500
-Wire Wire Line
-	3200 4600 2850 4600
 Wire Wire Line
 	3200 4800 2850 4800
 Wire Wire Line
@@ -495,16 +483,6 @@ Wire Wire Line
 Connection ~ 4400 4900
 Wire Wire Line
 	4400 4900 4400 5100
-Text HLabel 4050 3800 2    50   Input ~ 0
-UART1_TXD
-Text HLabel 4050 3900 2    50   Input ~ 0
-UART1_RXD
-Text HLabel 2850 4400 0    50   Input ~ 0
-FlexSPI_D0_B
-Text HLabel 2850 4500 0    50   Input ~ 0
-FlexSPI_D1_B
-Text HLabel 2850 4600 0    50   Input ~ 0
-FlexSPI_CLK_B
 $Comp
 L power:GND #PWR090
 U 1 1 5AAA953A
@@ -656,20 +634,14 @@ Text HLabel 6150 5150 0    50   Input ~ 0
 LCDIF_HSYNC
 Text HLabel 6150 5250 0    50   Input ~ 0
 LCDIF_VSYNC
-Text HLabel 2850 3800 0    50   Input ~ 0
-ENET_CRS_DV
-Text HLabel 2850 4000 0    50   Input ~ 0
-ENET_RXD0
-Text HLabel 2850 4100 0    50   Input ~ 0
-ENET_TXD0
 Text HLabel 7350 3750 2    50   Input ~ 0
 BACKLIGHT_CTL
 Text HLabel 4600 4000 2    50   Input ~ 0
 GPIO_AD_B0_00
 Text HLabel 4600 4500 2    50   Input ~ 0
 GPIO_AD_B0_01
-Text HLabel 4050 4700 2    50   Input ~ 0
-GPIO_AD_B1_04
+Text HLabel 2600 6050 0    50   Input ~ 0
+GPIO_AD_B1_03
 Text HLabel 4050 4800 2    50   Input ~ 0
 GPIO_AD_B1_05
 Text HLabel 4050 5000 2    50   Input ~ 0
@@ -709,8 +681,6 @@ Wire Wire Line
 Connection ~ 2600 4200
 Wire Wire Line
 	2600 4200 2600 3500
-Text HLabel 5650 2300 2    50   Input ~ 0
-GPIO_AD_B1_03
 Text Label 4800 1600 0    50   ~ 0
 LED_R
 Text Label 4800 1800 0    50   ~ 0
@@ -765,8 +735,6 @@ Wire Wire Line
 	4350 4500 4600 4500
 Wire Wire Line
 	4350 4000 4600 4000
-Text HLabel 5650 2200 2    50   Input ~ 0
-GPIO_AD_B1_05
 Text HLabel 4050 5200 2    50   Input ~ 0
 MCU_RESET_N
 Wire Wire Line
@@ -789,28 +757,28 @@ I2C1_SDA
 Text Label 2850 3700 0    50   ~ 0
 I2C1_SCL
 Wire Wire Line
-	2450 6100 2850 6100
-Text Label 2850 6100 2    50   ~ 0
+	1400 6050 1800 6050
+Text Label 1800 6050 2    50   ~ 0
 I2C1_SDA
-Text Label 2850 6200 2    50   ~ 0
+Text Label 1800 6150 2    50   ~ 0
 I2C1_SCL
 Wire Wire Line
-	2450 6200 2850 6200
-Text HLabel 2450 6100 0    50   Input ~ 0
+	1400 6150 1800 6150
+Text HLabel 1400 6050 0    50   Input ~ 0
 GPIO_AD_B1_01
-Text HLabel 2450 6200 0    50   Input ~ 0
+Text HLabel 1400 6150 0    50   Input ~ 0
 GPIO_AD_B1_00
-Text HLabel 2450 6400 0    50   Input ~ 0
+Text HLabel 1400 6350 0    50   Input ~ 0
 GPIO_AD_B1_06
-Text HLabel 2450 6500 0    50   Input ~ 0
+Text HLabel 1400 6450 0    50   Input ~ 0
 GPIO_AD_B1_07
 Wire Wire Line
-	2450 6400 2850 6400
+	1400 6350 1800 6350
 Wire Wire Line
-	2450 6500 2850 6500
-Text Label 2850 6400 2    50   ~ 0
+	1400 6450 1800 6450
+Text Label 1800 6350 2    50   ~ 0
 I2C3_SDA
-Text Label 2850 6500 2    50   ~ 0
+Text Label 1800 6450 2    50   ~ 0
 I2C3_SCL
 Text Label 4050 4200 2    50   ~ 0
 I2C3_SCL
@@ -822,26 +790,100 @@ Text HLabel 5650 1800 2    50   Input ~ 0
 GPIO_SD_B1_02
 Text HLabel 5650 2000 2    50   Input ~ 0
 GPIO_AD_B0_01
-Text HLabel 4050 4600 2    50   Input ~ 0
-FlexSPI_SS_B
 Text HLabel 2850 4800 0    50   Input ~ 0
 GPIO_B1_15
 Text Label 2850 5300 0    50   ~ 0
 CAN1_RX
 Text Label 4050 5300 2    50   ~ 0
 CAN1_TX
-Text Label 2800 6700 2    50   ~ 0
+Text Label 1750 6650 2    50   ~ 0
 CAN1_RX
-Text Label 2800 6800 2    50   ~ 0
+Text Label 1750 6750 2    50   ~ 0
 CAN1_TX
 Wire Wire Line
-	2800 6700 2400 6700
+	1750 6650 1350 6650
 Wire Wire Line
-	2800 6800 2400 6800
+	1750 6750 1350 6750
+Text HLabel 1350 6650 0    50   Input ~ 0
+GPIO_SD_B1_03
+Text HLabel 1350 6750 0    50   Input ~ 0
+GPIO_AD_B1_08
+Text HLabel 1350 6900 0    50   Input ~ 0
+GPIO_AD_B0_12
+Text Label 4150 3800 2    50   ~ 0
+UART1_TXD
+Text Label 1800 6900 2    50   ~ 0
+UART1_TXD
+Text HLabel 1350 7000 0    50   Input ~ 0
+GPIO_AD_B0_13
+Text Label 1800 7000 2    50   ~ 0
+UART1_RXD
+Text Label 4150 3900 2    50   ~ 0
+UART1_RXD
+Wire Wire Line
+	3700 3800 4150 3800
+Wire Wire Line
+	3700 3900 4150 3900
+Wire Wire Line
+	1350 7000 1800 7000
+Wire Wire Line
+	1350 6900 1800 6900
+Text HLabel 1350 7150 0    50   Input ~ 0
+GPIO_B1_07
+Text Label 1850 7150 2    50   ~ 0
+LPSPI4_SCK
+Text HLabel 1350 7250 0    50   Input ~ 0
+GPIO_B1_06
+Wire Wire Line
+	1350 7250 1850 7250
+Wire Wire Line
+	1350 7150 1850 7150
+Text Label 1850 7250 2    50   ~ 0
+LPSPI4_SDO
+Text HLabel 1350 7350 0    50   Input ~ 0
+GPIO_B1_05
+Text HLabel 1350 7450 0    50   Input ~ 0
+GPIO_B1_04
+Wire Wire Line
+	1350 7350 1850 7350
+Wire Wire Line
+	1350 7450 1850 7450
+Text Label 1850 7350 2    50   ~ 0
+LPSPI4_SDI
+Text Label 1850 7450 2    50   ~ 0
+LPSPI4_PCS0
+Text Label 2700 4400 0    50   ~ 0
+LPSPI4_SDO
+Text Label 2700 4500 0    50   ~ 0
+LPSPI4_SDI
+Text Label 2700 4600 0    50   ~ 0
+LPSPI4_SCK
+Text Label 4250 4600 2    50   ~ 0
+LPSPI4_PCS0
+Wire Wire Line
+	2700 4400 3200 4400
+Wire Wire Line
+	2700 4500 3200 4500
+Wire Wire Line
+	2700 4600 3200 4600
+Text HLabel 2850 4100 0    50   Input ~ 0
+ENET_TXD0
+Text HLabel 2850 4000 0    50   Input ~ 0
+ENET_RXD0
+Text HLabel 2850 3800 0    50   Input ~ 0
+ENET_CRS_DV
+Wire Wire Line
+	3700 4600 4250 4600
+Wire Wire Line
+	2600 6050 3050 6050
 Wire Bus Line
 	8100 3700 8100 5300
-Text HLabel 2400 6700 0    50   Input ~ 0
-GPIO_SD_B1_03
-Text HLabel 2400 6800 0    50   Input ~ 0
-GPIO_AD_B1_08
+Text Label 3050 6050 2    50   ~ 0
+ADC1
+Text Label 4050 4700 2    50   ~ 0
+ADC1
+Text HLabel 5650 2200 2    50   Input ~ 0
+PMIC_STBY_REQ
+Text HLabel 5650 2300 2    50   Input ~ 0
+PMIC_ON_REQ
 $EndSCHEMATC
