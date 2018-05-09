@@ -1,3 +1,29 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +1V8
+D power-flag symbol +1.8V
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP +3.3V
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP +3V3
+D power-flag symbol +3.3V
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP GND
+D GROUND power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP R_Pack08
+D 8 Resistor network, parallel topology, DIP package
+K R Network parallel topology
+F ~
+$ENDCMP
+#
 #End Doc Library
