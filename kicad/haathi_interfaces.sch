@@ -662,17 +662,17 @@ Text HLabel 1250 6050 0    50   Input ~ 0
 GPIO_AD_B1_01
 Text HLabel 1250 6150 0    50   Input ~ 0
 GPIO_AD_B1_00
-Text HLabel 1250 6350 0    50   Input ~ 0
+Text HLabel 1250 7500 0    50   Input ~ 0
 GPIO_AD_B1_06
-Text HLabel 1250 6450 0    50   Input ~ 0
+Text HLabel 1250 7600 0    50   Input ~ 0
 GPIO_AD_B1_07
 Wire Wire Line
-	1250 6350 1650 6350
+	1250 7500 1400 7500
 Wire Wire Line
-	1250 6450 1650 6450
-Text Label 1650 6350 2    50   ~ 0
+	1250 7600 1550 7600
+Text Label 1650 7500 2    50   ~ 0
 I2C3_SDA
-Text Label 1650 6450 2    50   ~ 0
+Text Label 1650 7600 2    50   ~ 0
 I2C3_SCL
 Text Label 4050 4200 2    50   ~ 0
 I2C3_SCL
@@ -688,27 +688,27 @@ Text Label 2850 5300 0    50   ~ 0
 CAN1_RX
 Text Label 4050 5300 2    50   ~ 0
 CAN1_TX
-Text Label 1600 6650 2    50   ~ 0
+Text Label 1650 6350 2    50   ~ 0
 CAN1_RX
-Text Label 1600 6750 2    50   ~ 0
+Text Label 1650 6450 2    50   ~ 0
 CAN1_TX
 Wire Wire Line
-	1600 6650 1200 6650
+	1650 6350 1250 6350
 Wire Wire Line
-	1600 6750 1200 6750
-Text HLabel 1200 6650 0    50   Input ~ 0
+	1650 6450 1250 6450
+Text HLabel 1250 6350 0    50   Input ~ 0
 GPIO_SD_B1_03
-Text HLabel 1200 6750 0    50   Input ~ 0
+Text HLabel 1250 6450 0    50   Input ~ 0
 GPIO_AD_B1_08
-Text HLabel 1200 6900 0    50   Input ~ 0
+Text HLabel 1250 6600 0    50   Input ~ 0
 GPIO_AD_B0_12
 Text Label 4150 3800 2    50   ~ 0
 UART1_TXD
-Text Label 1650 6900 2    50   ~ 0
+Text Label 1700 6600 2    50   ~ 0
 UART1_TXD
-Text HLabel 1200 7000 0    50   Input ~ 0
+Text HLabel 1250 6700 0    50   Input ~ 0
 GPIO_AD_B0_13
-Text Label 1650 7000 2    50   ~ 0
+Text Label 1700 6700 2    50   ~ 0
 UART1_RXD
 Text Label 4150 3900 2    50   ~ 0
 UART1_RXD
@@ -717,9 +717,9 @@ Wire Wire Line
 Wire Wire Line
 	3700 3900 4150 3900
 Wire Wire Line
-	1200 7000 1650 7000
+	1250 6700 1700 6700
 Wire Wire Line
-	1200 6900 1650 6900
+	1250 6600 1700 6600
 Text HLabel 2400 6050 0    50   Input ~ 0
 GPIO_B1_07
 Text Label 2900 6050 2    50   ~ 0
@@ -1048,6 +1048,54 @@ Wire Notes Line
 	5600 5900 5600 7500
 Wire Notes Line
 	5500 5900 5500 7500
+$Comp
+L haathi_mayank:R R?
+U 1 1 5B465F1F
+P 1550 7200
+F 0 "R?" H 1400 7150 50  0000 L CNN
+F 1 "4.7k_DNP" H 1150 7250 50  0000 L CNN
+F 2 "" V 1480 7200 30  0000 C CNN
+F 3 "" H 1550 7200 30  0000 C CNN
+	1    1550 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L haathi_mayank:R R?
+U 1 1 5B46616D
+P 1400 7200
+F 0 "R?" H 1500 7150 50  0000 L CNN
+F 1 "4.7k_DNP" H 1500 7250 50  0000 L CNN
+F 2 "" V 1330 7200 30  0000 C CNN
+F 3 "" H 1400 7200 30  0000 C CNN
+	1    1400 7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 7350 1400 7500
+Connection ~ 1400 7500
+Wire Wire Line
+	1400 7500 1650 7500
+Wire Wire Line
+	1550 7350 1550 7600
+Connection ~ 1550 7600
+Wire Wire Line
+	1550 7600 1650 7600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5B48CD9A
+P 1550 6950
+F 0 "#PWR?" H 1550 6800 50  0001 C CNN
+F 1 "+3V3" H 1565 7123 50  0000 C CNN
+F 2 "" H 1550 6950 50  0001 C CNN
+F 3 "" H 1550 6950 50  0001 C CNN
+	1    1550 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 7050 1550 6950
+Wire Wire Line
+	1400 7050 1550 7050
 Wire Bus Line
 	8100 3700 8100 5300
+Connection ~ 1550 7050
 $EndSCHEMATC
