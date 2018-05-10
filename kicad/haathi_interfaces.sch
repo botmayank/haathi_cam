@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_interfaces-cache
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 6 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -683,7 +683,7 @@ GPIO_SD_B1_00
 Text HLabel 5650 1800 2    50   Input ~ 0
 GPIO_SD_B1_02
 Text HLabel 5650 2000 2    50   Input ~ 0
-GPIO_AD_B0_01
+GPIO_SD_B1_01
 Text Label 2850 5300 0    50   ~ 0
 CAN1_RX
 Text Label 4050 5300 2    50   ~ 0
@@ -1095,7 +1095,7 @@ Wire Wire Line
 	1550 7050 1550 6950
 Wire Wire Line
 	1400 7050 1550 7050
+Connection ~ 1550 7050
 Wire Bus Line
 	8100 3700 8100 5300
-Connection ~ 1550 7050
 $EndSCHEMATC
