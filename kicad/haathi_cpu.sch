@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi_cpu-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -2412,8 +2412,6 @@ Text Label 17450 9750 0    50   ~ 0
 GPIO_SD_B1_04
 Text Label 17450 9850 0    50   ~ 0
 GPIO_SD_B1_05
-Text Notes 6050 9450 2    98   ~ 0
-USB_OTG\n
 Wire Wire Line
 	4250 8500 3650 8500
 Wire Wire Line
@@ -3495,44 +3493,6 @@ Text Label 7200 14650 0    50   ~ 0
 GPIO_AD_B0_04
 Text Label 7200 14750 0    50   ~ 0
 GPIO_AD_B0_05
-Text HLabel 3650 9400 0    50   Input ~ 0
-USB_OTG1_ID
-Text HLabel 3650 9500 0    50   Input ~ 0
-USB_OTG2_ID
-$Comp
-L haathi_mayank:R R34
-U 1 1 5AE1CD1D
-P 3950 9400
-F 0 "R34" V 4157 9400 50  0000 C CNN
-F 1 "0E_DNP" V 4066 9400 50  0000 C CNN
-F 2 "" V 3880 9400 30  0000 C CNN
-F 3 "" H 3950 9400 30  0000 C CNN
-	1    3950 9400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L haathi_mayank:R R35
-U 1 1 5AE1DA1A
-P 3950 9500
-F 0 "R35" V 4157 9500 50  0000 C CNN
-F 1 "0E_DNP" V 4066 9500 50  0000 C CNN
-F 2 "" V 3880 9500 30  0000 C CNN
-F 3 "" H 3950 9500 30  0000 C CNN
-	1    3950 9500
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	3650 9400 3800 9400
-Wire Wire Line
-	3650 9500 3800 9500
-Wire Wire Line
-	4100 9400 4250 9400
-Wire Wire Line
-	4100 9500 4250 9500
-Text Label 4250 9400 0    50   ~ 0
-GPIO_AD_B0_01
-Text Label 4250 9500 0    50   ~ 0
-GPIO_AD_B0_00
 Text HLabel 10325 11050 0    50   Input ~ 0
 GPIO_B1_15
 $Comp
@@ -3621,8 +3581,6 @@ F 3 "~" H 8650 3050 50  0001 C CNN
 	1    8650 3050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7050 3850
-NoConn ~ 7050 3950
 $Comp
 L power:PWR_FLAG #FLG0116
 U 1 1 5B73D343
