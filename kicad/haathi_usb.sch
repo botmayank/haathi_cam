@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi_usb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -59,17 +59,6 @@ F 3 "" H 5340 965 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L haathi:Diode_TVS D1
-U 1 1 5A6E039C
-P 4150 2725
-F 0 "D1" H 4400 2525 50  0000 R CNN
-F 1 "RClamp0854P.TCT" H 4675 2450 50  0000 R CNN
-F 2 "" H 4150 2725 50  0001 C CNN
-F 3 "" H 4150 2725 50  0001 C CNN
-	1    4150 2725
-	1    0    0    -1  
-$EndComp
-$Comp
 L haathi:IND_CHOKE_CM L2
 U 1 1 5A6E041C
 P 5375 1875
@@ -79,17 +68,6 @@ F 2 "" H 5375 1775 60  0000 C CNN
 F 3 "" H 5375 1775 60  0000 C CNN
 	1    5375 1875
 	1    0    0    1   
-$EndComp
-$Comp
-L haathi:R R1
-U 1 1 5A6E0521
-P 5350 2250
-F 0 "R1" V 5250 2250 50  0000 C CNN
-F 1 "0E" V 5350 2250 50  0000 C CNN
-F 2 "" V 5280 2250 30  0000 C CNN
-F 3 "" H 5350 2250 30  0000 C CNN
-	1    5350 2250
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5175 1775 4300 1775
@@ -169,8 +147,6 @@ Wire Wire Line
 Wire Wire Line
 	2975 2850 2975 3850
 Wire Wire Line
-	3950 2975 3950 3850
-Wire Wire Line
 	5950 1275 5950 1400
 Wire Wire Line
 	5575 1775 6825 1775
@@ -223,11 +199,6 @@ $EndComp
 Wire Wire Line
 	5950 875  6825 875 
 Connection ~ 5950 875 
-Wire Wire Line
-	5200 2250 4100 2250
-Connection ~ 4100 2250
-Wire Wire Line
-	5500 2250 6825 2250
 Text Label 5950 875  0    50   ~ 0
 5V_USB_OTG
 Text Label 3325 875  0    50   ~ 0
@@ -240,18 +211,12 @@ Text Label 5950 1775 0    50   ~ 0
 USB_OTG1_D-
 Text Label 5950 1975 0    50   ~ 0
 USB_OTG1_D+
-Text Label 5950 2250 0    50   ~ 0
-USB_OTG1_ID
 Text HLabel 6825 875  2    50   BiDi ~ 0
 5V_USB_OTG
 Text HLabel 6825 1775 2    50   BiDi ~ 0
 USB_OTG1_D-
 Text HLabel 6825 1975 2    50   BiDi ~ 0
 USB_OTG1_D+
-Text HLabel 6825 2250 2    50   BiDi ~ 0
-USB_OTG1_ID
-NoConn ~ 4500 2625
-NoConn ~ 4500 2825
 $Comp
 L haathi:C_NP C108
 U 1 1 5A8AEC37
@@ -283,17 +248,6 @@ F 1 "330E" H 4900 4300 40  0000 C CNN
 F 2 "" H 4875 4425 60  0000 C CNN
 F 3 "" H 4840 4515 60  0000 C CNN
 	1    4875 4425
-	1    0    0    -1  
-$EndComp
-$Comp
-L haathi:Diode_TVS D7
-U 1 1 5A8AEC4C
-P 3650 6275
-F 0 "D7" H 3900 6075 50  0000 R CNN
-F 1 "RClamp0854P.TCT" H 4175 6000 50  0000 R CNN
-F 2 "" H 3650 6275 50  0001 C CNN
-F 3 "" H 3650 6275 50  0001 C CNN
-	1    3650 6275
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -366,8 +320,6 @@ Wire Wire Line
 Wire Wire Line
 	2725 5675 2725 7400
 Wire Wire Line
-	3450 6525 3450 7400
-Wire Wire Line
 	5450 4825 5450 4950
 Wire Wire Line
 	5075 5325 6325 5325
@@ -434,10 +386,6 @@ Text HLabel 6325 5325 2    50   BiDi ~ 0
 USB_OTG2_D-
 Text HLabel 6325 5525 2    50   BiDi ~ 0
 USB_OTG2_D+
-Text HLabel 6325 5800 2    50   BiDi ~ 0
-USB_OTG2_ID
-NoConn ~ 4000 6175
-NoConn ~ 4000 6375
 Text HLabel 1975 5275 0    50   Input ~ 0
 5V_USB_HS_EXTERN
 Text HLabel 1975 5375 0    50   Input ~ 0
@@ -452,4 +400,32 @@ Wire Wire Line
 	1975 5675 2175 5675
 Wire Wire Line
 	2575 5675 2725 5675
+Text HLabel 6325 5800 2    50   Input ~ 0
+GPIO_AD_B0_00
+$Comp
+L haathi:TPD4S012 D?
+U 1 1 5B0B0690
+P 3650 6375
+F 0 "D?" H 3362 6396 50  0000 R CNN
+F 1 "TPD4S012" H 3362 6305 50  0000 R CNN
+F 2 "" H 3650 6375 50  0001 C CNN
+F 3 "" H 3650 6375 50  0001 C CNN
+	1    3650 6375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 6775 3450 7400
+$Comp
+L haathi:TPD4S012 D?
+U 1 1 5B0B3608
+P 4150 2825
+F 0 "D?" H 3862 2846 50  0000 R CNN
+F 1 "TPD4S012" H 3862 2755 50  0000 R CNN
+F 2 "" H 4150 2825 50  0001 C CNN
+F 3 "" H 4150 2825 50  0001 C CNN
+	1    4150 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3225 3950 3850
 $EndSCHEMATC
