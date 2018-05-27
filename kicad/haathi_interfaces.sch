@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 1 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -301,8 +301,6 @@ Text HLabel 6150 3550 0    50   Input ~ 0
 USB_OTG2_D-_EXTERN
 Text HLabel 6150 3650 0    50   Input ~ 0
 USB_OTG2_D+_EXTERN
-Text HLabel 6150 3750 0    50   Input ~ 0
-USB_OTG2_ID_EXTERN
 Text HLabel 6150 3850 0    50   Input ~ 0
 USB_GND_EXTERN
 Wire Wire Line
@@ -345,9 +343,9 @@ Wire Wire Line
 	3200 5200 2850 5200
 Wire Wire Line
 	3200 5300 2850 5300
-Text HLabel 7350 3450 2    50   Input ~ 0
+Text HLabel 4050 4000 2    50   Input ~ 0
 ONOFF
-Text HLabel 7350 3550 2    50   Input ~ 0
+Text HLabel 4050 4500 2    50   Input ~ 0
 WAKEUP_BUTTON
 $Comp
 L power:+3V3 #PWR086
@@ -808,21 +806,11 @@ Wire Wire Line
 	2650 4000 3200 4000
 Wire Wire Line
 	2650 4100 3200 4100
-Text HLabel 2400 6750 0    50   Input ~ 0
-GPIO_AD_B0_00
-Wire Wire Line
-	2400 6750 3000 6750
 Wire Wire Line
 	2400 6850 3000 6850
 Text HLabel 2400 6850 0    50   Input ~ 0
 GPIO_EMC_40
-Text Label 3000 6750 2    50   ~ 0
-OTG2_ID
 Text Label 3000 6850 2    50   ~ 0
-OTG2_OC
-Text Label 4050 4000 2    50   ~ 0
-OTG2_ID
-Text Label 4050 4500 2    50   ~ 0
 OTG2_OC
 Text Label 5950 4050 0    50   ~ 0
 SAI1_MCLK
@@ -1096,6 +1084,20 @@ Wire Wire Line
 Wire Wire Line
 	1400 7050 1550 7050
 Connection ~ 1550 7050
+Wire Wire Line
+	2400 6950 3000 6950
+Text HLabel 2400 6950 0    50   Input ~ 0
+GPIO_EMC_41
+Text Label 3000 6950 2    50   ~ 0
+OTG2_PWR
+Text Label 7350 3550 2    50   ~ 0
+OTG2_OC
+Text Label 7350 3450 2    50   ~ 0
+OTG2_PWR
+Text Notes 2425 7125 0    50   ~ 0
+Note: EMC_41 is muxed with CSI page pin!\n\n
 Wire Bus Line
 	8100 3700 8100 5300
+Text HLabel 6150 3750 0    50   Input ~ 0
+USB_OTG2_ID_EXTERN
 $EndSCHEMATC
