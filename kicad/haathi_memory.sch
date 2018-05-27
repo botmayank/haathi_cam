@@ -417,15 +417,15 @@ GPIO_SD_B1_06
 Text HLabel 1700 5600 0    50   Input ~ 0
 GPIO_SD_B1_07
 Text HLabel 1700 2500 0    50   Input ~ 0
-GIO_SD_B0_04
+GPIO_SD_B0_04
 Text HLabel 1700 2600 0    50   Input ~ 0
-GIO_SD_B0_05
+GPIO_SD_B0_05
 Text HLabel 1700 2700 0    50   Input ~ 0
 GPIO_SD_B0_00
 Text HLabel 1700 2900 0    50   Input ~ 0
 GPIO_SD_B0_02
 Text HLabel 1700 3000 0    50   Input ~ 0
-GIO_SD_B0_03
+GPIO_SD_B0_03
 Text HLabel 1700 3100 0    50   Input ~ 0
 GPIO_SD_B0_01
 Text HLabel 1700 2400 0    50   Input ~ 0
