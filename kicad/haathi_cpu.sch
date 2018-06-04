@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:haathi_cpu-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 1
+Sheet 1 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
