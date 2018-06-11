@@ -15,6 +15,12 @@ D power-flag symbol +3.3V
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP D_Schottky_x2_KCom_AAK
+D Dual schottky diode, common cathode
+K diode
+F ~
+$ENDCMP
+#
 $CMP GND
 D GROUND power-flag symbol
 K Power Flag Symbol
