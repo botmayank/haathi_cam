@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:haathi_power-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -1687,7 +1688,7 @@ F 3 "~" H 5000 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky_x2_KCom_AAK D?
+L haathi_mayank:D_Schottky_x2_KCom_AAK D?
 U 1 1 5B013789
 P 9925 2550
 F 0 "D?" V 9971 2628 50  0000 L CNN
