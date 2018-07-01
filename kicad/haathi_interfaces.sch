@@ -443,19 +443,12 @@ F 3 "" H 5750 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 4750 6500 4750
-Wire Wire Line
 	5750 3950 6500 3950
-Wire Wire Line
-	5750 3950 5750 4750
-Connection ~ 5750 4750
 Wire Wire Line
 	5750 5350 6500 5350
 Connection ~ 5750 5350
 Wire Wire Line
 	5750 5350 5750 5450
-Wire Wire Line
-	5750 4750 5750 5350
 Wire Wire Line
 	6500 5150 6150 5150
 Wire Wire Line
@@ -964,7 +957,7 @@ CAN_STBY
 Text Label 2850 5200 0    50   ~ 0
 CAN2_RX
 Text Label 5950 4850 0    50   ~ 0
-SAI_MCLK
+ENET_TX_CLK
 $Comp
 L haathi_mayank:R R35
 U 1 1 5B27A627
@@ -996,7 +989,7 @@ Connection ~ 4700 5000
 Wire Wire Line
 	4700 5000 4700 3350
 Wire Wire Line
-	8450 1050 8450 1200
+	8450 1050 8450 1125
 $Comp
 L haathi_mayank:R_Pack04 RN2
 U 1 1 5B30F592
@@ -1098,6 +1091,30 @@ Text Notes 2425 7125 0    50   ~ 0
 Note: EMC_41 is muxed with CSI page pin!\n\n
 Text HLabel 6150 3750 0    50   Input ~ 0
 USB_OTG2_ID_EXTERN
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5B45B6D3
+P 8800 1050
+F 0 "#FLG0102" H 8800 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 8800 1224 50  0000 C CNN
+F 2 "" H 8800 1050 50  0001 C CNN
+F 3 "~" H 8800 1050 50  0001 C CNN
+	1    8800 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1050 8800 1125
+Wire Wire Line
+	8800 1125 8450 1125
+Connection ~ 8450 1125
+Wire Wire Line
+	8450 1125 8450 1200
+Wire Wire Line
+	5750 3950 5750 5350
+Wire Wire Line
+	6500 4750 5950 4750
 Wire Bus Line
 	8100 3700 8100 5300
+Text Label 5950 4750 0    50   ~ 0
+ENET_RXER
 $EndSCHEMATC
