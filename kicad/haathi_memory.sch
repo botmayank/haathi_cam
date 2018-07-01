@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 9 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -1033,10 +1034,10 @@ Wire Wire Line
 Text HLabel 1875 4625 0    50   Input ~ 0
 NVCC_SD1
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR067
 U 1 1 5AE730B5
 P 3525 4625
-F 0 "#PWR?" H 3525 4475 50  0001 C CNN
+F 0 "#PWR067" H 3525 4475 50  0001 C CNN
 F 1 "+3V3" H 3540 4798 50  0000 C CNN
 F 2 "" H 3525 4625 50  0001 C CNN
 F 3 "" H 3525 4625 50  0001 C CNN

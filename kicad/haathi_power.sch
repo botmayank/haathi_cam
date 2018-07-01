@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_power-cache
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -1688,10 +1688,10 @@ F 3 "~" H 5000 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L haathi_mayank:D_Schottky_x2_KCom_AAK D?
+L haathi_mayank:D_Schottky_x2_KCom_AAK D1
 U 1 1 5B013789
 P 9925 2550
-F 0 "D?" V 9971 2628 50  0000 L CNN
+F 0 "D1" V 9971 2628 50  0000 L CNN
 F 1 "PMEG3020CPA" V 10050 1950 50  0000 L CNN
 F 2 "" H 9925 2550 50  0001 C CNN
 F 3 "~" H 9925 2550 50  0001 C CNN
@@ -1711,10 +1711,10 @@ Wire Wire Line
 Wire Wire Line
 	9525 3225 9525 3425
 $Comp
-L power:GND #PWR?
+L power:GND #PWR057
 U 1 1 5B071E70
 P 10375 3050
-F 0 "#PWR?" H 10375 2800 50  0001 C CNN
+F 0 "#PWR057" H 10375 2800 50  0001 C CNN
 F 1 "GND" H 10380 2877 50  0000 C CNN
 F 2 "" H 10375 3050 50  0001 C CNN
 F 3 "" H 10375 3050 50  0001 C CNN
@@ -1722,10 +1722,10 @@ F 3 "" H 10375 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR063
 U 1 1 5B071EFF
 P 10775 3050
-F 0 "#PWR?" H 10775 2800 50  0001 C CNN
+F 0 "#PWR063" H 10775 2800 50  0001 C CNN
 F 1 "GND" H 10780 2877 50  0000 C CNN
 F 2 "" H 10775 3050 50  0001 C CNN
 F 3 "" H 10775 3050 50  0001 C CNN

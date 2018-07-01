@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 5 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -844,10 +845,10 @@ SAI1_TX_BCLK
 Text Label 6800 7000 2    50   ~ 0
 SAI1_TX_SYNC
 $Comp
-L haathi_mayank:R_Pack08 RN?
+L haathi_mayank:R_Pack08 RN1
 U 1 1 5B0C77FA
 P 5950 6400
-F 0 "RN?" V 5350 6150 50  0000 C CNN
+F 0 "RN1" V 5350 6150 50  0000 C CNN
 F 1 "R_Pack08_0E_DNP" V 5450 6400 50  0000 C CNN
 F 2 "" V 6425 6400 50  0001 C CNN
 F 3 "~" H 5950 6400 50  0001 C CNN
@@ -965,10 +966,10 @@ CAN2_RX
 Text Label 5950 4850 0    50   ~ 0
 SAI_MCLK
 $Comp
-L haathi_mayank:R R?
+L haathi_mayank:R R35
 U 1 1 5B27A627
 P 5950 7450
-F 0 "R?" V 5900 7550 50  0000 L CNN
+F 0 "R35" V 5900 7550 50  0000 L CNN
 F 1 "0E" V 5950 7400 50  0000 L CNN
 F 2 "" V 5880 7450 30  0000 C CNN
 F 3 "" H 5950 7450 30  0000 C CNN
@@ -997,10 +998,10 @@ Wire Wire Line
 Wire Wire Line
 	8450 1050 8450 1200
 $Comp
-L haathi_mayank:R_Pack04 RN?
+L haathi_mayank:R_Pack04 RN2
 U 1 1 5B30F592
 P 5950 7200
-F 0 "RN?" V 5550 7000 50  0000 C CNN
+F 0 "RN2" V 5550 7000 50  0000 C CNN
 F 1 "R_Pack04_0E_DNP" V 5650 7250 50  0000 C CNN
 F 2 "" V 6225 7200 50  0001 C CNN
 F 3 "~" H 5950 7200 50  0001 C CNN
@@ -1036,10 +1037,10 @@ Wire Notes Line
 Wire Notes Line
 	5500 5900 5500 7500
 $Comp
-L haathi_mayank:R R?
+L haathi_mayank:R R34
 U 1 1 5B465F1F
 P 1550 7200
-F 0 "R?" H 1400 7150 50  0000 L CNN
+F 0 "R34" H 1400 7150 50  0000 L CNN
 F 1 "4.7k_DNP" H 1150 7250 50  0000 L CNN
 F 2 "" V 1480 7200 30  0000 C CNN
 F 3 "" H 1550 7200 30  0000 C CNN
@@ -1047,10 +1048,10 @@ F 3 "" H 1550 7200 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L haathi_mayank:R R?
+L haathi_mayank:R R1
 U 1 1 5B46616D
 P 1400 7200
-F 0 "R?" H 1500 7150 50  0000 L CNN
+F 0 "R1" H 1500 7150 50  0000 L CNN
 F 1 "4.7k_DNP" H 1500 7250 50  0000 L CNN
 F 2 "" V 1330 7200 30  0000 C CNN
 F 3 "" H 1400 7200 30  0000 C CNN
@@ -1068,10 +1069,10 @@ Connection ~ 1550 7600
 Wire Wire Line
 	1550 7600 1650 7600
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR066
 U 1 1 5B48CD9A
 P 1550 6950
-F 0 "#PWR?" H 1550 6800 50  0001 C CNN
+F 0 "#PWR066" H 1550 6800 50  0001 C CNN
 F 1 "+3V3" H 1565 7123 50  0000 C CNN
 F 2 "" H 1550 6950 50  0001 C CNN
 F 3 "" H 1550 6950 50  0001 C CNN
@@ -1095,8 +1096,8 @@ Text Label 7350 3450 2    50   ~ 0
 OTG2_PWR
 Text Notes 2425 7125 0    50   ~ 0
 Note: EMC_41 is muxed with CSI page pin!\n\n
-Wire Bus Line
-	8100 3700 8100 5300
 Text HLabel 6150 3750 0    50   Input ~ 0
 USB_OTG2_ID_EXTERN
+Wire Bus Line
+	8100 3700 8100 5300
 $EndSCHEMATC

@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:haathi_schematic-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 4 9
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -402,10 +403,10 @@ Wire Wire Line
 Text HLabel 6325 5800 2    50   Input ~ 0
 GPIO_AD_B0_00
 $Comp
-L haathi:TPD4S012 D?
+L haathi:TPD4S012 D3
 U 1 1 5B0B0690
 P 3650 6375
-F 0 "D?" H 3362 6396 50  0000 R CNN
+F 0 "D3" H 3362 6396 50  0000 R CNN
 F 1 "TPD4S012" H 3362 6305 50  0000 R CNN
 F 2 "" H 3650 6375 50  0001 C CNN
 F 3 "" H 3650 6375 50  0001 C CNN
@@ -415,10 +416,10 @@ $EndComp
 Wire Wire Line
 	3450 6775 3450 7400
 $Comp
-L haathi:TPD4S012 D?
+L haathi:TPD4S012 D4
 U 1 1 5B0B3608
 P 4150 2825
-F 0 "D?" H 3862 2846 50  0000 R CNN
+F 0 "D4" H 3862 2846 50  0000 R CNN
 F 1 "TPD4S012" H 3862 2755 50  0000 R CNN
 F 2 "" H 4150 2825 50  0001 C CNN
 F 3 "" H 4150 2825 50  0001 C CNN
