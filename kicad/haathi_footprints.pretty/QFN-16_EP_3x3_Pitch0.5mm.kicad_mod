@@ -1,4 +1,4 @@
-(module TPS62142 (layer F.Cu) (tedit 5B48EF5B)
+(module QFN-16_EP_3x3_Pitch0.5mm (layer F.Cu) (tedit 5B48EF5B)
   (attr smd)
   (fp_text reference U* (at 0 -2.8) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
