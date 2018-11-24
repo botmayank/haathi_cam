@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:haathi_schematic-cache
+LIBS:haathi_usb-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 1 1
 Title "haathi_cam"
 Date "2018-03-11"
 Rev "rev 1"
@@ -15,14 +15,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L haathi:USB_microAB J1
+L haathi:USB_micro J1
 U 1 1 5A6AD825
-P 2275 1925
-F 0 "J1" H 2050 2000 50  0000 R CNN
-F 1 "USB_microAB" H 2050 1900 50  0000 R CNN
-F 2 "" H 2275 1925 50  0001 C CNN
-F 3 "" H 2275 1925 50  0001 C CNN
-	1    2275 1925
+P 2075 1925
+F 0 "J1" H 1850 2000 50  0000 R CNN
+F 1 "USB_microAB" H 1850 1900 50  0000 R CNN
+F 2 "" H 2075 1925 50  0001 C CNN
+F 3 "" H 2075 1925 50  0001 C CNN
+	1    2075 1925
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -118,30 +118,6 @@ Wire Wire Line
 	2475 2125 3225 2125
 Wire Wire Line
 	3225 2125 3225 3850
-Wire Wire Line
-	2275 1525 2275 1425
-Wire Wire Line
-	2275 1425 2175 1425
-Wire Wire Line
-	1425 1425 1425 2425
-Wire Wire Line
-	1425 2425 2175 2425
-Wire Wire Line
-	2275 2425 2275 2325
-Wire Wire Line
-	2175 2325 2175 2425
-Connection ~ 2175 2425
-Wire Wire Line
-	2175 2425 2275 2425
-Wire Wire Line
-	2175 1525 2175 1425
-Connection ~ 2175 1425
-Wire Wire Line
-	2175 1425 1425 1425
-Wire Wire Line
-	2175 2425 2175 2850
-Wire Wire Line
-	2175 2850 2450 2850
 Wire Wire Line
 	2850 2850 2975 2850
 Wire Wire Line
@@ -428,4 +404,8 @@ F 3 "" H 4150 2825 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 3225 3950 3850
+Wire Wire Line
+	2075 2325 2075 2850
+Wire Wire Line
+	2075 2850 2450 2850
 $EndSCHEMATC
